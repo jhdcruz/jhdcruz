@@ -1,4 +1,4 @@
-## A Hobbyist Coder & Front-End Web Developer. ![](https://komarev.com/ghpvc/?jhdcruz&label=Views&style=flat-square)
+## A Hobbyist Coder & Front-End Web Developer.
 
 :satellite: || **[Twitter](https://twitter.com/jhdcrux) | [Reddit](https://www.reddit.com/user/xAegir) | [Steam](https://steamcommunity.com/id/itsAEGIR/)**
 
