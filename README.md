@@ -4,7 +4,7 @@
 
 - **HTML5 & CSS3** _(If that counts)_
 - **JavaScript** _(ES6+)_
-- **React 16/17**
+- **React 16/17** _(Functional Components)_
 - **Electron Framework 10**
 - **Sass/Scss** _(mainly `node-sass`)_
 
