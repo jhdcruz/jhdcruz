@@ -1,7 +1,15 @@
-<div align="center">
+## A Front-End Web Developer.
 
-![](https://i.ytimg.com/vi/QxJHJPCh65A/hqdefault.jpg)
+### Languages & Frameworks
 
-<h6>Kill me...</h6>
+- **HTML5 & CSS3** _(If that counts)_
+- **JavaScript** _(ES6+)_
+- **React 16+**
+- **Electron Framework 10+**
+- **Sass/Scss** _(mainly `node-sass`)_
 
-</div>
+### Currently trying out:
+
+- **Redux**
+- **Express**
+- **TypeScript**
