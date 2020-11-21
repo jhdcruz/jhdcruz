@@ -6,10 +6,10 @@
 - **JavaScript** _(ES6+)_
 - **React 16/17** _(Functional Components)_
 - **Electron Framework 10**
-- **Sass/Scss** _(mainly `node-sass`)_
+- **Sass/Scss**
+- **Express (As a `Back-End` only)**
 
 ### Currently trying out:
 
 - **Redux**
-- **Express**
 - **TypeScript**
