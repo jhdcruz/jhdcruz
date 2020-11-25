@@ -7,9 +7,8 @@
 - **React 16/17** _(Functional Components)_
 - **Electron Framework 10**
 - **Sass/Scss**
-- **Express** _(As a `Back-End` only)_
 
 ### Currently trying out:
 
-- **Redux**
 - **TypeScript**
+- **Express**
