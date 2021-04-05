@@ -1,1 +1,3 @@
-![Metrics](https://https://metrics.lecoq.io/jhdcruz)
+<div align="center">
+  <img src="./github-metrics.svg" />
+</div>
