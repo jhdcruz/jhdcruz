@@ -32,7 +32,7 @@ jobs:
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           plugin_wakatime_days: 14
-          plugin_wakatime_sections: time, projects, projects-graphs
+          plugin_wakatime_sections: time, projects
           plugin_wakatime_limit: 4
           plugin_habits: yes
           plugin_habits_from: 200
