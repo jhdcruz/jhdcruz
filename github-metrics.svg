@@ -1169,8 +1169,8 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="414.2005512818203" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="414.2005512818203" y="0" width="45.79944871817969" height="8" fill="#2b7489"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="421.8188493930285" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="421.8188493930285" y="0" width="38.18115060697156" height="8" fill="#2b7489"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -1181,7 +1181,7 @@
                     </div>
                             <small>
                                 <div>399 kB</div>
-                                <div>90.04%</div>
+                                <div>91.7%</div>
                             </small>
                         </div>
                     </section>
@@ -1192,8 +1192,8 @@
                       TypeScript
                     </div>
                             <small>
-                                <div>44.2 kB</div>
-                                <div>9.96%</div>
+                                <div>36.1 kB</div>
+                                <div>8.3%</div>
                             </small>
                         </div>
                     </section>
@@ -1207,15 +1207,15 @@
                 <div class="row">
                     <ul class="habits">
                         <li>Uses spaces for indentation</li>
-                        <li>Has approximately 29.5 characters per line of code written</li>
-                        <li>Mostly pushes code around 17:00</li>
-                        <li>Mostly active on Friday</li>
+                        <li>Has approximately 28.4 characters per line of code written</li>
+                        <li>Mostly pushes code around 15:00</li>
+                        <li>Mostly active on Monday</li>
                     </ul>
                 </div>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated Mon, 05 Jul 2021 08:57:03 (timezone Asia/Manila) with lowlighter/metrics@3.10.0</span>
+                <span>Last updated Tue, 06 Jul 2021 09:01:30 (timezone Asia/Manila) with lowlighter/metrics@3.10.0</span>
             </footer>
             <div id="metrics-end"></div>
         </div>
