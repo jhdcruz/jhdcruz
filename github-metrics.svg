@@ -1169,8 +1169,8 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="421.793683283004" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="421.793683283004" y="0" width="38.20631671699602" height="8" fill="#2b7489"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="421.72304063835696" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="421.72304063835696" y="0" width="38.27695936164306" height="8" fill="#2b7489"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -1181,7 +1181,7 @@
                     </div>
                             <small>
                                 <div>399 kB</div>
-                                <div>91.69%</div>
+                                <div>91.68%</div>
                             </small>
                         </div>
                     </section>
@@ -1193,7 +1193,7 @@
                     </div>
                             <small>
                                 <div>36.2 kB</div>
-                                <div>8.31%</div>
+                                <div>8.32%</div>
                             </small>
                         </div>
                     </section>
@@ -1208,14 +1208,14 @@
                     <ul class="habits">
                         <li>Uses spaces for indentation</li>
                         <li>Has approximately 28.5 characters per line of code written</li>
-                        <li>Mostly pushes code around 15:00</li>
+                        <li>Mostly pushes code around 00:00</li>
                         <li>Mostly active on Monday</li>
                     </ul>
                 </div>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated Thu, 15 Jul 2021 09:00:17 (timezone Asia/Manila) with lowlighter/metrics@3.10.0</span>
+                <span>Last updated Fri, 16 Jul 2021 09:00:11 (timezone Asia/Manila) with lowlighter/metrics@3.10.0</span>
             </footer>
             <div id="metrics-end"></div>
         </div>
