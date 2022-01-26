@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "postcss-syntax",
+    "@stylelint/postcss-css-in-js",
+    "stylelint-prettier/recommended"
+  ],
+  "customSyntax": "@stylelint/postcss-css-in-js",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extends",
+          "apply",
+          "tailwind",
+          "components",
+          "utilities",
+          "screen"
+        ]
+      }
+    ]
+  }
+}
