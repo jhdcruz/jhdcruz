@@ -1,0 +1,20 @@
+{
+  "name": "@jhdcruz/portfolio",
+  "version": "1.0.0",
+  "author": "Joshua Hero Dela Cruz <jhdcrux@outlook.com>",
+  "homepage": "https://jhdcruz.pages.dev",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "solid-js": "1.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-solid": "0.3.1",
+    "astro": "0.22.18"
+  }
+}
