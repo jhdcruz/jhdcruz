@@ -1,0 +1,45 @@
+name: codeql
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+      - preview
+    paths-ignore:
+      - docs/
+      - scripts/
+      - .vscode/
+      - .husky/
+      - README.md
+      - LICENSE.txt
+      - renovate.json
+      - .czrc.json
+      - .editorconfig
+      - .gitattributes
+      - .gitignore
+      - .prettierignore
+  schedule:
+    - cron: "0 0 * * 1" # every week 'monday'
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v1
+        with:
+          languages: javascript
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v1
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v1
