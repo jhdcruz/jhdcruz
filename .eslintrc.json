@@ -9,9 +9,15 @@
   ],
   "plugins": ["@typescript-eslint"],
   "ignorePatterns": ["node_modules"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
   "rules": {
-    "import/no-anonymous-default-export": "off",
+    "no-undef": "off",
     "no-unused-vars": "off",
+    "import/no-anonymous-default-export": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "off"
   }
