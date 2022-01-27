@@ -125,9 +125,9 @@ __metadata:
   linkType: hard
 
 "@astropub/webapi@npm:^0.10.1":
-  version: 0.10.7
-  resolution: "@astropub/webapi@npm:0.10.7"
-  checksum: bc0c12f79a6ca0620525ff4b4e40a1f5ec9a07d8c39c7cef5a57cd280bef0bb6bc2763b6bc3db50431c7a83c31bfe6f0ec335bd5f1e828eb4a2a3f1d20f6d05f
+  version: 0.10.8
+  resolution: "@astropub/webapi@npm:0.10.8"
+  checksum: b52d48a3ce4928eb99f57b501ee68fedf3741a09f869b3fdb3d29e02f1f029b0db028b1d80d3ee6294841b41bde04a2c546ef928cdd347993382cba0505ceb6b
   languageName: node
   linkType: hard
 
@@ -480,13 +480,13 @@ __metadata:
   linkType: hard
 
 "@humanwhocodes/config-array@npm:^0.9.2":
-  version: 0.9.2
-  resolution: "@humanwhocodes/config-array@npm:0.9.2"
+  version: 0.9.3
+  resolution: "@humanwhocodes/config-array@npm:0.9.3"
   dependencies:
     "@humanwhocodes/object-schema": ^1.2.1
     debug: ^4.1.1
     minimatch: ^3.0.4
-  checksum: 28a9e2974c50a86765cb6cc96e03d29187ea33fdaba62c4f35db89002e3cfbd340e64c9f6cf869e33e2e5cdcc06e78763458f4178d38a6f30aea1308787ca706
+  checksum: 6e5d7d274941c459bab0a14a87e372206d89fad3e4879d982edc942e8cc34da6510ea3644b8535a2a9edaa6527e91dccceabc6837ffa8ee506d66bca5d269ebc
   languageName: node
   linkType: hard
 
@@ -504,6 +504,7 @@ __metadata:
     "@astrojs/renderer-solid": 0.3.1
     "@stylelint/postcss-css-in-js": 0.37.2
     "@typescript-eslint/eslint-plugin": 5.10.1
+    "@typescript-eslint/parser": 5.10.1
     astro: 0.22.18
     autoprefixer: 10.4.2
     eslint: 8.7.0
@@ -878,6 +879,23 @@ __metadata:
     typescript:
       optional: true
   checksum: 44d71b4622c0e53bb0c576f2b94bf9274faf0c2f3d5fc0357ecec211add6ebfc96c15a5fa68aab8eede1a928f09631062517617ee83a8d228d2c81215c0156a8
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:5.10.1":
+  version: 5.10.1
+  resolution: "@typescript-eslint/parser@npm:5.10.1"
+  dependencies:
+    "@typescript-eslint/scope-manager": 5.10.1
+    "@typescript-eslint/types": 5.10.1
+    "@typescript-eslint/typescript-estree": 5.10.1
+    debug: ^4.3.2
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 36e94b3fb5010f09311f1667f8beed1ece46677e738424df78e266eef0957e33671d505a7979d775e863b553d509ce8dbee6201a6994da5282ff38f8e1ae0303
   languageName: node
   linkType: hard
 
@@ -1476,15 +1494,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-jsx-dom-expressions@npm:^0.31.9":
-  version: 0.31.9
-  resolution: "babel-plugin-jsx-dom-expressions@npm:0.31.9"
+"babel-plugin-jsx-dom-expressions@npm:^0.31.11":
+  version: 0.31.11
+  resolution: "babel-plugin-jsx-dom-expressions@npm:0.31.11"
   dependencies:
     "@babel/helper-module-imports": 7.16.0
     "@babel/plugin-syntax-jsx": ^7.16.5
     "@babel/types": ^7.16.0
     html-entities: 2.3.2
-  checksum: 1ca271111d559351dede2b45bc1ce78ce27987af0428f43cd15de36dac8551727c6a49417a53c073f16b199be35d743c1a996bc2eb8c25f264339263337304f0
+  checksum: ff4f78913ad20b98ed8aa8e9126fd3af54007f2b98718f6438dea4ce2511506c1d2c88e7874914bbadc1f8ecf681281a367884ae0f33cf7bf12f94082b8cee2d
   languageName: node
   linkType: hard
 
@@ -1502,11 +1520,11 @@ __metadata:
   linkType: hard
 
 "babel-preset-solid@npm:^1.2.3":
-  version: 1.3.2
-  resolution: "babel-preset-solid@npm:1.3.2"
+  version: 1.3.4
+  resolution: "babel-preset-solid@npm:1.3.4"
   dependencies:
-    babel-plugin-jsx-dom-expressions: ^0.31.9
-  checksum: 5219c932220b20f137908a4ce1c8205a62fdc3b478ed543fe11268703d51c4639bbe1ad6c89be09518753922512f99ec1c8fddce9ff3c7424d6cd5e4434606f6
+    babel-plugin-jsx-dom-expressions: ^0.31.11
+  checksum: 6fafcceacc34d076d0c4eedfff63440db874f26a6fbcb0a9dcd612378b49358cdcba586148fdd9f0b660468dc32eeeb6190410a710330e419cd251062b8ef02c
   languageName: node
   linkType: hard
 
@@ -1648,9 +1666,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001286, caniuse-lite@npm:^1.0.30001297":
-  version: 1.0.30001302
-  resolution: "caniuse-lite@npm:1.0.30001302"
-  checksum: 612689059f6a9aeebad43afeabac655308ddbad8e0f345030edf7656564cf9d0d5af10e3cbf61b64b09b06a97f82ba3788f5621d6526c7a3e7e068cae88d6782
+  version: 1.0.30001303
+  resolution: "caniuse-lite@npm:1.0.30001303"
+  checksum: fe77fb680c94c875be2fb78c9507a69d3ed6be8894832d3ee8a7d24e4c5c7599bf217f030fcdfd761ea211065042679bf697a57eefe114058a3208561e2fd042
   languageName: node
   linkType: hard
 
@@ -2184,9 +2202,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.17":
-  version: 1.4.53
-  resolution: "electron-to-chromium@npm:1.4.53"
-  checksum: 8c221a85b1941763803836044a8d8eaacb6e9661302fcdd36601a74f7123236aa52b0007d54320a1550cbbcf9dfdd4cf52ca92e677df3f71be0ee2ed68c738d7
+  version: 1.4.54
+  resolution: "electron-to-chromium@npm:1.4.54"
+  checksum: 4c078dc6d5e664d14c166e966e013144a774ab3dd1a853a10fc7bab57c6dafcfc1c451c329ad7c4d45da6ac463fab463e079a32f250b37e7954bbe2ed83ad52e
   languageName: node
   linkType: hard
 
@@ -3360,9 +3378,9 @@ __metadata:
   linkType: hard
 
 "flatted@npm:^3.1.0":
-  version: 3.2.4
-  resolution: "flatted@npm:3.2.4"
-  checksum: 7d33846428ab337ec81ef9b8b9103894c1c81f5f67feb32bd4ed106fbc47da60d56edb42efd36c9f1f30a010272aeccd34ec1ffacfe9dfdff19673b1d4df481b
+  version: 3.2.5
+  resolution: "flatted@npm:3.2.5"
+  checksum: 3c436e9695ccca29620b4be5671dd72e5dd0a7500e0856611b7ca9bd8169f177f408c3b9abfa78dfe1493ee2d873e2c119080a8a9bee4e1a186a9e60ca6c89f1
   languageName: node
   linkType: hard
 
@@ -6828,10 +6846,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solid-js@npm:1.3.3, solid-js@npm:^1.2.3":
+"solid-js@npm:1.3.3":
   version: 1.3.3
   resolution: "solid-js@npm:1.3.3"
   checksum: 3ce169ac778f502ed5b18d69dbfb6d0b29b34528675f405052b73eb6be069e8c395a8d64d1ee4fefa4f32ee7eea19377b853917d29acf273e0049d7da3ad2d9f
+  languageName: node
+  linkType: hard
+
+"solid-js@npm:^1.2.3":
+  version: 1.3.4
+  resolution: "solid-js@npm:1.3.4"
+  checksum: 45824c770ff0d68b28550fb13879a53cf41499d474a3e50f7785c47cb21a86bdf49b55919c6f5dc2270ec0d438654e0c90086e2d3066522f125053e502142e13
   languageName: node
   linkType: hard
 
@@ -7315,9 +7340,9 @@ __metadata:
   linkType: hard
 
 "svelte@npm:^3.44.3":
-  version: 3.46.2
-  resolution: "svelte@npm:3.46.2"
-  checksum: a04688a844b4ad91f728d48441b66e4341f99119c3b972a747dbce26b5bf484b0b25fd6fa10cbc3fd992d7979d7e58bf05debf7d134aff47c48dab516d6a5122
+  version: 3.46.3
+  resolution: "svelte@npm:3.46.3"
+  checksum: 58659dd03edaf7f4e21e029bb92babe53c26b727d8e1d2beb61baebb360131829016f2ff4c222fa23d789dbbb3e1d092ece79178f441fa385378456b425044f7
   languageName: node
   linkType: hard
 

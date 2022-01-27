@@ -18,6 +18,7 @@
     "@astrojs/renderer-solid": "0.3.1",
     "@stylelint/postcss-css-in-js": "0.37.2",
     "@typescript-eslint/eslint-plugin": "5.10.1",
+    "@typescript-eslint/parser": "5.10.1",
     "astro": "0.22.18",
     "autoprefixer": "10.4.2",
     "eslint": "8.7.0",
