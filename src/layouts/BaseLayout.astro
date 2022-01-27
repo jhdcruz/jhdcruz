@@ -1,0 +1,41 @@
+---
+import { Nav } from '@/components/Nav';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <title>Joshua Hero Dela Cruz | @jhdcruz</title>
+    <meta
+      name="description"
+      content="An aspiring software developer, exploring various programming languages and technologies for adventure."
+    />
+    <meta
+      name="keywords"
+      content="personal,portfolio,software,technology,IT,computer,science"
+    />
+    <meta name="author" content="Joshua Hero Dela Cruz" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+
+  <body>
+    <style global>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      html {
+        background: #1e1e1e url('/bg.svg') center;
+        background-size: contain;
+        background-attachment: fixed;
+      }
+    </style>
+
+    <main>
+      <Nav />
+      <slot />
+    </main>
+  </body>
+</html>
