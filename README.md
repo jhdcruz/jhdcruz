@@ -10,9 +10,10 @@
 [![GitHub](https://img.shields.io/badge/-Github-000?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/jhdcruz)
 
 
-### About me:
+<img width="45%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
 
-<img width="50%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
+
+### About me:
 
 - 🌐 I mostly do front-end development, but I also do back-end development ocassionally;
 - 🌱 I’m interested in Web 3 _(Rooting for [Radicle](https://radicle.xyz))_;
@@ -31,7 +32,6 @@
 
   <a href="https://reactjs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" title="Reactjs"></a>
   <a href="https://solidjs.com"><img width="5%" src="https://upload.vectorlogo.zone/logos/solidjs/images/d514fbf4-e50a-4efa-933b-061bded05cd5.svg" title="Solidjs"></a>
-  <a href="https://tauri.studio"><img width="5%" src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/6a27f1be5327f2a7da21e393b12fea5b9160237f/public/logos/tauri.svg" title="Tauri"></a>
   <a href="https://electronjs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg" title="Electron"></a>
   <a href="https://typescriptlang.org"><img width="5%" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" title="TypeScript"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/javascript"><img width="5%" src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" title="JavaScript"></a>
@@ -45,9 +45,16 @@
   <a href="https://heroku.com"><img width="5%" src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" title="Heroku"></a>
   <a href="#"><img width="5%" src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" title="Linux"></a>
   
-  **Interested:**
-  <br />
+  </p>
   
-  <a href="https://soliditylang.org/"><img width="4%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/386px-Solidity_logo.svg.png" title="Solidity"></a>
-  <a href="https://hyperledger.org"><img width="6%" src="https://www.vectorlogo.zone/logos/hyperledger/hyperledger-icon.svg" title="HyperLedger Blockchain"></a>
+### Interested:
+ 
+ Currently interested in learning:
+ 
+ <p>
+  <a href="https://tauri.studio"><img width="5%" src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/6a27f1be5327f2a7da21e393b12fea5b9160237f/public/logos/tauri.svg" title="Tauri"></a>
+  <a href="https://rust-lang.org/"><img width="5%" src="https://www.vectorlogo.zone/logos/rust-lang/rust-lang-icon.svg" title="Rust"></a>
+  <a href="https://elixir-lang.org/"><img width="5%" src="https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg" title="Elixir"></a>
+  <a href="https://www.phoenixframework.org/"><img width="6%" src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/phoenix.svg" title="Phoenix Framework"></a>
+  <a href="https://hyperledger.org"><img width="5%" src="https://www.vectorlogo.zone/logos/hyperledger/hyperledger-icon.svg" title="HyperLedger Blockchain"></a>
 </p>
