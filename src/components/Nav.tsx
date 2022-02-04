@@ -5,10 +5,10 @@ interface IRoutes {
   url: string;
 }
 
-const sections: IRoutes[] = [
+const links: IRoutes[] = [
   {
     name: 'About',
-    url: '/',
+    url: '#about',
   },
   {
     name: 'Projects',
@@ -22,29 +22,24 @@ const sections: IRoutes[] = [
     name: 'Badges',
     url: '#badges',
   },
-  {
-    name: 'Resume',
-    url: '',
-  },
 ];
 
 export const Nav = () => (
-  <nav class="space-between flex p-3">
-    <ul class="flex">
-      <Index each={sections}>
-        {(section: () => IRoutes) => (
-          <li>
+  <nav class=" border-b border-gray-300 bg-white p-5 dark:bg-matte">
+    <div class="space-between flex">
+      <div arial-label="Navigation links">
+        <Index each={links}>
+          {(link: () => IRoutes) => (
             <a
-              class=" rounded-lg py-2 px-3 text-gray-200 decoration-primary decoration-2 underline-offset-8 hover:underline"
-              href={section().url}
+              class=" rounded-md py-2 px-3 decoration-primary decoration-2 underline-offset-8 hover:underline focus:outline-primary"
+              href={link().url}
+              aria-label={`Link to ${link().name}`}
             >
-              {section().name}
+              {link().name}
             </a>
-          </li>
-        )}
-      </Index>
-    </ul>
-
-    <div>{/* Social Media/Contacts */}</div>
+          )}
+        </Index>
+      </div>
+    </div>
   </nav>
 );

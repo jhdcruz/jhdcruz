@@ -3,5 +3,30 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
-  <p>slot here</p>
+  <section class="px-8 py-5" id="about" aria-label="About section">
+    <h1 class="py-10 text-4xl font-bold leading-normal">
+      Developing
+      <span class="underline underline-offset-8 decoration-4 decoration-primary"
+        >highly-performant</span
+      > and <span>accessible</span> websites and web apps.
+    </h1>
+
+    <div class="block">
+      <a
+        href="#projects"
+        class="mr-3 py-3 px-5 rounded-full bg-primary hover:bg-primary-darken rop-shadow-lg focus:outline-dark text-white"
+        aria-label="Take a look at my projects."
+      >
+        See projects &nbsp;&#129042;
+      </a>
+
+      <a
+        href="#projects"
+        class="p-3 rounded-full underline-offset-8 decoration-2 hover:underline decoration-primary"
+        aria-label="Learn more about me."
+      >
+        Learn more &nbsp;&#129042
+      </a>
+    </div>
+  </section>
 </BaseLayout>

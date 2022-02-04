@@ -2,7 +2,7 @@
 import { Nav } from '@/components/Nav';
 ---
 
-<html lang="en">
+<html lang="en" class="bg-light dark:bg-dark smooth-scroll">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -25,16 +25,11 @@ import { Nav } from '@/components/Nav';
       @tailwind base;
       @tailwind components;
       @tailwind utilities;
-
-      html {
-        background: #1e1e1e url('/bg.svg') center;
-        background-size: contain;
-        background-attachment: fixed;
-      }
     </style>
 
-    <main>
-      <Nav />
+    <Nav />
+
+    <main class="text-matte">
       <slot />
     </main>
   </body>
