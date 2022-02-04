@@ -27,7 +27,7 @@
 
   <!-- Skills -->
   **Langauges & Frameworks:**
-  <br /><br />
+  <br />
 
   <a href="https://reactjs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" title="Reactjs"></a>
   <a href="https://solidjs.com"><img width="5%" src="https://upload.vectorlogo.zone/logos/solidjs/images/d514fbf4-e50a-4efa-933b-061bded05cd5.svg" title="Solidjs"></a>
@@ -37,7 +37,8 @@
   <a href="https://developer.mozilla.org/en-US/docs/Web/javascript"><img width="5%" src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" title="JavaScript"></a>
 
   **Tools:**
-  <br /><br />
+  <br />
+  
   <a href="https://cloud.ibm.com/"><img width="5%" src="https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-icon.svg" title="IBM Cloud"></a>
   <a href="https://gitlab.com"><img width="5%" src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" title="GitLab"></a>
   <a href="https://vercel.com"><img width="5%" src="https://www.vectorlogo.zone/logos/zeit/zeit-icon.svg" title="Vercel"></a>
@@ -45,7 +46,8 @@
   <a href="#"><img width="5%" src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" title="Linux"></a>
   
   **Interested:**
-  <br /><br />
+  <br />
+  
   <a href="https://soliditylang.org/"><img width="4%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/386px-Solidity_logo.svg.png" title="Solidity"></a>
   <a href="https://hyperledger.org"><img width="6%" src="https://www.vectorlogo.zone/logos/hyperledger/hyperledger-icon.svg" title="HyperLedger Blockchain"></a>
 </p>
