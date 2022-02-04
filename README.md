@@ -28,23 +28,24 @@
   <!-- Skills -->
   **Langauges & Frameworks:**
   <br /><br />
-  <img width="5%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" title="Reactjs">
-  <img width="5%" src="https://upload.vectorlogo.zone/logos/solidjs/images/d514fbf4-e50a-4efa-933b-061bded05cd5.svg" title="Solidjs">
-  <img width="5%" src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/6a27f1be5327f2a7da21e393b12fea5b9160237f/public/logos/tauri.svg" title="Tauri">
-  <img width="5%" src="https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg" title="Electron">
-  <img width="5%" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" title="TypeScript">
-  <img width="5%" src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" title="JavaScript">
+
+  <a href="https://reactjs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" title="Reactjs"></a>
+  <a href="https://solidjs.com"><img width="5%" src="https://upload.vectorlogo.zone/logos/solidjs/images/d514fbf4-e50a-4efa-933b-061bded05cd5.svg" title="Solidjs"></a>
+  <a href="https://tauri.studio"><img width="5%" src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/6a27f1be5327f2a7da21e393b12fea5b9160237f/public/logos/tauri.svg" title="Tauri"></a>
+  <a href="https://electronjs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg" title="Electron"></a>
+  <a href="https://typescriptlang.org"><img width="5%" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" title="TypeScript"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/javascript"><img width="5%" src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" title="JavaScript"></a>
 
   **Tools:**
   <br /><br />
-  <img width="5%" src="https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-icon.svg" title="IBM Cloud">
-  <img width="5%" src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" title="GitLab">
-  <img width="5%" src="https://www.vectorlogo.zone/logos/zeit/zeit-icon.svg" title="Vercel">
-  <img width="5%" src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" title="Heroku">
-  <img width="5%" src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" title="Linux">
+  <a href="https://cloud.ibm.com/"><img width="5%" src="https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-icon.svg" title="IBM Cloud"></a>
+  <a href="https://gitlab.com"><img width="5%" src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" title="GitLab"></a>
+  <a href="https://vercel.com"><img width="5%" src="https://www.vectorlogo.zone/logos/zeit/zeit-icon.svg" title="Vercel"></a>
+  <a href="https://heroku.com"><img width="5%" src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" title="Heroku"></a>
+  <a href="#"><img width="5%" src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" title="Linux"></a>
   
   **Interested:**
   <br /><br />
-  <img width="4%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/386px-Solidity_logo.svg.png" title="Solidity">
-  <img width="6%" src="https://www.vectorlogo.zone/logos/hyperledger/hyperledger-icon.svg" title="HyperLedger">
+  <a href="https://soliditylang.org/"><img width="4%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Solidity_logo.svg/386px-Solidity_logo.svg.png" title="Solidity"></a>
+  <a href="https://hyperledger.org"><img width="6%" src="https://www.vectorlogo.zone/logos/hyperledger/hyperledger-icon.svg" title="HyperLedger Blockchain"></a>
 </p>
