@@ -1,5 +1,4 @@
 {
   "*.(md,json,yml,iml)": "prettier --write",
-  "*.astro": ["prettier --write", "stylelint --fix"],
   "*.ts?(x)": ["eslint --cache --fix", "prettier --write", "stylelint --fix"]
 }
