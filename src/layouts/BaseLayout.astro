@@ -14,7 +14,7 @@ import { Nav } from '@/components/Nav';
     />
     <meta
       name="keywords"
-      content="personal,portfolio,software,technology,IT,computer,science"
+      content="personal,portfolio,software,web,development,technology,IT"
     />
     <meta name="author" content="Joshua Hero Dela Cruz" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -27,9 +27,9 @@ import { Nav } from '@/components/Nav';
       @tailwind utilities;
     </style>
 
-    <Nav />
+    <Nav client:load />
 
-    <main class="text-matte">
+    <main class="text-matte dark:text-light">
       <slot />
     </main>
   </body>
