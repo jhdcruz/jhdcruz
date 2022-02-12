@@ -35,12 +35,12 @@ const links: IRoutes[] = [
 ];
 
 export const Nav = () => (
-  <nav class="flex justify-center p-3 border-t md:border-b md:border-t-0 border-gray-300 bg-white dark:bg-matte absolute bottom-0 md:top-0 md:bottom-auto w-screen">
+  <nav class="flex justify-center p-2 border-t md:border-b md:border-t-0 border-gray-300 bg-white dark:bg-matte fixed bottom-0 md:top-0 md:bottom-auto w-screen">
     <div class="flex w-full" arial-label="Navigation links">
       <Index each={links}>
         {(link: () => IRoutes) => (
           <a
-            class="rounded-lg p-3 text-gray-600 text-center grow"
+            class="rounded-lg text-gray-600 text-center grow"
             href={link().url}
             aria-label={`Link to ${link().name}`}
           >
