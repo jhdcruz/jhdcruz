@@ -15,10 +15,10 @@
 
 ### About me:
 
-- 🌐 I mostly do front-end development, but I also do back-end development ocassionally;
-- 🌱 I’m interested in Web 3 _(Rooting for [Radicle](https://radicle.xyz))_;
-- ☀️ I’m open to part-time opportunities.
-- 📚 Currently pursuing my BS in Information Technology _(~2025)_;
+- 🌐 I mostly do front-end development, but I also do back-end development ocassionally
+- 🌱 I’m interested in Web 3 _(Rooting for [Radicle](https://radicle.xyz))_
+- ☀️ I’m open to part-time opportunities
+- 📚 Currently pursuing my BS in Information Technology
 
 ### My skills:
 
