@@ -7,4 +7,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     sitemap: true,
     site: 'https://jhdcruz.pages.dev',
   },
+  devOptions: {
+    hostname: '0.0.0.0',
+  },
 });

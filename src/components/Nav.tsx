@@ -40,7 +40,7 @@ export const Nav = () => (
       <Index each={links}>
         {(link: () => IRoutes) => (
           <a
-            class="rounded-lg text-sm text-gray-600 text-center grow"
+            class="rounded-lg text-sm py-2 text-gray-600 text-center grow"
             href={link().url}
             aria-label={`Link to ${link().name}`}
           >
