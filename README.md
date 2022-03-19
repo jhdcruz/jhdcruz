@@ -16,9 +16,10 @@
 ### About me:
 
 - 🌐 I mostly do front-end development, but I also do back-end development ocassionally
-- 🌱 I’m interested in Web 3 _(Rooting for [Radicle](https://radicle.xyz))_
-- ☀️ I’m open to part-time opportunities
+- 🌱 I’m interested in Web 3 _(rooting for [radicle.xyz](https://radicle.xyz))_
+- 💼 I do some work on [Gitcoin](https://gitcoin.co/jhdcruz)
 - 📚 Currently pursuing my BS in Information Technology
+- ☀️ I’m open to part-time opportunities
 
 ### My skills:
 
