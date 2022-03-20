@@ -21,10 +21,10 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="378.62893660676815" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="378.62893660676815" y="0" width="65.53108837179126" height="8" fill="#2b7489"/>
-                    <rect mask="url(#languages-bar)" x="444.16002497855936" y="0" width="9.67428526244721" height="8" fill="#c6538c"/>
-                    <rect mask="url(#languages-bar)" x="453.8343102410066" y="0" width="6.1656897589933966" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="378.6326869042358" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="378.6326869042358" y="0" width="65.52897578222246" height="8" fill="#2b7489"/>
+                    <rect mask="url(#languages-bar)" x="444.16166268645827" y="0" width="9.673285030226609" height="8" fill="#c6538c"/>
+                    <rect mask="url(#languages-bar)" x="453.8349477166849" y="0" width="6.1650522833151555" height="8" fill="#89e051"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -36,7 +36,7 @@
                                 JavaScript
                             </div>
                             <small>
-                                <div>405 kB</div>
+                                <div>406 kB</div>
                                 <div>82.31%</div>
                             </small>
                         </div>
@@ -87,20 +87,20 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 27 commits)</small>
+                    <small class="h-details">(computed from last 18 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="habits">
                         <li>Uses spaces for indentation</li>
-                        <li>Has approximately 34.5 characters per line of code written</li>
-                        <li>Mostly pushes code around 17:00</li>
-                        <li>Mostly active on Wednesday</li>
+                        <li>Has approximately 34.3 characters per line of code written</li>
+                        <li>Mostly pushes code around 16:00</li>
+                        <li>Mostly active on Friday</li>
                     </ul>
                 </div>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 13 Mar 2022, 09:20:45 (timezone Asia/Manila) with lowlighter/metrics@3.21.0</span>
+                <span>Last updated 20 Mar 2022, 09:34:34 (timezone Asia/Manila) with lowlighter/metrics@3.21.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
