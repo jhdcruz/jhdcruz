@@ -13,6 +13,7 @@ specifiers:
   eslint-plugin-prettier: 4.0.0
   husky: 7.0.4
   lint-staged: 12.3.5
+  micromorph: 0.1.2
   morphdom: 2.6.1
   postcss: 8.4.8
   prettier: 2.5.1
@@ -38,6 +39,7 @@ devDependencies:
   eslint-plugin-prettier: 4.0.0_f3d13a703a9c1079e3d1af6044603beb
   husky: 7.0.4
   lint-staged: 12.3.5
+  micromorph: 0.1.2
   morphdom: 2.6.1
   postcss: 8.4.8
   prettier: 2.5.1

@@ -27,12 +27,16 @@ import { Nav } from '@/components/Nav';
       @tailwind utilities;
     </style>
 
-    <Nav />
+    <Nav client:load />
 
     <main class="text-matte dark:text-light">
       <slot />
     </main>
 
-    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js" async defer></script>
+    <script
+      src="https://code.iconify.design/2/2.1.2/iconify.min.js"
+      async
+      defer
+    ></script>
   </body>
 </html>

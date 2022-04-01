@@ -11,11 +11,13 @@
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
 # Editors
 .vscode/**/*
 !.vscode/extensions.json
 !.vscode/launch.json
 .idea
+*.sublime-*
 
 # Testing
 /coverage
