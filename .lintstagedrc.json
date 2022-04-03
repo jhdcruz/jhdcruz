@@ -1,4 +1,0 @@
-{
-  "*.(md,json,yml,iml)": "prettier --write",
-  "*.ts?(x)": ["eslint --cache --fix", "prettier --write"]
-}
