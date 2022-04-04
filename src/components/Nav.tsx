@@ -38,7 +38,7 @@ export const Nav = () => (
   <nav class="bg-transparent fixed bottom-0 md:top-0 md:bottom-auto w-screen">
     {/* Mobile nav */}
     <div
-      class="flex m-3 border shadow-xl rounded-lg bg-white dark:bg-matte md:hidden"
+      class="flex mb-3 mx-4 border shadow-xl rounded-lg bg-white dark:bg-matte md:hidden"
       arial-label="Navigation links"
     >
       <Index each={links}>
