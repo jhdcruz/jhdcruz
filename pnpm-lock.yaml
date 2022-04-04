@@ -1,7 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@astrojs/renderer-solid': 0.4.0
+  '@astrojs/solid-js': 0.0.3
+  '@astrojs/tailwind': ^0.1.0
   '@babel/core': 7.17.8
   '@typescript-eslint/eslint-plugin': 5.17.0
   '@typescript-eslint/parser': 5.17.0
@@ -19,6 +20,8 @@ specifiers:
   prettier: 2.6.2
   prettier-plugin-astro: 0.0.12
   prettier-plugin-tailwindcss: 0.1.8
+  serialize-javascript: 6.0.0
+  shorthash: 0.0.2
   solid-js: 1.3.13
   tailwindcss: 3.0.23
   typescript: 4.6.3
@@ -27,7 +30,8 @@ dependencies:
   solid-js: 1.3.13
 
 devDependencies:
-  '@astrojs/renderer-solid': 0.4.0_@babel+core@7.17.8
+  '@astrojs/solid-js': 0.0.3_a3f8ab494fe0bbab8e487ee3010e791b
+  '@astrojs/tailwind': 0.1.0
   '@babel/core': 7.17.8
   '@typescript-eslint/eslint-plugin': 5.17.0_689ff565753ecf7c3328c07fad067df5
   '@typescript-eslint/parser': 5.17.0_eslint@8.12.0+typescript@4.6.3
@@ -45,6 +49,8 @@ devDependencies:
   prettier: 2.6.2
   prettier-plugin-astro: 0.0.12
   prettier-plugin-tailwindcss: 0.1.8_prettier@2.6.2
+  serialize-javascript: 6.0.0
+  shorthash: 0.0.2
   tailwindcss: 3.0.23_autoprefixer@10.4.4
   typescript: 4.6.3
 
@@ -126,9 +132,11 @@ packages:
     engines: {node: ^14.15.0 || >=16.0.0}
     dev: true
 
-  /@astrojs/renderer-solid/0.4.0_@babel+core@7.17.8:
-    resolution: {integrity: sha512-d5QcmbBmaWkcVSG5ULm4708XpEP32OI25eT4xGEfGuvNSZttNtAHrfxhyk2caQbeTnpqMZ+KX/0zOkAS45mo/g==}
+  /@astrojs/solid-js/0.0.3_a3f8ab494fe0bbab8e487ee3010e791b:
+    resolution: {integrity: sha512-iuFimMyfM6IOb8Y+ZPAaynDIb4UJrig02EJaJrfUnsLWNJzUzXxMATU6mgcy9es5pRzdplxVqjCCMz9rRYkfpQ==}
     engines: {node: ^14.15.0 || >=16.0.0}
+    peerDependencies:
+      solid-js: ^1.3.6
     dependencies:
       babel-preset-solid: 1.3.13_@babel+core@7.17.8
       solid-js: 1.3.13
@@ -143,6 +151,17 @@ packages:
       svelte2tsx: 0.5.6_svelte@3.46.6+typescript@4.6.3
     transitivePeerDependencies:
       - typescript
+    dev: true
+
+  /@astrojs/tailwind/0.1.0:
+    resolution: {integrity: sha512-W4yNMg5zpuOPyCNR0BRolenFB2qpPA5dlxl1vJd/imekXUfBUgCnay6vHYnymQmXr5QhNNop+7Kde3+tL3GgVA==}
+    dependencies:
+      '@proload/core': 0.2.2
+      autoprefixer: 10.4.4_postcss@8.4.12
+      postcss: 8.4.12
+      tailwindcss: 3.0.23_autoprefixer@10.4.4
+    transitivePeerDependencies:
+      - ts-node
     dev: true
 
   /@astrojs/webapi/0.11.0:
@@ -4557,6 +4576,7 @@ packages:
 
   /solid-js/1.3.13:
     resolution: {integrity: sha512-1EBEIW9u2yqT5QNjFdvz/tMAoKsDdaRA2Jbgykd2Dt13Ia0D4mV+BFvPkOaseSyu7DsMKS23+ZZofV8BVKmpuQ==}
+    dev: false
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
