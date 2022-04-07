@@ -1,31 +1,27 @@
 ---
+import { Button } from '@/components/Button';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
   <section class="px-8 pt-10 pb-20" id="about" aria-label="About section">
     <h1 class="mb-10 text-4xl font-bold leading-normal">
-      Developing highly-performant websites and web apps.
+      Developing <span class="text-primary drop-shadow-sm">highly-performant</span> websites and web apps.
     </h1>
 
-      <a
-        href="#projects"
-        class="mr-3 py-4 px-6 rounded-full bg-primary hover:bg-primary-darken rop-shadow-lg focus:outline-dark text-white"
-        aria-label="Take a look at my projects."
-      >
-        See projects
-      </a>
 
-      <a
-        href="#projects"
-        class="p-3 underline-offset-8 decoration-2 hover:underline focus:underline decoration-primary"
-        aria-label="Learn more about me."
-      >
-        Learn more
-      </a>
+<div class="flex flex-col md:flex-row">
+  <Button href="#projects">
+  <span class="font-bold text-white">See my projects</span>
+  </Button>
+
+  <Button href="#projects" outline>
+  <span class="font-bold text-primary">More about me</span>
+  </Button>
+</div>
+
   </section>
 
-  <!-- TODO: Fetch from Github aAPI -->
   <section id="projects">
 
   </section>
