@@ -27,4 +27,5 @@ jobs:
           plugin_habits: yes
           plugin_habits_from: 200
           plugin_achievements: yes
+          plugin_achievements_display: compact
           plugin_wakatime_sections: "language-graphs, os-graphs, time"
