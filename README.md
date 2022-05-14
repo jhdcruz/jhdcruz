@@ -15,9 +15,8 @@
 
 ### About me:
 
-- 🌐 I mostly do front-end development, but I also do back-end development occasionally
-- 🌱 I’m interested in Web 3 _(rooting for [radicle.xyz](https://radicle.xyz))_
-- 💼 I do some work on [Gitcoin](https://gitcoin.co/jhdcruz)
+- 🌐 I mostly do front-end development, but I also do back-end development occasionally.
+- 🌱 I’m interested in Web 3. _([Radicle](https://radicle.xyz), [Polygon](https://polygon.technology), etc.)_
 - 📚 Currently pursuing my BS in Information Technology
 - ☀️ I’m open to part-time opportunities
 
@@ -56,7 +55,5 @@
  <p>
   <a href="https://tauri.studio"><img width="5%" src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/6a27f1be5327f2a7da21e393b12fea5b9160237f/public/logos/tauri.svg" title="Tauri"></a>
   <a href="https://rust-lang.org/"><img width="5%" src="https://www.vectorlogo.zone/logos/rust-lang/rust-lang-icon.svg" title="Rust"></a>
-  <a href="https://elixir-lang.org/"><img width="5%" src="https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg" title="Elixir"></a>
-  <a href="https://www.phoenixframework.org/"><img width="6%" src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/phoenix.svg" title="Phoenix Framework"></a>
   <a href="https://hyperledger.org"><img width="5%" src="https://www.vectorlogo.zone/logos/hyperledger/hyperledger-icon.svg" title="HyperLedger Blockchain"></a>
 </p>
