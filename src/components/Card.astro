@@ -1,0 +1,32 @@
+---
+import Link from './Link.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  labels: string[];
+  repo: string;
+  preview?: string;
+}
+
+const { title, description, labels, repo } = Astro.props;
+---
+
+<div>
+  <h2>{title}</h2>
+  <p>{description}</p>
+
+  <div aria-label="Languages/frameworks used:">
+    {labels.map((label: string) => (
+      <span class="border-1 text-bold mx-0.5 rounded-full border bg-primary py-1 px-3 text-white">
+        {label}
+      </span>
+    ))}
+  </div>
+
+  <div aria-label="Project links">
+    <Link href={repo} outline>
+      <span class="">View Repo</span>
+    </Link>
+  </div>
+</div>

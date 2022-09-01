@@ -1,0 +1,55 @@
+---
+export interface Page {
+  name: string;
+  url: string;
+  icon: string;
+}
+
+const links: Page[] = [
+  {
+    name: 'About',
+    url: '#about',
+    icon: 'user',
+  },
+  {
+    name: 'Projects',
+    url: '#projects',
+    icon: 'cube-transparent',
+  },
+  {
+    name: 'Skills',
+    url: '#skills',
+    icon: 'puzzle',
+  },
+  {
+    name: 'Badges',
+    url: '#badges',
+    icon: 'flag',
+  },
+  {
+    name: 'Contact',
+    url: 'mailto:jhdcrux@outlook.com',
+    icon: 'mail',
+  },
+];
+---
+
+<nav
+  class="flex mb-3 mx-4 border shadow-lg rounded-xl bg-white dark:bg-matte min-h-[76px] fixed bottom-0 left-0 right-0 md:top-0 md:bottom-auto md:hidden"
+>
+  {
+    links.map((link: Page) => (
+      <a
+        class="grow py-2 text-center align-middle text-sm text-gray-600 hover:bg-gray-200"
+        href={link.url}
+        aria-label={`Link to ${link.name}`}
+      >
+        <span
+          class="iconify mx-auto my-2 text-xl"
+          data-icon={`heroicons-solid:${link.icon}`}
+        />
+        {link.name}
+      </a>
+    ))
+  }
+</nav>
