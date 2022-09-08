@@ -10,15 +10,16 @@
 [![GitHub](https://img.shields.io/badge/-Github-000?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/jhdcruz)
 
 
+<!-- IMPORTANT: This could be destructive, make a local copy and use that instead -->
 <img width="45%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
 
 
 ### About me:
 
 - 🌐 I mostly do front-end development, but I also do back-end development occasionally.
-- 🌱 I’m interested in Web 3. _([Radicle](https://radicle.xyz), [Polygon](https://polygon.technology), etc.)_
+- 🌱 I’m interested in Web3 space. _([Radicle](https://radicle.xyz), [Polygon](https://polygon.technology), [Hyperledger](https://www.hyperledger.org/).)_
 - 📚 Currently pursuing my BS in Information Technology
-- ☀️ I’m open to part-time opportunities
+- ☀️ I’m open to part-time developer opportunities
 
 ### My skills:
 
@@ -36,14 +37,13 @@
   <a href="https://nodejs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" title="Node.js"></a>
   <a href="https://typescriptlang.org"><img width="5%" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" title="TypeScript"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/javascript"><img width="5%" src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" title="JavaScript"></a>
+  <a href="https://www.java.com/en/"><img width="5%" src="https://www.vectorlogo.zone/logos/java/java-icon.svg" title="Java 11+"></a>
 
   **Tools:**
   <br />
   
-  <a href="https://cloud.ibm.com/"><img width="5%" src="https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-icon.svg" title="IBM Cloud"></a>
   <a href="https://gitlab.com"><img width="5%" src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg" title="GitLab"></a>
   <a href="https://vercel.com"><img width="5%" src="https://www.vectorlogo.zone/logos/zeit/zeit-icon.svg" title="Vercel"></a>
-  <a href="https://heroku.com"><img width="5%" src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" title="Heroku"></a>
   <a href="#"><img width="5%" src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" title="Linux"></a>
   
   </p>
