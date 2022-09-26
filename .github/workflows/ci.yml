@@ -16,6 +16,7 @@ on:
       - .gitattributes
       - .gitignore
       - .prettierignore
+      - ./*.svg
 
 jobs:
   build:
