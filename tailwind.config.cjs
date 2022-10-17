@@ -5,9 +5,9 @@ module.exports = {
   content: ['./public/**/*.html', './src/**/*.{astro,tsx}'],
   theme: {
     fontFamily: {
-      sans: ['Lato', ...defaultTheme.fontFamily.sans],
-      display: ['Lato', ...defaultTheme.fontFamily.sans],
-      body: ['Lato', ...defaultTheme.fontFamily.sans],
+      sans: ['Cantarell', ...defaultTheme.fontFamily.sans],
+      display: ['Cantarell', ...defaultTheme.fontFamily.sans],
+      body: ['Cantarell', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: {

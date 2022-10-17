@@ -1,7 +1,7 @@
 ---
 import { SEO } from 'astro-seo';
 import Nav from '@/components/Nav.astro';
-import "@fontsource/lato"
+import "@fontsource/cantarell"
 ---
 
 <html lang="en" class="bg-light dark:bg-dark smooth-scroll">
@@ -26,15 +26,11 @@ import "@fontsource/lato"
     />
   </head>
 
-  <body>
+  <body class="font-display">
     <style is:global>
       @tailwind base;
       @tailwind components;
       @tailwind utilities;
-
-      html {
-        font-family: "Lato", sans-serif;
-      }
     </style>
 
     <Nav />
