@@ -31,7 +31,6 @@
 <br />
 
 <a href="https://reactjs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" title="Reactjs"></a>
-<!-- <a href="https://solidjs.com"><img width="5%" src="https://upload.vectorlogo.zone/logos/solidjs/images/d514fbf4-e50a-4efa-933b-061bded05cd5.svg" title="Solidjs"></a> -->
 <a href="https://electronjs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg" title="Electron"></a>
 <a href="https://nodejs.org"><img width="5%" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" title="Node.js"></a>
 <a href="https://typescriptlang.org"><img width="5%" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" title="TypeScript"></a>
