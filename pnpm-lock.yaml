@@ -11,7 +11,7 @@ specifiers:
   astro: 1.5.0
   astro-icon: 0.7.3
   astro-seo: 0.6.1
-  autoprefixer: 10.4.12
+  autoprefixer: 10.4.13
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-jsx-a11y: 6.6.1
@@ -38,7 +38,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
   '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
   astro: 1.5.0
-  autoprefixer: 10.4.12_postcss@8.4.18
+  autoprefixer: 10.4.13_postcss@8.4.18
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0_eslint@8.25.0
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.25.0
@@ -166,7 +166,7 @@ packages:
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      autoprefixer: 10.4.12_postcss@8.4.18
+      autoprefixer: 10.4.13_postcss@8.4.18
       postcss: 8.4.18
       tailwindcss: 3.1.8_postcss@8.4.18
     dev: true
@@ -1126,15 +1126,15 @@ packages:
       - ts-node
     dev: true
 
-  /autoprefixer/10.4.12_postcss@8.4.18:
-    resolution: {integrity: sha512-WrCGV9/b97Pa+jtwf5UGaRjgQIg7OK3D06GnoYoZNcG1Xb8Gt3EfuKjlhh9i/VtT16g6PYjZ69jdJ2g8FxSC4Q==}
+  /autoprefixer/10.4.13_postcss@8.4.18:
+    resolution: {integrity: sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.4
-      caniuse-lite: 1.0.30001420
+      caniuse-lite: 1.0.30001442
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1217,7 +1217,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001420
+      caniuse-lite: 1.0.30001442
       electron-to-chromium: 1.4.283
       node-releases: 2.0.6
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -1252,8 +1252,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite/1.0.30001420:
-    resolution: {integrity: sha512-OnyeJ9ascFA9roEj72ok2Ikp7PHJTKubtEJIQ/VK3fdsS50q4KWy+Z5X0A1/GswEItKX0ctAp8n4SYDE7wTu6A==}
+  /caniuse-lite/1.0.30001442:
+    resolution: {integrity: sha512-239m03Pqy0hwxYPYR5JwOIxRJfLTWtle9FV8zosfV5pHg+/51uD4nxcUlM8+mWWGfwKtt8lJNHnD3cWw9VZ6ow==}
     dev: true
 
   /ccount/2.0.1:
