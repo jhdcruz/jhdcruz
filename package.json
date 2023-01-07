@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "3.1.0",
+    "@astrojs/cloudflare": "3.1.2",
     "@fontsource/cantarell": "4.5.9",
     "astro-icon": "0.7.3",
     "astro-seo": "0.6.0"
