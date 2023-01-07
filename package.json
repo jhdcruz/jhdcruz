@@ -19,7 +19,7 @@
     "astro-seo": "0.6.0"
   },
   "devDependencies": {
-    "@astrojs/partytown": "1.0.1",
+    "@astrojs/partytown": "1.0.2",
     "@astrojs/sitemap": "1.0.0",
     "@astrojs/tailwind": "2.1.0",
     "@typescript-eslint/eslint-plugin": "5.40.0",
