@@ -22,7 +22,7 @@ specifiers:
   prettier: 2.8.2
   prettier-plugin-astro: 0.7.2
   prettier-plugin-tailwindcss: 0.2.1
-  tailwindcss: 3.1.8
+  tailwindcss: 3.2.4
   typescript: 4.8.4
 
 dependencies:
@@ -34,7 +34,7 @@ dependencies:
 devDependencies:
   '@astrojs/partytown': 1.0.2
   '@astrojs/sitemap': 1.0.0
-  '@astrojs/tailwind': 2.1.3_tailwindcss@3.1.8
+  '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
   '@typescript-eslint/eslint-plugin': 5.40.0_kidxc2jcxfqlpmslkrd27zpczu
   '@typescript-eslint/parser': 5.40.0_hxm4ti6flr4ebpn5txq2vx72t4
   astro: 1.9.1
@@ -49,7 +49,7 @@ devDependencies:
   prettier: 2.8.2
   prettier-plugin-astro: 0.7.2
   prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.2
-  tailwindcss: 3.1.8_postcss@8.4.21
+  tailwindcss: 3.2.4_postcss@8.4.21
   typescript: 4.8.4
 
 packages:
@@ -156,7 +156,7 @@ packages:
       zod: 3.19.1
     dev: true
 
-  /@astrojs/tailwind/2.1.3_tailwindcss@3.1.8:
+  /@astrojs/tailwind/2.1.3_tailwindcss@3.2.4:
     resolution: {integrity: sha512-W7UUUBJ3itDGcvJPvk+M/eNKFlLBYGODIzPsJ3zuehNzcJDhv/Ues+TzrpSvd0FaKfmV9Zlq3ZtToy96xxJU6Q==}
     peerDependencies:
       tailwindcss: ^3.0.24
@@ -164,7 +164,7 @@ packages:
       '@proload/core': 0.3.3
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
-      tailwindcss: 3.1.8_postcss@8.4.21
+      tailwindcss: 3.2.4_postcss@8.4.21
     dev: true
 
   /@astrojs/telemetry/1.0.1:
@@ -4030,8 +4030,8 @@ packages:
       yaml: 1.10.2
     dev: true
 
-  /postcss-nested/5.0.6_postcss@8.4.21:
-    resolution: {integrity: sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA==}
+  /postcss-nested/6.0.0_postcss@8.4.21:
+    resolution: {integrity: sha512-0DkamqrPcmkBDsLn+vQDIrtkSbNkv5AD/M322ySo9kqFkCIYklym2xEmWkwo+Y3/qZo34tzEPNUw4y7yMCdv5w==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
@@ -4725,8 +4725,8 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /tailwindcss/3.1.8_postcss@8.4.21:
-    resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
+  /tailwindcss/3.2.4_postcss@8.4.21:
+    resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
@@ -4742,6 +4742,7 @@ packages:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       lilconfig: 2.0.6
+      micromatch: 4.0.5
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.0
@@ -4749,7 +4750,7 @@ packages:
       postcss-import: 14.1.0_postcss@8.4.21
       postcss-js: 4.0.0_postcss@8.4.21
       postcss-load-config: 3.1.4_postcss@8.4.21
-      postcss-nested: 5.0.6_postcss@8.4.21
+      postcss-nested: 6.0.0_postcss@8.4.21
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
       quick-lru: 5.1.1
