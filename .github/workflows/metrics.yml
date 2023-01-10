@@ -16,7 +16,7 @@ jobs:
           # Options
           user: jhdcruz
           template: classic
-          base: repositories
+          base: metadata
           config_timezone: Asia/Manila
           repositories_affiliations: owner, collaborator
           plugin_notable: yes
