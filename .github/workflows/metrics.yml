@@ -42,7 +42,7 @@ jobs:
           plugin_notable_indepth: yes
           plugin_notable_repositories: yes
           plugin_lines: yes
-          plugin_lines_sections: repositories, history
+          plugin_lines_sections: history
           plugin_lines_repositories_limit: 3
           plugin_lines_history_limit: 1
 
