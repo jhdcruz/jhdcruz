@@ -1,7 +1,7 @@
 name: metrics
 
 on:
-  schedule: [{cron: "0 0 * * 0"}] # At 00:00 oevery Sunday
+  schedule: [{ cron: "0 0 * * 0" }] # At 00:00 oevery Sunday
   workflow_dispatch:
 
 jobs:
@@ -16,9 +16,16 @@ jobs:
           # Options
           user: jhdcruz
           template: classic
-          base: metadata
+          base: repositories
           config_timezone: Asia/Manila
           repositories_affiliations: owner, collaborator
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
+          plugin_lines: yes
+          plugin_lines_sections: history, repositories
+          plugin_lines_repositories_limit: 4
+          plugin_lines_history_limit: 1
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_threshold: 1%
