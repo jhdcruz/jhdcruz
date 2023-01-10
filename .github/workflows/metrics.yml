@@ -22,10 +22,6 @@ jobs:
           plugin_notable: yes
           plugin_notable_indepth: yes
           plugin_notable_repositories: yes
-          plugin_lines: yes
-          plugin_lines_sections: history, repositories
-          plugin_lines_repositories_limit: 4
-          plugin_lines_history_limit: 1
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_threshold: 1%
