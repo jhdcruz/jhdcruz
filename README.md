@@ -16,5 +16,3 @@
 - 🌱 I’m interested in some Web3 space. ([Radicle](https://radicle.xyz), [Polygon](https://polygon.technology), [Hyperledger](https://www.hyperledger.org/))
 - 📚 Currently pursuing my BS in Information Technology
 - ☀️ I’m open to part-time developer opportunities
-
-<img alt="Jhdcruz's github stats 2" src="./metrics-stats.svg" />
