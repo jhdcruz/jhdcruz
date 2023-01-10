@@ -27,3 +27,22 @@ jobs:
           plugin_habits: yes
           plugin_habits_from: 200
           plugin_wakatime_sections: "language-graphs, os-graphs, time"
+          
+      - uses: lowlighter/metrics@latest
+        with:
+          # Your GitHub token
+          filename: metrics-stats.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Options
+          user: jhdcruz
+          template: classic
+          base: repositories
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
+          plugin_lines: yes
+          plugin_lines_sections: repositories, history
+          plugin_lines_repositories_limit: 3
+          plugin_lines_history_limit: 1
+
