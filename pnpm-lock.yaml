@@ -14,7 +14,7 @@ specifiers:
   autoprefixer: 10.4.13
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0
-  eslint-plugin-jsx-a11y: 6.7.0
+  eslint-plugin-jsx-a11y: 6.7.1
   eslint-plugin-prettier: 4.2.1
   husky: 8.0.3
   lint-staged: 13.1.0
@@ -41,7 +41,7 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0_eslint@8.31.0
-  eslint-plugin-jsx-a11y: 6.7.0_eslint@8.31.0
+  eslint-plugin-jsx-a11y: 6.7.1_eslint@8.31.0
   eslint-plugin-prettier: 4.2.1_iu5s7nk6dw7o3tajefwfiqfmge
   husky: 8.0.3
   lint-staged: 13.1.0
@@ -1836,8 +1836,8 @@ packages:
       eslint: 8.31.0
     dev: true
 
-  /eslint-plugin-jsx-a11y/6.7.0_eslint@8.31.0:
-    resolution: {integrity: sha512-EGGRKhzejSzXKtjmEjWNtr4SK/DkMkSzkBH7g7e7moBDXZXrqaUIxkmD7uF93upMysc4dKYEJwupu7Dff+ShwA==}
+  /eslint-plugin-jsx-a11y/6.7.1_eslint@8.31.0:
+    resolution: {integrity: sha512-63Bog4iIethyo8smBklORknVjB0T2dwB8Mr/hIC+fBS0uyHdYYpzM/Ed+YC8VxTjlXHEWFOdmgwcDn1U2L9VCA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
