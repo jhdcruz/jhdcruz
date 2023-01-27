@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/cloudflare': 6.0.0
+  '@astrojs/cloudflare': 6.1.0
   '@astrojs/partytown': 1.0.3
   '@astrojs/sitemap': 1.0.0
   '@astrojs/tailwind': 3.0.0
@@ -26,7 +26,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
-  '@astrojs/cloudflare': 6.0.0_astro@2.0.2
+  '@astrojs/cloudflare': 6.1.0_astro@2.0.2
   '@fontsource/cantarell': 4.5.10
   astro-icon: 0.8.0
   astro-seo: 0.7.0
@@ -61,10 +61,10 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
 
-  /@astrojs/cloudflare/6.0.0_astro@2.0.2:
-    resolution: {integrity: sha512-kS5ydO8gAmEDs0xIilirvceOuSglBnLe+9JABFil2ErcHElva8heQRSnV8i2q0eKLomkAsz2srSoZLkZF/JRlw==}
+  /@astrojs/cloudflare/6.1.0_astro@2.0.2:
+    resolution: {integrity: sha512-eVtjZjSe6SPq5O5KXbFMPpRid/k3b8DtPM4g2oSJ0njAY++9kVLRmWc3kRcJ6gYKBRs/bjSZpUNyMhuvZgyctQ==}
     peerDependencies:
-      astro: ^2.0.0
+      astro: ^2.0.2
     dependencies:
       astro: 2.0.2
       esbuild: 0.15.18
