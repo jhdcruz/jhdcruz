@@ -21,7 +21,7 @@
   "devDependencies": {
     "@astrojs/partytown": "1.0.3",
     "@astrojs/sitemap": "1.0.1",
-    "@astrojs/tailwind": "3.0.0",
+    "@astrojs/tailwind": "3.0.1",
     "@typescript-eslint/eslint-plugin": "5.49.0",
     "@typescript-eslint/parser": "5.49.0",
     "astro": "2.0.2",
