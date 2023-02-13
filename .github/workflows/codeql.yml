@@ -21,7 +21,7 @@ on:
       - .gitignore
       - .prettierignore
   schedule:
-    - cron: "0 0 * * 1" # every week 'monday'
+    - cron: '0 0 * * 1' # every week 'monday'
 
 jobs:
   scan:

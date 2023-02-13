@@ -8,7 +8,7 @@
 
 ### About me:
 
-  - 🌐 I mostly do front-end development, but can also do back-end development.
-  - 🌱 I’m interested in some Web3 space. ([Radicle](https://radicle.xyz), [Polygon](https://polygon.technology), [Hyperledger](https://www.hyperledger.org/))
-  - 📚 Currently pursuing my Bachelor's in Information Technology _(BSIT)_
-  - ☀️ I’m open to part-time developer opportunities
+- 🌐 I mostly do front-end development, but can also do back-end development.
+- 🌱 I’m interested in some Web3 space. ([Radicle](https://radicle.xyz), [Polygon](https://polygon.technology), [Hyperledger](https://www.hyperledger.org/))
+- 📚 Currently pursuing my Bachelor's in Information Technology _(BSIT)_
+- ☀️ I’m open to part-time developer opportunities
