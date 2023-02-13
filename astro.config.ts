@@ -15,11 +15,11 @@ export default defineConfig({
       },
     }),
     sitemap({
-      customPages: ['https://jhdcruz.pages.dev'],
+      customPages: ['https://jhdcruz.pages.dev/'],
     }),
     partytown({}),
   ],
-  site: 'https://jhdcruz.pages.dev',
+  site: 'https://jhdcruz.pages.dev/',
   server: {
     port: 3000,
     host: true,
