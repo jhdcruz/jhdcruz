@@ -8,7 +8,7 @@ specifiers:
   '@fontsource/inter': 4.5.15
   '@typescript-eslint/eslint-plugin': 5.52.0
   '@typescript-eslint/parser': 5.52.0
-  astro: 2.0.10
+  astro: 2.0.11
   astro-icon: 0.8.0
   astro-seo: 0.7.0
   autoprefixer: 10.4.13
@@ -26,7 +26,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@astrojs/cloudflare': 6.1.3_astro@2.0.10
+  '@astrojs/cloudflare': 6.1.3_astro@2.0.11
   '@fontsource/inter': 4.5.15
   astro-icon: 0.8.0
   astro-seo: 0.7.0
@@ -34,10 +34,10 @@ dependencies:
 devDependencies:
   '@astrojs/partytown': 1.0.3
   '@astrojs/sitemap': 1.0.1
-  '@astrojs/tailwind': 3.0.1_jukmciyu6aodegbctarme2zo2y
+  '@astrojs/tailwind': 3.0.1_drorp46nleyzwiktdofkcoki4q
   '@typescript-eslint/eslint-plugin': 5.52.0_6cfvjsbua5ptj65675bqcn6oza
   '@typescript-eslint/parser': 5.52.0_7kw3g6rralp5ps6mg3uyzz6azm
-  astro: 2.0.10
+  astro: 2.0.11
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.34.0
   eslint-config-prettier: 8.6.0_eslint@8.34.0
@@ -61,12 +61,12 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
 
-  /@astrojs/cloudflare/6.1.3_astro@2.0.10:
+  /@astrojs/cloudflare/6.1.3_astro@2.0.11:
     resolution: {integrity: sha512-RKYW6RxFWb6QqcNbMpKl1M87tJ8lDMTBy1iGu/vD4WSJ/XDcTYsXneVYvShikkjv6dGWM7yCOUA3/j/yg0WJwA==}
     peerDependencies:
       astro: ^2.0.11
     dependencies:
-      astro: 2.0.10
+      astro: 2.0.11
       esbuild: 0.15.18
       tiny-glob: 0.2.9
     dev: false
@@ -94,13 +94,13 @@ packages:
       vscode-languageserver-types: 3.17.2
       vscode-uri: 3.0.7
 
-  /@astrojs/markdown-remark/2.0.1_astro@2.0.10:
+  /@astrojs/markdown-remark/2.0.1_astro@2.0.11:
     resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
     peerDependencies:
       astro: ^2.0.2
     dependencies:
       '@astrojs/prism': 2.0.0
-      astro: 2.0.10
+      astro: 2.0.11
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.1
       rehype-raw: 6.1.1
@@ -136,14 +136,14 @@ packages:
       zod: 3.20.6
     dev: true
 
-  /@astrojs/tailwind/3.0.1_jukmciyu6aodegbctarme2zo2y:
+  /@astrojs/tailwind/3.0.1_drorp46nleyzwiktdofkcoki4q:
     resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
     peerDependencies:
       astro: ^2.0.4
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.0.10
+      astro: 2.0.11
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
@@ -1101,14 +1101,14 @@ packages:
     resolution: {integrity: sha512-G7zJUr4lfKLeqfWx2g5rfuBsOsIOfqxIOqErQfrMsMchDFfLFxNKAuW8yAo8hynJJwBvtGyS/vOXgGdMVVCFrA==}
     dev: false
 
-  /astro/2.0.10:
-    resolution: {integrity: sha512-Jg2JYPA6Nlip27So1+O0p9VFL98H+LiDLEt+F65e6536LkWE5oiV0fDSbK8aI8hKeCvOQzLiEZiD21eXbug0XQ==}
+  /astro/2.0.11:
+    resolution: {integrity: sha512-dXBuHE1ZYfafHyjhe7ZUkcZzGGInWrLCMeHAML//+mdySr/htDsiMo8DN25Ld5siKClsCvyXgxitu651wSWcyw==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 1.1.0
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.0.1_astro@2.0.10
+      '@astrojs/markdown-remark': 2.0.1_astro@2.0.11
       '@astrojs/telemetry': 2.0.0
       '@astrojs/webapi': 2.0.0
       '@babel/core': 7.20.12
