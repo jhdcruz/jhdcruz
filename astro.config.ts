@@ -6,14 +6,10 @@ import partytown from '@astrojs/partytown';
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    tailwind({
-      config: {
-        path: './tailwind.config.cjs',
-      },
-    }),
     sitemap({
       customPages: ['https://jhdcruz.pages.dev'],
     }),
+    tailwind(),
     partytown({}),
   ],
   site: 'https://jhdcruz.pages.dev',
