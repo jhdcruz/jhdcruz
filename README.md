@@ -1,4 +1,4 @@
-## Hi, I'm Joshua Hero, An aspiring Software Engineer 🛠️.
+## Hi there 👋,
 
 [![Outlook](https://img.shields.io/badge/-Outlook-0078D4?style=for-the-badge&logo=Microsoft-Outlook&logoColor=white)](mailto:jhdcrux@outlook.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jhdcruz/)
