@@ -34,11 +34,14 @@ import '@fontsource/poppins';
       <slot />
     </main>
 
-    <script
-      defer
-      type="text/partytown"
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "e8a4e8aa4bbb48639771ca46680f08e7"}'
-    ></script>
+    {process.env.PRODUCTION ? (
+      <script
+        defer
+        type="text/partytown"
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "e8a4e8aa4bbb48639771ca46680f08e7"}'
+       ></script>
+      ) : null
+    }
   </body>
 </html>
