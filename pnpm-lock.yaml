@@ -4,7 +4,7 @@ specifiers:
   '@astrojs/partytown': 1.0.3
   '@astrojs/sitemap': 1.1.0
   '@astrojs/tailwind': 3.0.1
-  '@fontsource/inter': 4.5.15
+  '@fontsource/poppins': 4.5.10
   '@typescript-eslint/eslint-plugin': 5.53.0
   '@typescript-eslint/parser': 5.53.0
   astro: 2.0.15
@@ -23,7 +23,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@fontsource/inter': 4.5.15
+  '@fontsource/poppins': 4.5.10
   astro-icon: 0.8.0
   astro-seo: 0.7.1
 
@@ -638,8 +638,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fontsource/inter/4.5.15:
-    resolution: {integrity: sha512-FzleM9AxZQK2nqsTDtBiY0PMEVWvnKnuu2i09+p6DHvrHsuucoV2j0tmw+kAT3L4hvsLdAIDv6MdGehsPIdT+Q==}
+  /@fontsource/poppins/4.5.10:
+    resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}
     dev: false
 
   /@humanwhocodes/config-array/0.11.8:

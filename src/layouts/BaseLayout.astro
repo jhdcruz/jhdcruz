@@ -1,7 +1,8 @@
 ---
 import { SEO } from 'astro-seo';
 import Nav from '@/components/Nav.astro';
-import "@fontsource/inter"
+
+import '@fontsource/poppins';
 ---
 
 <html lang="en" class="bg-light dark:bg-dark smooth-scroll">
@@ -26,14 +27,18 @@ import "@fontsource/inter"
     />
   </head>
 
-  <body class="font-display">
+  <body class="font-sans">
     <Nav />
 
     <main class="text-matte dark:text-light">
       <slot />
     </main>
 
-    <script defer src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script defer type="text/partytown" src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e8a4e8aa4bbb48639771ca46680f08e7"}'></script>
+    <script
+      defer
+      type="text/partytown"
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "e8a4e8aa4bbb48639771ca46680f08e7"}'
+    ></script>
   </body>
 </html>
