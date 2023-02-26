@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon';
+
 export interface Page {
   name: string;
   url: string;
@@ -44,9 +46,10 @@ const links: Page[] = [
         href={link.url}
         aria-label={`Link to ${link.name}`}
       >
-        <span
-          class="iconify mx-auto my-2 text-xl"
-          data-icon={`heroicons-solid:${link.icon}`}
+        <Icon
+          name={`heroicons-solid:${link.icon}`}
+          class="mx-auto my-2"
+          height="1.4rem"
         />
         {link.name}
       </a>
