@@ -2,13 +2,16 @@
 export interface Props {
   href: string;
   outline?: boolean;
-};
+}
 
-const { href, outline } = Astro.props
+const { href, outline } = Astro.props;
 ---
+
 <a
   href={href}
-  class={`my-1 rounded-full py-4 px-6 text-center md:mr-3 ${!outline && 'bg-primary'}`}
+  class={`my-1 rounded-full py-4 px-6 text-center md:mr-3 ${
+    !outline && 'bg-primary'
+  }`}
 >
-<slot />
+  <slot />
 </a>

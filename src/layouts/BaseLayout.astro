@@ -2,7 +2,12 @@
 import { SEO } from 'astro-seo';
 import Nav from '@/components/Nav.astro';
 
-import '@fontsource/poppins';
+// fonts
+import "@fontsource/inter/variable.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/800.css";
+
 ---
 
 <html lang="en" class="bg-light dark:bg-dark smooth-scroll">
@@ -10,13 +15,13 @@ import '@fontsource/poppins';
     <meta charset="UTF-8" />
     <SEO
       title="Joshua Hero Dela Cruz | @jhdcruz"
-      description="A software developer who loves to build software, obviously."
+      description="A self-taught software developer who loves building software."
       extend={{
         link: [{ rel: 'icon', href: '/favicon.ico' }],
         meta: [
           {
             name: 'viewport',
-            content: 'width=device-width',
+            content: 'width=device-width, initial-scale=1',
           },
           {
             httpEquiv: 'X-UA-Compatible',
@@ -36,7 +41,6 @@ import '@fontsource/poppins';
 
     {process.env.PRODUCTION ? (
       <script
-        defer
         type="text/partytown"
         src="https://static.cloudflareinsights.com/beacon.min.js"
         data-cf-beacon='{"token": "e8a4e8aa4bbb48639771ca46680f08e7"}'
