@@ -22,7 +22,7 @@
     "@astrojs/tailwind": "3.0.1",
     "@typescript-eslint/eslint-plugin": "5.54.0",
     "@typescript-eslint/parser": "5.54.0",
-    "astro": "2.0.17",
+    "astro": "2.1.0",
     "autoprefixer": "10.4.13",
     "eslint": "8.35.0",
     "eslint-config-prettier": "8.6.0",
