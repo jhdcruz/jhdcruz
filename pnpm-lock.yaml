@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/partytown': 1.0.3
+  '@astrojs/partytown': 1.1.0
   '@astrojs/sitemap': 1.1.0
   '@astrojs/tailwind': 3.0.1
   '@fontsource/inter': 4.5.15
@@ -29,7 +29,7 @@ dependencies:
   astro-seo: 0.7.1
 
 devDependencies:
-  '@astrojs/partytown': 1.0.3
+  '@astrojs/partytown': 1.1.0
   '@astrojs/sitemap': 1.1.0
   '@astrojs/tailwind': 3.0.1_o5pmjyiyxefuvlue2yryq6hdmq
   '@typescript-eslint/eslint-plugin': 5.54.1_mlk7dnz565t663n4razh6a6v6i
@@ -112,8 +112,8 @@ packages:
       - supports-color
     dev: true
 
-  /@astrojs/partytown/1.0.3:
-    resolution: {integrity: sha512-u2/pG9owRipICz/PksLUUqUat98sm0/YODvv3/IKKJ0JCwF7+0olbMvyyvoj7kJooIXh0XowcOjEs5vhCYFo5g==}
+  /@astrojs/partytown/1.1.0:
+    resolution: {integrity: sha512-2cO2MuK8KEWRIsYyAkxopSL7Q5aB3ra+HTkk0umNUwAKVEZWZdDtYifdztU7WFYIlV/6t+2191MvBTqTcnenJQ==}
     dependencies:
       '@builder.io/partytown': 0.7.5
       mrmime: 1.0.1
