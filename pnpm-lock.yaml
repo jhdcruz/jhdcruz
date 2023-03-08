@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/partytown': 1.1.0
   '@astrojs/sitemap': 1.2.0
-  '@astrojs/tailwind': 3.0.1
+  '@astrojs/tailwind': 3.1.0
   '@fontsource/inter': 4.5.15
   '@typescript-eslint/eslint-plugin': 5.54.1
   '@typescript-eslint/parser': 5.54.1
@@ -31,7 +31,7 @@ dependencies:
 devDependencies:
   '@astrojs/partytown': 1.1.0
   '@astrojs/sitemap': 1.2.0
-  '@astrojs/tailwind': 3.0.1_o5pmjyiyxefuvlue2yryq6hdmq
+  '@astrojs/tailwind': 3.1.0_o5pmjyiyxefuvlue2yryq6hdmq
   '@typescript-eslint/eslint-plugin': 5.54.1_mlk7dnz565t663n4razh6a6v6i
   '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
   astro: 2.1.0
@@ -133,10 +133,10 @@ packages:
       zod: 3.20.6
     dev: true
 
-  /@astrojs/tailwind/3.0.1_o5pmjyiyxefuvlue2yryq6hdmq:
-    resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
+  /@astrojs/tailwind/3.1.0_o5pmjyiyxefuvlue2yryq6hdmq:
+    resolution: {integrity: sha512-eNflzlCdCtLZjc8pK0xQb/hXYnN/mVGVJFRAMWStrFwg8Tsvj6WVCPyRy77D5NL2tQ1piS2wiouOzAgiy1Dsiw==}
     peerDependencies:
-      astro: ^2.0.4
+      astro: ^2.1.0
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
