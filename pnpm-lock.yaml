@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/partytown': 1.1.0
-  '@astrojs/sitemap': 1.2.0
+  '@astrojs/sitemap': 1.2.1
   '@astrojs/tailwind': 3.1.0
   '@fontsource/inter': 4.5.15
   '@typescript-eslint/eslint-plugin': 5.54.1
@@ -30,7 +30,7 @@ dependencies:
 
 devDependencies:
   '@astrojs/partytown': 1.1.0
-  '@astrojs/sitemap': 1.2.0
+  '@astrojs/sitemap': 1.2.1
   '@astrojs/tailwind': 3.1.0_5fkwwuzubt6borit3q7k7y2k74
   '@typescript-eslint/eslint-plugin': 5.54.1_4rfaf6mlw2mmutqjcopwvbftpu
   '@typescript-eslint/parser': 5.54.1_vgl77cfdswitgr47lm5swmv43m
@@ -122,8 +122,8 @@ packages:
       prismjs: 1.29.0
     dev: true
 
-  /@astrojs/sitemap/1.2.0:
-    resolution: {integrity: sha512-v4Esbchc7QcbDilDcZ80BrW29o7SoWnuX80dndH+rE92cpiRwdJw5w1bfI17mtmjlt3NjgFxyjVB93ycD9s66A==}
+  /@astrojs/sitemap/1.2.1:
+    resolution: {integrity: sha512-nlKP1qc1ENZ61w+ep5RdsObjYWso4QdLGC5WyzssnKkgVDijHT61s/tHFfBWHhxqdjcw4x1V1um/eSQZPDTR3Q==}
     dependencies:
       sitemap: 7.1.1
       zod: 3.21.4
