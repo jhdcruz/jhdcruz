@@ -1,11 +1,11 @@
 version: 0.1
 cli:
-  version: 1.5.1
+  version: 1.6.1
 
 plugins:
   sources:
     - id: trunk
-      ref: v0.0.11
+      ref: v0.0.13
       uri: https://github.com/trunk-io/plugins
 
 lint:
@@ -13,13 +13,13 @@ lint:
     - svgo
   enabled:
     - shfmt@3.5.0
-    - gitleaks@8.15.3
+    - gitleaks@8.16.1
     - oxipng@8.0.0
     - git-diff-check
     - actionlint@1.6.23
     - shellcheck@0.9.0
     - prettier@2.8.4
-    - eslint@8.34.0
+    - eslint@8.36.0
     - markdownlint@0.33.0
 
 runtimes:
