@@ -9,7 +9,7 @@ specifiers:
   '@typescript-eslint/parser': 5.56.0
   astro: 2.1.6
   astro-icon: 0.8.0
-  astro-seo: 0.7.1
+  astro-seo: 0.7.2
   autoprefixer: 10.4.14
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0
@@ -26,7 +26,7 @@ specifiers:
 dependencies:
   '@fontsource/inter': 4.5.15
   astro-icon: 0.8.0
-  astro-seo: 0.7.1
+  astro-seo: 0.7.2
 
 devDependencies:
   '@astrojs/partytown': 1.1.1
@@ -1167,8 +1167,8 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /astro-seo/0.7.1:
-    resolution: {integrity: sha512-8Yo1nQrl2iB5zj+VUAHrvGIck8bZ4WAmXQgJOeF9FuAZGQD5qK6DtSZaRbpBXsFfZYHA6tE8pjs3btHhLbC1zQ==}
+  /astro-seo/0.7.2:
+    resolution: {integrity: sha512-YnSqj4E6vbF7wRk3gcxOPHBjenhfgaINEJlTsnu4sovAyfyGEdQksbioYKoZ+vERRDaYvEricfSzC6fc9lieww==}
     dev: false
 
   /astro/2.1.6:
