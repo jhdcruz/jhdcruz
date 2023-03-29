@@ -13,8 +13,8 @@ dependencies:
 
 devDependencies:
   '@astrojs/partytown':
-    specifier: 1.1.1
-    version: 1.1.1
+    specifier: 1.2.0
+    version: 1.2.0
   '@astrojs/sitemap':
     specifier: 1.2.1
     version: 1.2.1
@@ -130,8 +130,8 @@ packages:
       - supports-color
     dev: true
 
-  /@astrojs/partytown@1.1.1:
-    resolution: {integrity: sha512-IaKzYieiuxnSRGSuAivV92kDTa0ENbei4Y0yEAowhyzV6MxJJImYEUKycSo/HUJwPQQmsPmBbp/IA4pyoL1Wxg==}
+  /@astrojs/partytown@1.2.0:
+    resolution: {integrity: sha512-AjrroKpBJR4rs0CLlmLqZ82Dfa3fFvN9mQZ3cfOXQYo85Rc/85R01MZiS1S1G5IzqWi2TDWIMH6R1cm12aGKDg==}
     dependencies:
       '@builder.io/partytown': 0.7.5
       mrmime: 1.0.1
