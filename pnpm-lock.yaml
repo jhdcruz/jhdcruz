@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@fontsource/inter':
-    specifier: 4.5.15
-    version: 4.5.15
+    specifier: 5.0.1
+    version: 5.0.1
   astro-icon:
     specifier: 0.8.0
     version: 0.8.0
@@ -681,8 +681,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/inter@4.5.15:
-    resolution: {integrity: sha512-FzleM9AxZQK2nqsTDtBiY0PMEVWvnKnuu2i09+p6DHvrHsuucoV2j0tmw+kAT3L4hvsLdAIDv6MdGehsPIdT+Q==}
+  /@fontsource/inter@5.0.1:
+    resolution: {integrity: sha512-jezFhHp0HcVy2t6M6r89EcxkT30vx0ofGauveQWQ81j70N/wNDYs4zI+sedeend6zF9GXIEqpOTO2D1k7VQX4w==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:
