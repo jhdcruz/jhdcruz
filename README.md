@@ -11,6 +11,5 @@
 
 #### Get in touch:
 
-[![Outlook](https://img.shields.io/badge/-Outlook-0078D4?style=for-the-badge&logo=Microsoft-Outlook&logoColor=white)](mailto:jhdcrux@outlook.com)
 [![ProtonMail](https://img.shields.io/badge/-ProtonMail-FFFFFF?style=for-the-badge&logo=ProtonMail&logoColor=blueviolet)](mailto:jhdcrux@protonmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jhdcruz/)
