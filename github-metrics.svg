@@ -21,11 +21,11 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="171.96506453663525" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="171.96506453663525" y="0" width="163.5463733267" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="335.5114378633353" y="0" width="74.26332421252407" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="409.77476207585937" y="0" width="38.144532581557534" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="447.9192946574169" y="0" width="12.080705342583125" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="169.77590124301224" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="169.77590124301224" y="0" width="161.46438232313952" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="331.2402835661518" y="0" width="79.17385981412119" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="410.414143380273" y="0" width="37.658942029750065" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="448.07308541002305" y="0" width="11.92691458997695" height="8" fill="#3178c6"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -38,7 +38,7 @@
                             </div>
                             <small>
                                 <div>405 kB</div>
-                                <div>37.38%</div>
+                                <div>36.91%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -49,8 +49,8 @@
                                 Kotlin
                             </div>
                             <small>
-                                <div>175 kB</div>
-                                <div>16.14%</div>
+                                <div>189 kB</div>
+                                <div>17.21%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -62,7 +62,7 @@
                             </div>
                             <small>
                                 <div>28.5 kB</div>
-                                <div>2.63%</div>
+                                <div>2.59%</div>
                             </small>
                         </div>
                     </section>
@@ -76,7 +76,7 @@
                             </div>
                             <small>
                                 <div>385 kB</div>
-                                <div>35.55%</div>
+                                <div>35.1%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -88,7 +88,7 @@
                             </div>
                             <small>
                                 <div>90 kB</div>
-                                <div>8.29%</div>
+                                <div>8.19%</div>
                             </small>
                         </div>
                     </section>
@@ -107,7 +107,7 @@
                         <span class="name">@solidjs/solid-start</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="16" height="16" class="gauge">
                             <circle class="gauge-base" r="12.5" cx="15" cy="15"/>
-                            <circle class="gauge-arc" transform="rotate(-90 15 15)" r="12.5" cx="15" cy="15" stroke-dasharray="0.23962126729788785 329"/>
+                            <circle class="gauge-arc" transform="rotate(-90 15 15)" r="12.5" cx="15" cy="15" stroke-dasharray="0.23857868020304568 329"/>
                             <text x="15" y="15" dominant-baseline="central">1</text>
                         </svg>
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -115,7 +115,7 @@
                         </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="16" height="16" class="gauge">
                             <circle class="gauge-base" r="12.5" cx="15" cy="15"/>
-                            <circle class="gauge-arc" transform="rotate(-90 15 15)" r="12.5" cx="15" cy="15" stroke-dasharray="0.2717511013215859 329"/>
+                            <circle class="gauge-arc" transform="rotate(-90 15 15)" r="12.5" cx="15" cy="15" stroke-dasharray="0.2699671772428884 329"/>
                             <text x="15" y="15" dominant-baseline="central">3</text>
                         </svg>
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -127,7 +127,7 @@
                         <span class="name">@ppy/osu-web</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="16" height="16" class="gauge">
                             <circle class="gauge-base" r="12.5" cx="15" cy="15"/>
-                            <circle class="gauge-arc" transform="rotate(-90 15 15)" r="12.5" cx="15" cy="15" stroke-dasharray="0.02606422309073624 329"/>
+                            <circle class="gauge-arc" transform="rotate(-90 15 15)" r="12.5" cx="15" cy="15" stroke-dasharray="0.026028481012658228 329"/>
                             <text x="15" y="15" dominant-baseline="central">3</text>
                         </svg>
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -146,20 +146,20 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 30 commits)</small>
+                    <small class="h-details">(computed from last 28 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="facts">
                         <li>Uses spaces for indentation</li>
-                        <li>Has approximately 33.8 characters per line of code written</li>
-                        <li>Mostly pushes code around 13:00</li>
-                        <li>Mostly active on Sunday</li>
+                        <li>Has approximately 32.7 characters per line of code written</li>
+                        <li>Mostly pushes code around 15:00</li>
+                        <li>Mostly active on Monday</li>
                     </ul>
                 </div>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 16 Jul 2023, 10:09:13 (timezone Asia/Manila) with lowlighter/metrics@3.33.0</span>
+                <span>Last updated 23 Jul 2023, 09:43:35 (timezone Asia/Manila) with lowlighter/metrics@3.33.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
