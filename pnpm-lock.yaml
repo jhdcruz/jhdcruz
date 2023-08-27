@@ -1068,7 +1068,7 @@ packages:
   /@types/cheerio@0.22.31:
     resolution: {integrity: sha512-Kt7Cdjjdi2XWSfrZ53v4Of0wG3ZcmaegFXjMmz9tfNrZSkzzo36G0AL1YqSdcIA78Etjt6E609pt5h1xnQkPUw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.5.6
     dev: false
 
   /@types/debug@4.1.8:
@@ -1113,6 +1113,11 @@ packages:
 
   /@types/node@17.0.45:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+    dev: true
+
+  /@types/node@20.5.6:
+    resolution: {integrity: sha512-Gi5wRGPbbyOTX+4Y2iULQ27oUPrefaB0PxGQJnfyWN3kvEDGM3mIB5M/gQLmitZf7A9FmLeaqxD3L1CXpm3VKQ==}
+    dev: false
 
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
@@ -1135,7 +1140,7 @@ packages:
   /@types/tar@6.1.5:
     resolution: {integrity: sha512-qm2I/RlZij5RofuY7vohTpYNaYcrSQlN2MyjucQc7ZweDwaEWkdN/EeNh6e9zjK6uEm6PwjdMXkcj05BxZdX1Q==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.5.6
       minipass: 4.2.8
     dev: false
 
@@ -1151,7 +1156,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.5.6
     dev: false
     optional: true
 
@@ -1558,7 +1563,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.10
-      caniuse-lite: 1.0.30001523
+      caniuse-lite: 1.0.30001524
       fraction.js: 4.2.1
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1656,7 +1661,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001523
+      caniuse-lite: 1.0.30001524
       electron-to-chromium: 1.4.503
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
@@ -1709,8 +1714,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite@1.0.30001523:
-    resolution: {integrity: sha512-I5q5cisATTPZ1mc588Z//pj/Ox80ERYDfR71YnvY7raS/NOk8xXlZcB0sF7JdqaV//kOaa6aus7lRfpdnt1eBA==}
+  /caniuse-lite@1.0.30001524:
+    resolution: {integrity: sha512-Jj917pJtYg9HSJBF95HVX3Cdr89JUyLT4IZ8SvM5aDRni95swKgYi3TgYLH5hnGfPE/U1dg6IfZ50UsIlLkwSA==}
     dev: true
 
   /ccount@2.0.1:
