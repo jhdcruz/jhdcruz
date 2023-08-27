@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@fontsource/inter':
-    specifier: 5.0.3
-    version: 5.0.3
+    specifier: 5.0.8
+    version: 5.0.8
   astro-icon:
     specifier: 0.8.1
     version: 0.8.1
@@ -693,8 +693,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/inter@5.0.3:
-    resolution: {integrity: sha512-JJvh5xht71F6e0E5r2+Ffu8g+CYAxMvnGJm9ZMg5IIjy8UwxLp+8C99TgPJupdEyBpEJv0wuMG2Rd183z/bV8g==}
+  /@fontsource/inter@5.0.8:
+    resolution: {integrity: sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.10:
