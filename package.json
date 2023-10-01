@@ -24,7 +24,7 @@
     "@iconify-json/heroicons": "1.1.12",
     "@typescript-eslint/eslint-plugin": "6.7.2",
     "@typescript-eslint/parser": "6.7.2",
-    "astro": "2.10.15",
+    "astro": "3.2.0",
     "autoprefixer": "10.4.16",
     "eslint": "8.50.0",
     "eslint-config-prettier": "9.0.0",
