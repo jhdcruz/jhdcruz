@@ -18,7 +18,7 @@
     "astro-seo": "0.8.0"
   },
   "devDependencies": {
-    "@astrojs/partytown": "2.0.0",
+    "@astrojs/partytown": "2.0.1",
     "@astrojs/sitemap": "3.0.0",
     "@astrojs/tailwind": "5.0.0",
     "@iconify-json/heroicons": "1.1.12",
