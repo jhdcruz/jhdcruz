@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@astrojs/partytown": "2.0.1",
-    "@astrojs/sitemap": "3.0.0",
+    "@astrojs/sitemap": "3.0.1",
     "@astrojs/tailwind": "5.0.0",
     "@iconify-json/heroicons": "1.1.12",
     "@typescript-eslint/eslint-plugin": "6.7.2",
