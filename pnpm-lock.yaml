@@ -29,8 +29,8 @@ devDependencies:
     specifier: 5.0.2
     version: 5.0.2(astro@2.10.15)(tailwindcss@3.3.3)
   '@iconify-json/heroicons':
-    specifier: 1.1.12
-    version: 1.1.12
+    specifier: 1.1.13
+    version: 1.1.13
   '@typescript-eslint/eslint-plugin':
     specifier: 6.7.5
     version: 6.7.5(@typescript-eslint/parser@6.7.5)(eslint@8.51.0)(typescript@5.2.2)
@@ -935,8 +935,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/heroicons@1.1.12:
-    resolution: {integrity: sha512-9tsn/xUU+HX56OngEDRTej4LzVm2qcMVLvEJ+q+1ZJBO4sjMDxycmbHq16HGl1LOeVG21fq4jNZHslVveVCwSQ==}
+  /@iconify-json/heroicons@1.1.13:
+    resolution: {integrity: sha512-WsRTTc0qGDreszIgL9uVpPSnRlM2bXaKmK3E0zpQZloUZQX3FokDqGFgc0UbJ+8np/ta571Ty+8n78mlMhEU8w==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
