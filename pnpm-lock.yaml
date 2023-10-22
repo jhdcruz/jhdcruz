@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@fontsource-variable/inter':
-    specifier: 5.0.13
-    version: 5.0.13
+    specifier: 5.0.15
+    version: 5.0.15
   '@fontsource/inter':
-    specifier: 5.0.13
-    version: 5.0.13
+    specifier: 5.0.15
+    version: 5.0.15
   astro-icon:
     specifier: 1.0.0-next.2
     version: 1.0.0-next.2
@@ -907,12 +907,12 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /@fontsource-variable/inter@5.0.13:
-    resolution: {integrity: sha512-mb2WyZ2rHeqIG8aqGJIvLBOmo4sg2x7SHlsE6PUhwxbOicVzO59EZwSGtzNO3FmchuDPFVAxzcXYcR5B6jE6Qw==}
+  /@fontsource-variable/inter@5.0.15:
+    resolution: {integrity: sha512-CdQPQQgOVxg6ifmbrqYZeUqtQf7p2wPn6EvJ4M+vdNnsmYZgYwPPPQDNlIOU7LCUlSGaN26v6H0uA030WKn61g==}
     dev: false
 
-  /@fontsource/inter@5.0.13:
-    resolution: {integrity: sha512-FVIBhP9X/x02blF2VQl2Pji/c3jUjkWEQ9bom4vIrGwO1MlHRDXhXx9iA1hhjpcCIfH3oX68ihIBdYcFnOXhsg==}
+  /@fontsource/inter@5.0.15:
+    resolution: {integrity: sha512-/IoWYEXl8lqJEx50JqNPT+bI4VNwxb/bg2oOfvG8PiEsDsmHRFvWBVHlohBNn1+QdBf+KbAjU/gb4vlGOSsVWw==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.11:
