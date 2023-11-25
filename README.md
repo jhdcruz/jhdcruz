@@ -7,6 +7,8 @@
 - 📚 Currently pursuing my Bachelor's in Information Technology _(BSIT)_
 - ☀️ I’m open to part-time developer opportunities
 
+ - [![wakatime](https://wakatime.com/badge/user/2537b94e-c04e-4938-8799-d88869388d8f.svg?style=flat-square)](https://wakatime.com/@2537b94e-c04e-4938-8799-d88869388d8f)
+
 <hr />
 
 #### Get in touch:
