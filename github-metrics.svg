@@ -21,11 +21,11 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="153.0828580081979" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="153.0828580081979" y="0" width="144.91856408950235" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="298.00142209770024" y="0" width="67.03350583002911" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="365.0349279277293" y="0" width="61.16517313753774" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="426.20010106526706" y="0" width="33.7998989347329" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="145.03949379009586" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="145.03949379009586" y="0" width="136.58414493213039" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="281.62363872222625" y="0" width="83.3419917550077" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="364.9656304772339" y="0" width="63.17833835244803" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="428.14396882968197" y="0" width="31.856031170318026" height="8" fill="#89e051"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -37,20 +37,20 @@
                                 JavaScript
                             </div>
                             <small>
-                                <div>407 kB</div>
-                                <div>33.28%</div>
+                                <div>409 kB</div>
+                                <div>31.53%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#A97BFF" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Kotlin
+                                TypeScript
                             </div>
                             <small>
-                                <div>178 kB</div>
-                                <div>14.57%</div>
+                                <div>235 kB</div>
+                                <div>18.12%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -62,7 +62,7 @@
                             </div>
                             <small>
                                 <div>90 kB</div>
-                                <div>7.35%</div>
+                                <div>6.93%</div>
                             </small>
                         </div>
                     </section>
@@ -76,19 +76,19 @@
                             </div>
                             <small>
                                 <div>385 kB</div>
-                                <div>31.5%</div>
+                                <div>29.69%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#A97BFF" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                TypeScript
+                                Kotlin
                             </div>
                             <small>
-                                <div>162 kB</div>
-                                <div>13.3%</div>
+                                <div>178 kB</div>
+                                <div>13.73%</div>
                             </small>
                         </div>
                     </section>
@@ -114,12 +114,12 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 56 commits)</small>
+                    <small class="h-details">(computed from last 72 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="facts">
                         <li>Uses spaces for indentation</li>
-                        <li>Has approximately 33.6 characters per line of code written</li>
+                        <li>Has approximately 31.4 characters per line of code written</li>
                         <li>Mostly pushes code around 01:00</li>
                         <li>Mostly active on Sunday</li>
                     </ul>
@@ -127,7 +127,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 19 Nov 2023, 09:24:37 (timezone Asia/Manila) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 26 Nov 2023, 09:23:29 (timezone Asia/Manila) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
