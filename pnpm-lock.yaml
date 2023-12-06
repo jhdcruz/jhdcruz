@@ -27,7 +27,7 @@ devDependencies:
     version: 3.0.3
   '@astrojs/tailwind':
     specifier: 5.0.3
-    version: 5.0.3(astro@2.10.15)(tailwindcss@3.3.5)
+    version: 5.0.3(astro@2.10.15)(tailwindcss@3.3.6)
   '@iconify-json/heroicons':
     specifier: 1.1.15
     version: 1.1.15
@@ -68,8 +68,8 @@ devDependencies:
     specifier: 0.5.9
     version: 0.5.9(prettier-plugin-astro@0.12.2)(prettier@3.1.0)
   tailwindcss:
-    specifier: 3.3.5
-    version: 3.3.5
+    specifier: 3.3.6
+    version: 3.3.6
   typescript:
     specifier: 5.3.2
     version: 5.3.2
@@ -176,7 +176,7 @@ packages:
       zod: 3.22.4
     dev: true
 
-  /@astrojs/tailwind@5.0.3(astro@2.10.15)(tailwindcss@3.3.5):
+  /@astrojs/tailwind@5.0.3(astro@2.10.15)(tailwindcss@3.3.6):
     resolution: {integrity: sha512-p+uFa1PNuV8RxhGkPUFgVq8CUbmS3xr0u5k1An2xKECLotRh7vsrGcPUijHvYOt42URohcg8rIq0CxNoVMhReg==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
@@ -186,7 +186,7 @@ packages:
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
-      tailwindcss: 3.3.5
+      tailwindcss: 3.3.6
     transitivePeerDependencies:
       - ts-node
     dev: true
@@ -4942,8 +4942,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /tailwindcss@3.3.5:
-    resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}
+  /tailwindcss@3.3.6:
+    resolution: {integrity: sha512-AKjF7qbbLvLaPieoKeTjG1+FyNZT6KaJMJPFeQyLfIp7l82ggH1fbHJSsYIvnbTFQOlkh+gBYpyby5GT1LIdLw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
