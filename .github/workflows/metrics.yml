@@ -29,4 +29,5 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_habits: yes
           plugin_habits_from: 200
-          plugin_wakatime_sections: 'language-graphs, os-graphs, time'
+          plugin_achievements: true
+          plugin_achievements_display: compact
