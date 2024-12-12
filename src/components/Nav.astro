@@ -1,0 +1,78 @@
+---
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+
+// @ts-expect-error aaaaaaaaaaaa
+import { Icon } from "astro-icon/components";
+
+export interface Page {
+	name: string;
+	url: string;
+	icon: string;
+}
+
+export const links: Page[] = [
+	{
+		name: "Services",
+		url: "/services",
+		icon: "cube-3d-sphere",
+	},
+	{
+		name: "Blogs",
+		url: "/blogs",
+		icon: "news",
+	},
+	{
+		name: "Connect",
+		url: "#connect",
+		icon: "affiliate",
+	},
+];
+---
+
+<nav
+  class="flex align-middle items-center border dark:border-dark_fg p-2 mb-3 shadow-lg rounded-full bg-white dark:bg-zinc-900 h-max w-[97%] md:w-max static mx-auto my-4 overflow-hidden justify-between"
+>
+  <a
+    class="flex items-center py-2 px-5 mr-4 rounded-full text-center align-middle text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700 hover:inset-shadow-md"
+    href="/"
+    aria-label="Return to homepage"
+  >
+    <Icon name="tabler:at" size={16} />
+    <span class="font-bold">jhdcruz</span>
+  </a>
+
+  <div
+    class="hidden md:flex bg-zinc-100 dark:bg-dark_fg rounded-full p-1 items-center"
+  >
+    {
+      links.map((link: Page) => (
+        <a
+          class="flex items-center py-1 px-4 rounded-full text-center align-middle text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700 hover:inset-shadow-md"
+          href={link.url}
+          aria-label={`Navigate to ${link.name}`}
+        >
+          <Icon name={`tabler:${link.icon}`} class="my-1 mx-0" size={18} />
+          <span class="font-medium ml-1">{link.name}</span>
+        </a>
+      ))
+    }
+  </div>
+
+  <div class="flex ml-10 items-center align-middle space-x-2">
+    <ThemeSwitcher server:defer>
+      <div slot="fallback">
+        <div
+          class="animate-pulse h-[40px] w-[40px] bg-gray-200 rounded-full dark:bg-gray-700"
+        >
+        </div>
+      </div>
+    </ThemeSwitcher>
+
+    <a
+      href="/login"
+      class="block justify-center items-center py-2 px-5 text-sm font-medium text-center dark:text-white rounded-full bg-transparent border-2 border-primary-500 hover:border-primary-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-700"
+    >
+      Already a client?
+    </a>
+  </div>
+</nav>

@@ -1,0 +1,51 @@
+---
+// @ts-expect-error aaaaaaaaaaaa
+import { Icon } from "astro-icon/components";
+---
+
+<footer
+  class="mt-24 p-4 bg-white inset-shadow-md md:p-8 lg:p-10 dark:bg-zinc-950"
+>
+  <div class="mx-auto max-w-screen-xl text-center">
+    <a
+      href="#"
+      class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+    >
+      <Icon name="tabler:at" size={16} />
+      <span class="font-bold">jhdcruz</span>
+    </a>
+    <p class="my-6 text-gray-500 dark:text-gray-400">
+      Software Development • System Design
+    </p>
+    <ul
+      class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
+    >
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+      </li>
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">Services</a>
+      </li>
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">Blogs</a>
+      </li>
+      <li>
+        <a href="#" class="hover:underline">Contact</a>
+      </li>
+      <li class="mx-8 text-zinc-700">|</li>
+      <li>
+        <a
+          href="https://wise.com/pay/me/joshuaheroherrerad"
+          class="mr-4 hover:underline md:mr-6">Pay in Fiat</a
+        >
+      </li>
+      <li>
+        <a href="#" class="mr-4 hover:underline md:mr-6">Pay in Crypto</a>
+      </li>
+    </ul>
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      © 2025 <a href="#" class="hover:underline">Joshua Hero Dela Cruz</a>. All
+      Rights Reserved.
+    </span>
+  </div>
+</footer>

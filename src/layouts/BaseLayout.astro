@@ -1,0 +1,71 @@
+---
+import { ClientRouter } from "astro:transitions";
+
+import MobileNav from "@/components/MobileNav.astro";
+import Nav from "@/components/Nav.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  .font-sans,
+  .font-display {
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+</style>
+
+<html lang="en" class="bg-light dark:bg-dark smooth-scroll">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000"
+      rel="stylesheet"
+    />
+    <title>Joshua Hero Dela Cruz | @jhdcruz</title>
+    <meta
+      name="description"
+      content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script is:inline>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
+    <ClientRouter />
+  </head>
+
+  <body class="bg-light dark:bg-dark font-sans">
+    <Nav />
+    <MobileNav />
+
+    <main class="text-matte dark:text-light">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+
+  <script>
+    import "flowbite";
+  </script>
+</html>

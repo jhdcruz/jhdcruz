@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+// @ts-expect-error aaaaaaaaaaaa
+import { Icon } from "astro-icon/components";
+---
+
+<BaseLayout>
+  <section>
+    <div class="py-12 px-4 mx-auto max-w-screen-xl lg:py-28 lg:px-6">
+      <div class="mx-auto text-center">
+        <h1 class="mb-8 tracking-tight font-bold text-5xl md:text-7xl">
+          This page does <span class="text-brand font-extrabold">not exist</span
+          >.
+        </h1>
+        <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
+          Perhaps you're not allowed to access it?
+        </p>
+        <a
+          href="/"
+          class="inline-flex text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-full text-sm px-7 py-3 text-center dark:focus:ring-primary-900 my-4"
+        >
+          <Icon name="tabler:home-spark" size={20} class="mr-2" />
+          Back to Homepage
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

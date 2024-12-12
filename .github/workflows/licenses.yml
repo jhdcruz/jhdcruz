@@ -1,0 +1,48 @@
+name: Compliance
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - package.json
+      - pnpm-lock.yaml
+
+permissions:
+  contents: read
+
+jobs:
+  license:
+    name: FOSSA Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Use Node.js LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: "pnpm"
+
+      - name: install deps
+        run: pnpm i --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: FOSSA Scan
+        uses: fossas/fossa-action@main
+        with:
+          api-key: ${{ secrets.FOSSA_API_KEY }}
+
+      - name: FOSSA Tests
+        uses: fossas/fossa-action@main
+        with:
+          api-key: ${{ secrets.FOSSA_API_KEY }}
+          run-tests: true

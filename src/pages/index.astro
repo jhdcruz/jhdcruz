@@ -1,0 +1,73 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+// @ts-expect-error aaaaaaaaaaaa
+import { Icon } from "astro-icon/components";
+
+const status: string = "busy";
+---
+
+<BaseLayout>
+  <section>
+    <div
+      class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
+    >
+      <a
+        href="#"
+        class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-zinc-700 bg-gray-100 rounded-full dark:bg-dark_fg dark:text-white hover:bg-zinc-200 dark:hover:bg-zinc-700"
+        role="alert"
+      >
+        <span
+          class="text-xs capitalize rounded-full text-white px-4 py-1.5 mr-3"
+          class:list={[status === "open" ? "bg-green-600" : "bg-red-600"]}
+          >{status}</span
+        >
+        <span class="text-sm font-medium">
+          {
+            (() => {
+              switch (status) {
+                case "open":
+                  return "I'm available for the next big thing. Let's talk!";
+                default:
+                  return "I'm currently working on a project. I'll be back soon!";
+              }
+            })()
+          }
+        </span>
+        <Icon class="ml-2" name="tabler:chevron-right" size={16} />
+      </a>
+      <h1
+        class="mb-4 font-extrabold tracking-tight leading-none text-gray-900 text-5xl lg:text-6xl dark:text-white"
+      >
+        Transform your
+        <span class="text-brand">visions</span>
+        into
+        <span class="text-brand">digital reality</span>.
+      </h1>
+      <p
+        class="mb-8 text-md font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+      >
+        Whether you want your dream product built or a fellow developer looking
+        for a technical system design, I can help you with that.
+      </p>
+      <div
+        class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+      >
+        <a
+          href="#"
+          class="inline-flex justify-center items-center py-3 px-9 text-base font-medium text-center text-white rounded-full bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-400 dark:focus:ring-primary-800"
+        >
+          I want something built
+          <Icon class="ml-2" name="tabler:code" size={20} />
+        </a>
+        <a
+          href="#"
+          class="inline-flex justify-center items-center py-3 px-7 text-base font-medium text-center text-gray-900 rounded-full border border-zinc-300 hover:bg-zinc-100 focus:ring-4 focus:ring-zinc-100 dark:text-white dark:border-zinc-700 dark:hover:bg-zinc-700 dark:focus:ring-zinc-800"
+        >
+          <Icon class="mr-2" name="tabler:sitemap" size={20} />
+          I need a system design
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
