@@ -16,3 +16,8 @@
 [![Website](https://img.shields.io/badge/-Website-000000?style=for-the-badge&logo=Cloudflare&logoColor=orange)](https://deuz.tech)
 [![ProtonMail](https://img.shields.io/badge/-ProtonMail-FFFFFF?style=for-the-badge&logo=ProtonMail&logoColor=blueviolet)](mailto:jhdcrux@protonmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/jhdcruz/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjhdcruz%2Fjhdcruz.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjhdcruz%2Fjhdcruz?ref=badge_shield)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjhdcruz%2Fjhdcruz.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjhdcruz%2Fjhdcruz?ref=badge_large)
