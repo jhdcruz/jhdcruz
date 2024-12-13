@@ -8,6 +8,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "astro dev",
+		"dev:wr": "wrangler pages dev ./dist",
 		"build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
