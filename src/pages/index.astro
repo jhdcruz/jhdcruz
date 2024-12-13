@@ -1,7 +1,7 @@
 ---
-import { Icon } from "astro-icon/components";
-import BaseLayout from "@/layouts/BaseLayout.astro";
 import WorkStatus from "@/components/WorkStatus.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
 
 const KV = Astro.locals.runtime.env.jhdcruz;
 const status = await KV.get("status");

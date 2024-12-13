@@ -1,10 +1,10 @@
-// @ts-check
-import { defineConfig } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
 import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
+// @ts-check
+import { defineConfig } from "astro/config";
 
 import solidJs from "@astrojs/solid-js";
 

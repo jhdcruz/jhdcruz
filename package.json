@@ -13,6 +13,7 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"fmt": "biome format --write --no-errors-on-unmatched src/",
+		"fmt:unsafe": "biome check --fix --unsafe",
 		"prepare": "husky"
 	},
 	"dependencies": {
@@ -40,6 +41,7 @@
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+			"biome check --fix --unsafe",
 			"biome format --write --no-errors-on-unmatched"
 		]
 	}
