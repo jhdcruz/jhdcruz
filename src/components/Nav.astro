@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import ThemeSwitcher from "./ThemeSwitcher.astro";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export interface Page {
   name: string;
@@ -57,10 +57,10 @@ export const links: Page[] = [
   </div>
 
   <div class="flex ml-10 items-center align-middle space-x-2">
-    <ThemeSwitcher server:defer>
+    <ThemeSwitcher client:only="solid-js">
       <div slot="fallback">
         <div
-          class="animate-pulse h-[40px] w-[40px] bg-gray-200 rounded-full dark:bg-gray-700"
+          class="animate-pulse h-[36px] w-[36px] bg-gray-200 rounded-full dark:bg-zinc-700"
         >
         </div>
       </div>
@@ -68,7 +68,7 @@ export const links: Page[] = [
 
     <a
       href="/login"
-      class="block justify-center items-center py-2 px-5 text-sm font-medium text-center dark:text-white hover:dark:bg-zinc-700 rounded-full bg-transparent border-2 border-primary-500 hover:border-primary-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-700"
+      class="block justify-center items-center py-2 px-5 text-sm font-medium text-center dark:text-white rounded-full bg-transparent border-2 border-primary-500 hover:border-primary-600 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-700"
     >
       Already a client?
     </a>
