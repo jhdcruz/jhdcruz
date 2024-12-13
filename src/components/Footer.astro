@@ -3,48 +3,80 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer
-  class="mt-24 p-4 bg-white inset-shadow-md md:p-8 lg:p-10 dark:bg-zinc-950"
+  class="mt-24 p-4 pb-28 md:pb-4 bg-white inset-shadow-md md:p-8 lg:p-10 dark:bg-zinc-950"
 >
   <div class="mx-auto max-w-screen-xl text-center">
     <a
-      href="#"
+      href="/"
       class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
     >
       <Icon name="tabler:at" size={16} />
       <span class="font-bold">jhdcruz</span>
     </a>
     <p class="my-6 text-gray-500 dark:text-gray-400">
-      Software Development • System Design
+      Software Engineer
+      <span class="mx-3 text-zinc-400 dark:text-zinc-700 select-none">•</span>
+      Full-Stack Web Developer
+      <span class="mx-3 text-zinc-400 dark:text-zinc-700 select-none">•</span>
+      DevOps/Platform Engineer
     </p>
     <ul
       class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
     >
+      <!-- Links -->
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+        <a href="/" class="mr-4 hover:underline md:mr-6">About</a>
       </li>
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">Services</a>
+        <a href="/services" class="mr-4 hover:underline md:mr-6">Services</a>
       </li>
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">Blogs</a>
+        <a href="/blogs" class="mr-4 hover:underline md:mr-6">Blogs</a>
       </li>
       <li>
-        <a href="#" class="hover:underline">Contact</a>
+        <a href="/connect" class="hover:underline">Connect</a>
       </li>
-      <li class="mx-8 text-zinc-700">|</li>
+
+      <!-- Separator -->
+      <li
+        class="hidden md:inline mx-8 text-zinc-300 dark:text-zinc-700 select-none"
+      >
+        |
+      </li>
+      <hr
+        class="h-px w-full my-3 mx-20 block md:hidden bg-gray-200 border-0 dark:bg-gray-700"
+      />
+
+      <!-- Payments -->
       <li>
         <a
           href="https://wise.com/pay/me/joshuaheroherrerad"
-          class="mr-4 hover:underline md:mr-6">Pay in Fiat</a
+          class="mr-4 hover:underline md:mr-6">Wise</a
         >
       </li>
       <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">Pay in Crypto</a>
+        <a
+          href="https://www.paypal.com/paypalme/jhdcruz"
+          class="mr-4 hover:underline md:mr-6"
+        >
+          Paypal
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://ud.me/jhdcruz.wallet"
+          class="mr-4 hover:underline md:mr-6"
+          >Crypto
+        </a>
       </li>
     </ul>
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-      © 2025 <a href="#" class="hover:underline">Joshua Hero Dela Cruz</a>. All
-      Rights Reserved.
+    <span class="text-sm text-zinc-500 sm:text-center dark:text-zinc-400">
+      © 2025 <a
+        href="https://linkedin.com/in/jhdcruz/"
+        class="hover:underline"
+      >
+        Joshua Hero Dela Cruz
+      </a>{". "} All Rights Reserved.
     </span>
   </div>
 </footer>

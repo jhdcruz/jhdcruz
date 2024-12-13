@@ -1,39 +1,15 @@
 ---
 import { Icon } from "astro-icon/components";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-
-const status: string = "busy";
+import WorkStatus from "@/components/WorkStatus.astro";
 ---
 
 <BaseLayout>
-  <section>
+  <section transition:name="homepage">
     <div
       class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
     >
-      <a
-        href="#"
-        class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-zinc-700 bg-gray-100 rounded-full dark:bg-dark_fg dark:text-white hover:bg-zinc-200 dark:hover:bg-zinc-700"
-        role="alert"
-      >
-        <span
-          class="text-xs capitalize rounded-full text-white px-4 py-1.5 mr-3"
-          class:list={[status === "open" ? "bg-green-600" : "bg-red-600"]}
-          >{status}</span
-        >
-        <span class="text-sm font-medium">
-          {
-            (() => {
-              switch (status) {
-                case "open":
-                  return "I'm available for the next big thing. Let's talk!";
-                default:
-                  return "I'm currently working on a project. I'll be back soon!";
-              }
-            })()
-          }
-        </span>
-        <Icon class="ml-2" name="tabler:chevron-right" size={16} />
-      </a>
+      <WorkStatus status="busy" />
       <h1
         class="mb-4 font-extrabold tracking-tight leading-none text-gray-900 text-5xl lg:text-6xl dark:text-white"
       >

@@ -21,7 +21,7 @@ import { Icon } from "astro-icon/components";
   />
 </button>
 
-<script>
+<script type="text/partytown">
   function toggleTheme() {
     const themeToggleDarkIcon = document.getElementById(
       "theme-toggle-dark-icon"
@@ -71,6 +71,5 @@ import { Icon } from "astro-icon/components";
     });
   }
 
-  document.addEventListener("astro:after-swap", () => toggleTheme());
   toggleTheme();
 </script>
