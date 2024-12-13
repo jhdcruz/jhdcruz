@@ -3,13 +3,9 @@ import { Icon } from "astro-icon/components";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import WorkStatus from "@/components/WorkStatus.astro";
 
-interface StatusResponse {
-  status: string;
-}
-
-const { status } = (await fetch(
-  `https://${import.meta.env.CF_KV_URL}/status`
-).then((res) => res.json())) as StatusResponse;
+const status = await fetch(`https://${import.meta.env.CF_KV_URL}/status`).then(
+  (res) => res.text()
+);
 ---
 
 <BaseLayout>
