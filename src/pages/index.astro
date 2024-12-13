@@ -3,9 +3,8 @@ import { Icon } from "astro-icon/components";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import WorkStatus from "@/components/WorkStatus.astro";
 
-const status = await fetch(`https://${import.meta.env.CF_KV_URL}/status`).then(
-  (res) => res.text()
-);
+const KV = Astro.locals.runtime.env.jhdcruz;
+const status = await KV.get("status");
 
 export const prerender = false;
 ---
