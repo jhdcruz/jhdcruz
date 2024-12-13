@@ -44,29 +44,38 @@ import { Icon } from "astro-icon/components";
         |
       </li>
       <hr
-        class="h-px w-full my-3 mx-20 block md:hidden bg-gray-200 border-0 dark:bg-gray-700"
+        class="h-px w-full my-3 mx-16 block md:hidden bg-gray-200 border-0 dark:bg-gray-700"
       />
 
       <!-- Payments -->
       <li>
         <a
           href="https://wise.com/pay/me/joshuaheroherrerad"
-          class="mr-4 hover:underline md:mr-6">Wise</a
+          target="__blank"
+          class="flex items-center align-middle mr-4 hover:underline md:mr-6"
         >
+          Wise
+          <Icon name={"tabler:external-link"} size={14} class="ml-1" />
+        </a>
       </li>
       <li>
         <a
           href="https://www.paypal.com/paypalme/jhdcruz"
-          class="mr-4 hover:underline md:mr-6"
+          target="__blank"
+          class="flex items-center align-middle mr-4 hover:underline md:mr-6"
         >
           Paypal
+          <Icon name={"tabler:external-link"} size={14} class="ml-1" />
         </a>
       </li>
       <li>
         <a
           href="https://ud.me/jhdcruz.wallet"
-          class="mr-4 hover:underline md:mr-6"
-          >Crypto
+          target="__blank"
+          class="flex items-center align-middle mr-4 hover:underline md:mr-6"
+        >
+          Crypto
+          <Icon name={"tabler:external-link"} size={14} class="ml-1" />
         </a>
       </li>
     </ul>

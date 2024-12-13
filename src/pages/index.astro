@@ -14,7 +14,7 @@ export const prerender = false;
     <div
       class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
     >
-      <WorkStatus status={status} />
+      <WorkStatus status={status ?? "busy"} />
       <h1
         class="mb-4 font-extrabold tracking-tight leading-none text-gray-900 text-5xl lg:text-6xl dark:text-white"
       >
