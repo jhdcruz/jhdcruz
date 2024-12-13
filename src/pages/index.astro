@@ -6,6 +6,8 @@ import WorkStatus from "@/components/WorkStatus.astro";
 const status = await fetch(`https://${import.meta.env.CF_KV_URL}/status`).then(
   (res) => res.text()
 );
+
+export const prerender = false;
 ---
 
 <BaseLayout>
