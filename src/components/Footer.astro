@@ -3,26 +3,86 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer
-  class="mt-24 p-4 pb-28 md:pb-4 bg-white inset-shadow-md md:p-8 lg:p-10 dark:bg-zinc-950"
+  class="mt-24 p-4 pb-28 md:pb-4 bg-white inset-shadow-md md:p-8 lg:p-10 dark:bg-zinc-900 inset-shadow-md"
 >
   <div class="mx-auto max-w-screen-xl text-center">
-    <a
-      href="/"
-      class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
-    >
-      <Icon name="tabler:at" size={16} />
-      <span class="font-bold">jhdcruz</span>
-    </a>
-    <p class="my-6 text-gray-500 dark:text-gray-400">
-      Software Engineer
+    <div class="flex w-max mx-auto space-x-16 justify-between">
+      <a
+        href="/"
+        class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+      >
+        <Icon name="tabler:at" size={20} />
+        <span class="font-bold">jhdcruz</span>
+      </a>
+
+      <div
+        class="flex space-x-3 align-middle items-center text-gray-900 dark:text-white"
+      >
+        <a
+          aria-label="Contact using Matrix"
+          href="https://matrix.to/#/@jhdcruz:beeper.com"
+          target="__blank"
+        >
+          <Icon name={"tabler:brand-matrix"} size={20} class="mr-1" />
+        </a>
+        <a
+          aria-label="Contact using telegram"
+          href="https://t.me/jhdcruz"
+          target="__blank"
+        >
+          <Icon name={"tabler:brand-telegram"} size={20} class="mr-1" />
+        </a>
+        <a
+          aria-label="Connect on GitHub"
+          href="https://github.com/jhdcruz"
+          target="__blank"
+        >
+          <Icon name={"tabler:brand-github"} size={20} class="mr-1" />
+        </a>
+        <a
+          aria-label="Connect on LinkedIn"
+          href="https://linkedin.com/in/jhdcruz/"
+          target="__blank"
+        >
+          <Icon name={"tabler:brand-linkedin"} size={20} class="mr-1" />
+        </a>
+      </div>
+    </div>
+
+    <!-- General Services -->
+    <p class="mt-5 mb-7 text-gray-500 dark:text-gray-400">
+      Software Development
       <span class="mx-3 text-zinc-400 dark:text-zinc-700 select-none">•</span>
-      Full-Stack Web Developer
+      System Architecture
       <span class="mx-3 text-zinc-400 dark:text-zinc-700 select-none">•</span>
-      DevOps/Platform Engineer
+      Platform Engineering
     </p>
+
+    <!-- Footer Links -->
     <ul
-      class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
+      class="flex flex-wrap justify-center align-middle mx-auto items-center mb-8 text-gray-900 dark:text-white"
     >
+      <!-- Compliance Links -->
+      <li>
+        <a href="/security" class="mr-4 hover:underline md:mr-6">Security</a>
+      </li>
+      <li>
+        <a href="/licenses" class="mr-4 hover:underline md:mr-6">Licenses</a>
+      </li>
+      <li>
+        <a href="mailto:contact@deuz.tech" class="hover:underline">Support</a>
+      </li>
+
+      <!-- Separator -->
+      <li
+        class="hidden md:inline mx-8 text-zinc-300 dark:text-zinc-700 select-none"
+      >
+        |
+      </li>
+      <hr
+        class="h-px w-full my-3 mx-16 block md:hidden bg-gray-200 border-0 dark:bg-gray-700"
+      />
+
       <!-- Links -->
       <li>
         <a href="/" class="mr-4 hover:underline md:mr-6">About</a>
@@ -31,10 +91,10 @@ import { Icon } from "astro-icon/components";
         <a href="/services" class="mr-4 hover:underline md:mr-6">Services</a>
       </li>
       <li>
-        <a href="/blogs" class="mr-4 hover:underline md:mr-6">Blogs</a>
+        <a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>
       </li>
       <li>
-        <a href="/connect" class="hover:underline">Connect</a>
+        <a href="/login" class="hover:underline">Client</a>
       </li>
 
       <!-- Separator -->
@@ -72,20 +132,22 @@ import { Icon } from "astro-icon/components";
         <a
           href="https://ud.me/jhdcruz.wallet"
           target="__blank"
-          class="flex items-center align-middle mr-4 hover:underline md:mr-6"
+          class="flex items-center align-middle hover:underline"
         >
           Crypto
           <Icon name={"tabler:external-link"} size={14} class="ml-1" />
         </a>
       </li>
     </ul>
+
+    <!-- Copyright / ARR -->
     <span class="text-sm text-zinc-500 sm:text-center dark:text-zinc-400">
       © 2025 <a
         href="https://linkedin.com/in/jhdcruz/"
         class="hover:underline"
       >
-        Joshua Hero Dela Cruz
-      </a>{". "} All Rights Reserved.
+        Joshua Hero Dela Cruz</a
+      >{". "} All Rights Reserved.
     </span>
   </div>
 </footer>
