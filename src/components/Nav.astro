@@ -3,27 +3,27 @@ import { Icon } from "astro-icon/components";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export interface Page {
-  name: string;
-  url: string;
-  icon: string;
+	name: string;
+	url: string;
+	icon: string;
 }
 
 export const links: Page[] = [
-  {
-    name: "Services",
-    url: "/services",
-    icon: "cube-3d-sphere",
-  },
-  {
-    name: "Blog",
-    url: "/blog",
-    icon: "news",
-  },
-  {
-    name: "Connect",
-    url: "/connect",
-    icon: "affiliate",
-  },
+	{
+		name: "Services",
+		url: "/services",
+		icon: "cube-3d-sphere",
+	},
+	{
+		name: "Blog",
+		url: "/blog",
+		icon: "news",
+	},
+	{
+		name: "Connect",
+		url: "/connect",
+		icon: "affiliate",
+	},
 ];
 
 const path = typeof window !== "undefined" ? window.location.pathname : "/";
