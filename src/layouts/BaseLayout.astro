@@ -8,21 +8,6 @@ import Nav from "@/components/Nav.astro";
 const { subtitle } = Astro.props;
 ---
 
-<style is:global>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-
-  .font-sans,
-  .font-display {
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-  }
-</style>
-
 <html
   lang="en"
   class="bg-light dark:bg-dark smooth-scroll"
@@ -77,4 +62,19 @@ const { subtitle } = Astro.props;
 
     <Footer />
   </body>
+  
+  <style is:global>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    .font-sans,
+    .font-display {
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    }
+  </style>
 </html>
