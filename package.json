@@ -40,7 +40,7 @@
 		"wrangler": "3.95.0"
 	},
 	"lint-staged": {
-		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+		"*.{astro,svelte,js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
 			"biome check --fix --unsafe",
 			"biome format --write --no-errors-on-unmatched"
 		]
