@@ -5,9 +5,8 @@ const { status } = Astro.props;
 ---
 
 <a
-  href="#"
+  href="/services?status=unavailable"
   class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-zinc-700 bg-gray-100 rounded-full dark:bg-dark_fg dark:text-white hover:bg-zinc-200 dark:hover:bg-zinc-700"
-  role="alert"
 >
   <span
     class="text-xs capitalize rounded-full text-white px-4 py-1.5 mr-3"
@@ -19,13 +18,13 @@ const { status } = Astro.props;
       (() => {
         switch (status) {
           case "open":
-            return "I'm available for the next big thing. Let's talk!";
+            return "I can help you. Let's talk!";
           case "vacation":
-            return "I'm currently appreciating life. I'll be back soon!";
+            return "I'm on vacation. I'll be back soon!";
           case "busy":
-            return "I'm currently working on a project. I'll be back soon!";
+            return "I'm working on a project. I'll be back soon!";
           default:
-            return "I'm currently unavailable. I'll be back soon!";
+            return "I'm unavailable. I'll be back soon!";
         }
       })()
     }

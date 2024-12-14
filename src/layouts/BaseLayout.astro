@@ -4,6 +4,8 @@ import { ClientRouter } from "astro:transitions";
 import Footer from "@/components/Footer.astro";
 import MobileNav from "@/components/MobileNav.astro";
 import Nav from "@/components/Nav.astro";
+
+const { subtitle } = Astro.props;
 ---
 
 <style is:global>
@@ -21,7 +23,12 @@ import Nav from "@/components/Nav.astro";
   }
 </style>
 
-<html lang="en" class="bg-light dark:bg-dark smooth-scroll">
+<html
+  lang="en"
+  class="bg-light dark:bg-dark smooth-scroll"
+  transition:persist="root"
+  transition:animate="none"
+>
   <head>
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +37,7 @@ import Nav from "@/components/Nav.astro";
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000"
       rel="stylesheet"
     />
-    <title>Joshua Hero Dela Cruz | @jhdcruz</title>
+    <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
     <meta
       name="description"
       content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
@@ -39,35 +46,35 @@ import Nav from "@/components/Nav.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <script>
-      import { useTheme } from "@/utils/theme";
-      useTheme();
+    <script is:inline>
+      function siteTheme() {
+        const theme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
 
-      // FIX: Theme reverting to light mode after page transition
-      document.addEventListener("astro:after-swap", () => {
-        useTheme();
-      });
+        if (theme === "dark" || (!theme && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+
+      document.addEventListener("astro:after-swap", siteTheme);
+      siteTheme();
     </script>
 
     <ClientRouter />
   </head>
 
-  <body class="bg-light dark:bg-dark font-sans">
+  <body class="bg-white dark:bg-dark font-sans">
     <Nav />
     <MobileNav />
 
-    <main class="text-matte dark:text-light">
+    <main class="text-matte dark:text-light" transition:animate="fade">
       <slot />
     </main>
 
     <Footer />
   </body>
-
-  <script>
-    import { initFlowbite } from "flowbite";
-
-    document.addEventListener("astro:page-load", () => {
-      initFlowbite();
-    });
-  </script>
 </html>

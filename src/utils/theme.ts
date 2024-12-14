@@ -29,19 +29,11 @@ export const useTheme = ({ theme }: ThemeProps = { theme: null }) => {
 			);
 			const currentTheme = localStorage.getItem("theme");
 
-			if (
-				currentTheme === "dark" ||
-				(!currentTheme && prefersDarkScheme.matches)
-			) {
-				localStorage.setItem("theme", "dark");
-				document.documentElement.classList.add("dark");
-				document.documentElement.classList.remove("light");
+			if (currentTheme === "dark" || prefersDarkScheme.matches) {
+				useTheme({ theme: "dark" });
 			} else {
-				localStorage.setItem("theme", "light");
-				document.documentElement.classList.remove("dark");
-				document.documentElement.classList.add("light");
+				useTheme({ theme: "light" });
 			}
-			break;
 		}
 	}
 };

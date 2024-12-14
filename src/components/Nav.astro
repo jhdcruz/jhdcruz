@@ -3,28 +3,30 @@ import { Icon } from "astro-icon/components";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export interface Page {
-	name: string;
-	url: string;
-	icon: string;
+  name: string;
+  url: string;
+  icon: string;
 }
 
 export const links: Page[] = [
-	{
-		name: "Services",
-		url: "/services",
-		icon: "cube-3d-sphere",
-	},
-	{
-		name: "Blog",
-		url: "/blog",
-		icon: "news",
-	},
-	{
-		name: "Connect",
-		url: "/connect",
-		icon: "affiliate",
-	},
+  {
+    name: "Services",
+    url: "/services",
+    icon: "cube-3d-sphere",
+  },
+  {
+    name: "Blog",
+    url: "/blog",
+    icon: "news",
+  },
+  {
+    name: "Connect",
+    url: "/connect",
+    icon: "affiliate",
+  },
 ];
+
+const path = typeof window !== "undefined" ? window.location.pathname : "/";
 ---
 
 <nav
@@ -46,6 +48,7 @@ export const links: Page[] = [
       links.map((link: Page) => (
         <a
           class="flex items-center py-1 px-4 rounded-full text-center align-middle text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700 hover:inset-shadow-md"
+          class:list={[link.url === path ? "bg-zinc-300 dark:bg-zinc-600" : ""]}
           href={link.url}
           aria-label={`Navigate to ${link.name}`}
         >

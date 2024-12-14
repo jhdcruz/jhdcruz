@@ -5,8 +5,13 @@ import {
 	IconSun,
 	IconSunMoon,
 } from "@tabler/icons-solidjs";
+import { initDropdowns } from "flowbite";
+import { onMount } from "solid-js";
 
 export const ThemeSwitcher = () => {
+	// Initialize dropdowns
+	onMount(() => initDropdowns());
+
 	return (
 		<>
 			<button
@@ -14,6 +19,7 @@ export const ThemeSwitcher = () => {
 				data-dropdown-toggle="dropdownHover"
 				data-dropdown-trigger="hover"
 				type="button"
+				aria-label="Toggle theme"
 				class="rounded-full p-2.5 text-sm text-zinc-700 hover:inset-shadow-md hover:bg-zinc-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-white dark:focus:ring-gray-700 hover:dark:bg-zinc-700"
 			>
 				<IconSunMoon size={20} />
