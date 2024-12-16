@@ -46,8 +46,8 @@ importers:
         specifier: 4.20241205.0
         version: 4.20241205.0
       '@iconify-json/tabler':
-        specifier: 1.2.11
-        version: 1.2.11
+        specifier: 1.2.12
+        version: 1.2.12
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -786,8 +786,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@iconify-json/tabler@1.2.11':
-    resolution: {integrity: sha512-sOZRVC+QaGmagdogWlz/cTmgXyo5OfRMaac28fAv0+CgESO/eQRBbnjgP4boKG+eKWxjQvRACDOI1HZ1J6Jh7Q==}
+  '@iconify-json/tabler@1.2.12':
+    resolution: {integrity: sha512-g9uhcq8o+BZyHqn+NPLumDuFv3m+28KFQLw1/ZCB2FVQ5i7UCMgmXbgk2vZ9gBFEx1YmYEK7gqUN6NnuvivOCQ==}
 
   '@iconify/tools@4.0.7':
     resolution: {integrity: sha512-zOJxKIfZn96ZRGGvIWzDRLD9vb2CsxjcLuM+QIdvwWbv6SWhm49gECzUnd4d2P0sq9sfodT7yCNobWK8nvavxQ==}
@@ -3781,7 +3781,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@iconify-json/tabler@1.2.11':
+  '@iconify-json/tabler@1.2.12':
     dependencies:
       '@iconify/types': 2.0.0
 
