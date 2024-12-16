@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@cloudflare/workers-types": "4.20241205.0",
+		"@cloudflare/workers-types": "4.20241216.0",
 		"@iconify-json/tabler": "1.2.13",
 		"husky": "9.1.7",
 		"lint-staged": "15.2.11",
