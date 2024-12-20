@@ -21,10 +21,10 @@
 		"@astrojs/cloudflare": "12.1.0",
 		"@astrojs/partytown": "2.1.2",
 		"@astrojs/sitemap": "3.2.1",
-		"@astrojs/solid-js": "5.0.0",
-		"@astrojs/tailwind": "5.1.3",
+		"@astrojs/solid-js": "5.0.1",
+		"@astrojs/tailwind": "5.1.4",
 		"@tabler/icons-solidjs": "3.26.0",
-		"astro": "5.1.0",
+		"astro": "5.1.1",
 		"astro-icon": "1.1.4",
 		"flowbite": "2.5.2"
 	},
