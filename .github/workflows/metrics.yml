@@ -31,4 +31,4 @@ jobs:
           plugin_habits_from: 200
           plugin_achievements: yes
           plugin_achievements_display: detailed
-          plugin_achievements_limit: 5
+          plugin_achievements_limit: 7
