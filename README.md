@@ -1,4 +1,4 @@
-<img align="right" alt="Jhdcruz's github stats" src="./github-metrics.svg" />
+<img align="right" alt="Jhdcruz's github stats" src="./github-metrics.svg" width="472" />
 
 ## Hi there :wave:
 
