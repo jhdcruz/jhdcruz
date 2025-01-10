@@ -23,7 +23,7 @@
 		"@astrojs/sitemap": "3.2.1",
 		"@astrojs/solid-js": "5.0.1",
 		"@astrojs/tailwind": "5.1.4",
-		"@tabler/icons-solidjs": "3.26.0",
+		"@tabler/icons-solidjs": "3.28.1",
 		"astro": "5.1.4",
 		"astro-icon": "1.1.5",
 		"flowbite": "2.5.2"
