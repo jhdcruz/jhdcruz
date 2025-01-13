@@ -6,6 +6,15 @@ import { type Page, links } from "./Nav.astro";
 <nav
   class="flex md:hidden border dark:border-dark_fg p-2 mb-3 mx-3 shadow-lg rounded-xl bg-white dark:bg-zinc-900 h-max fixed bottom-0 left-0 right-0 overflow-hidden justify-between"
 >
+    <a
+        class="flex-1 py-1 rounded-lg text-center align-middle text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700 hover:inset-shadow-md"
+        href="/"
+        aria-label="Back to homepage"
+    >
+        <Icon name="tabler:at" class="mx-auto my-2" size={18} />
+        <span class="font-medium">Home</span>
+    </a>
+
   {
     links.map((link: Page) => (
       <a
