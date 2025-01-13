@@ -30,7 +30,7 @@ const path = typeof window !== "undefined" ? window.location.pathname : "/";
 ---
 
 <nav
-  class="flex align-middle items-center border dark:border-dark_fg p-2 mb-3 shadow-lg rounded-full bg-white dark:bg-zinc-900 h-max w-[97%] md:w-max static mx-auto my-4 overflow-hidden justify-between"
+  class="flex align-middle items-center border dark:border-dark_fg p-2 mb-3 shadow-lg rounded-full bg-white dark:bg-zinc-900 h-max w-[97%] md:w-max static mx-auto overflow-hidden justify-between"
 >
   <a
     class="flex items-center py-2 px-5 mr-4 rounded-full text-center align-middle text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700 hover:inset-shadow-md"
@@ -59,7 +59,7 @@ const path = typeof window !== "undefined" ? window.location.pathname : "/";
     }
   </div>
 
-  <div class="flex ml-10 items-center align-middle space-x-2">
+  <div class="flex ml-20 items-center align-middle space-x-2">
     <ThemeSwitcher client:only="solid-js">
       <div slot="fallback">
         <div
