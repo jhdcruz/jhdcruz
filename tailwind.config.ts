@@ -18,7 +18,7 @@ export default {
 				current: "currentColor",
 				primary: colors.amber,
 				brand: colors.amber[500],
-				light: colors.zinc[50],
+				light: colors.zinc[100],
 				dark: colors.zinc[950],
 				dark_fg: colors.zinc[800],
 			},
