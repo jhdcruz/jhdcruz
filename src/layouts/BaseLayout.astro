@@ -45,12 +45,24 @@ const { subtitle } = Astro.props;
         }
       }
 
-      document.addEventListener("astro:after-swap", siteTheme);
       siteTheme();
+      document.addEventListener("astro:after-swap", siteTheme);
     </script>
 
     <ClientRouter />
   </head>
+
+  <style is:global>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    .font-sans,
+    .font-display {
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+  </style>
 
   <body class="bg-white dark:bg-dark font-sans">
     <Nav />
@@ -62,19 +74,4 @@ const { subtitle } = Astro.props;
 
     <Footer />
   </body>
-  
-  <style is:global>
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-
-    .font-sans,
-    .font-display {
-      font-optical-sizing: auto;
-      font-style: normal;
-      font-variation-settings:
-        "wdth" 100,
-        "YTLC" 500;
-    }
-  </style>
 </html>
