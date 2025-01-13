@@ -10,28 +10,49 @@ export const prerender = false;
 ---
 
 <BaseLayout>
-  <section transition:name="homepage">
+
+  <style>
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/bg.webp') no-repeat center center;
+        background-size: cover;
+    }
+  </style>
+
+  <section class="relative backdrop-blur-sm" transition:name="homepage">
+
+  <!-- Photo attribution -->
+  <div class="text-gray-600 italic text-sm absolute bottom-0 right-0 mr-5">
+    Photo by <a href="https://unsplash.com/@mbrunacr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Miguel Bruna</a> on <a href="https://unsplash.com/photos/escalators-inside-building-DdiaNwoCK0c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  </div>
+
     <div
       class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12"
     >
       <WorkStatus status={status ?? "busy"} />
+
+      <!-- Title -->
       <h1
-        class="mb-4 drop-shadow-md font-extrabold tracking-tight leading-none text-gray-900 text-5xl lg:text-6xl dark:text-white"
+        class="mb-4 drop-shadow-md font-extrabold tracking-tight leading-none text-gray-100 text-5xl lg:text-6xl dark:text-white"
       >
-        Transforming
-        <span class="text-brand">visions</span>
-        into
-        <span class="text-brand">digital reality</span>.
+        Delivering
+        <span class="text-brand">intuitive</span>
+        and
+        <span class="text-brand">effective</span>
+        technology solutions.
       </h1>
+
+    <!-- Subtitle -->
       <p
-        class="mb-8 text-md font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+        class="drop-shadow-sm mt-6 mb-10 text-md font-normal text-gray-200 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-300"
       >
         Whether you need assistance with product realization, infrastructure
         platform, or complete system architecture,
         <span class="font-bold text-brand">I can help with that.</span>
       </p>
+
+      <!-- CTAs -->
       <div
-        class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+        class="flex flex-col mb-8 lg:mb-10 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
       >
         <a
           href="/services/web-development"
@@ -42,12 +63,17 @@ export const prerender = false;
         </a>
         <a
           href="/services/system-design"
-          class="inline-flex justify-center items-center py-3 px-7 text-base font-medium text-center text-gray-900 rounded-full border border-zinc-300 hover:bg-zinc-100 focus:ring-4 focus:ring-zinc-100 dark:text-white dark:border-zinc-700 dark:hover:bg-zinc-700 dark:focus:ring-zinc-800"
+          class="inline-flex justify-center items-center py-3 px-7 text-base font-medium text-center text-gray-200 rounded-full border border-zinc-300 hover:bg-zinc-100 focus:ring-4 focus:ring-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:focus:ring-zinc-800"
         >
           <Icon class="mr-2" name="tabler:sitemap" size={20} />
-          I need a system design
+          Connect with me
         </a>
       </div>
     </div>
+  </section>
+
+  <!-- About me section -->
+  <section class="bg-light dark:bg-dark mt-4">
+    <!-- TODO... -->
   </section>
 </BaseLayout>
