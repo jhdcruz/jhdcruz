@@ -5,6 +5,8 @@ import { Icon } from "astro-icon/components";
 
 const KV = Astro.locals.runtime.env.jhdcruz;
 const status = await KV.get("status");
+
+export const prerender = false;
 ---
 
 <BaseLayout>

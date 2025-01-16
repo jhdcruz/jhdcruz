@@ -19,6 +19,11 @@ export default defineConfig({
 			enabled: true,
 		},
 	}),
+	vite: {
+		ssr: {
+			noExternal: ["workerd", "astrojs/cloudflare"],
+		},
+	},
 	image: {
 		experimentalLayout: "responsive",
 	},
