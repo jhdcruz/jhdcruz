@@ -44,5 +44,8 @@
 			"biome check --fix --unsafe",
 			"biome format --write --no-errors-on-unmatched"
 		]
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": ["@biomejs/biome", "esbuild", "sharp", "workerd"]
 	}
 }
