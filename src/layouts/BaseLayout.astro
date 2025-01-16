@@ -9,69 +9,68 @@ const { subtitle } = Astro.props;
 ---
 
 <html
-  lang="en"
-  class="bg-light dark:bg-dark smooth-scroll"
-  transition:persist="root"
-  transition:animate="none"
+    lang="en"
+    class="bg-light dark:bg-dark smooth-scroll"
+    transition:persist="root"
+    transition:animate="none"
 >
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000"
-      rel="stylesheet"
-    />
-    <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
-    <meta
-      name="description"
-      content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
-    />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <head>
+        <meta charset="UTF-8" />
 
-    <script is:inline>
-      function siteTheme() {
-        const theme = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
+        <script is:inline>
+            function siteTheme() {
+                const theme = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                ).matches;
 
-        if (theme === "dark" || (!theme && prefersDark)) {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
-      }
+                if (theme === "dark" || (!theme && prefersDark)) {
+                    document.documentElement.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                }
+            }
 
-      siteTheme();
-      document.addEventListener("astro:after-swap", siteTheme);
-    </script>
+            siteTheme();
+            document.addEventListener("astro:after-swap", siteTheme);
+        </script>
 
-    <ClientRouter />
-  </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000"
+            rel="stylesheet"
+        />
+        <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
+        <meta
+            name="description"
+            content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <ClientRouter />
+        <style is:global>
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
 
-  <style is:global>
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+            .font-sans,
+            .font-display {
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+        </style></head
+    >
 
-    .font-sans,
-    .font-display {
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
-  </style>
+    <body class="bg-white dark:bg-dark font-sans pt-4">
+        <Nav />
+        <MobileNav />
 
-  <body class="bg-white dark:bg-dark font-sans pt-4">
-    <Nav />
-    <MobileNav />
+        <main class="text-matte dark:text-light" transition:animate="fade">
+            <slot />
+        </main>
 
-    <main class="text-matte dark:text-light" transition:animate="fade">
-      <slot />
-    </main>
-
-    <Footer />
-  </body>
+        <Footer />
+    </body>
 </html>
