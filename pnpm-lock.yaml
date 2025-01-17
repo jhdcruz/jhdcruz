@@ -64,8 +64,8 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
       wrangler:
-        specifier: 3.102.0
-        version: 3.102.0(@cloudflare/workers-types@4.20250109.0)
+        specifier: 3.103.1
+        version: 3.103.1(@cloudflare/workers-types@4.20250109.0)
 
 packages:
 
@@ -2693,8 +2693,8 @@ packages:
     resolution: {integrity: sha512-BUgJXc752Kou3oOIuU1i+yZZypyZRqNPW0vqoMPl8VaoalSfeR0D8/t4iAS3yirs79SSMTxTag+ZC86uswv+Cw==}
     engines: {node: '>=18.17'}
 
-  unenv-nightly@2.0.0-20241218-183400-5d6aec3:
-    resolution: {integrity: sha512-7Xpi29CJRbOV1/IrC03DawMJ0hloklDLq/cigSe+J2jkcC+iDres2Cy0r4ltj5f0x7DqsaGaB4/dLuCPPFZnZA==}
+  unenv-nightly@2.0.0-20250109-100802-88ad671:
+    resolution: {integrity: sha512-Uij6gODNNNNsNBoDlnaMvZI99I6YlVJLRfYH8AOLMlbFrW7k2w872v9VLuIdch2vF8QBeSC4EftIh5sG4ibzdA==}
 
   unenv@1.10.0:
     resolution: {integrity: sha512-wY5bskBQFL9n3Eca5XnhH6KbUo/tfvkwm9OpcdCvLaeA7piBNbavbOKJySEwQ1V0RH6HvNlSAFRTpvTqgKRQXQ==}
@@ -3006,8 +3006,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.102.0:
-    resolution: {integrity: sha512-Za4DstbS3+/hu+///K/4dFFeV6XbPBAGp7NCnVajchxRTwEPTdbO5eezH0HLJPMHK6G/0yIzyhlEMnyg4YzHAA==}
+  wrangler@3.103.1:
+    resolution: {integrity: sha512-IuPXxRY5IZ081m6TeL1UY4X1lUH873MbndT4Tn9A5qN5ePzxTvyOM3pUil76bV+2rXk/TiZyt9fYykrKQ4g6Xg==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -3156,7 +3156,7 @@ snapshots:
       miniflare: 3.20241230.1
       tiny-glob: 0.2.9
       vite: 6.0.7(@types/node@22.10.5)(jiti@1.21.7)(yaml@2.7.0)
-      wrangler: 3.102.0(@cloudflare/workers-types@4.20250109.0)
+      wrangler: 3.103.1(@cloudflare/workers-types@4.20250109.0)
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
@@ -6132,7 +6132,7 @@ snapshots:
 
   undici@6.21.0: {}
 
-  unenv-nightly@2.0.0-20241218-183400-5d6aec3:
+  unenv-nightly@2.0.0-20250109-100802-88ad671:
     dependencies:
       defu: 6.1.4
       mlly: 1.7.3
@@ -6403,7 +6403,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20241230.0
       '@cloudflare/workerd-windows-64': 1.20241230.0
 
-  wrangler@3.102.0(@cloudflare/workers-types@4.20250109.0):
+  wrangler@3.103.1(@cloudflare/workers-types@4.20250109.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -6412,7 +6412,7 @@ snapshots:
       esbuild: 0.17.19
       miniflare: 3.20241230.2
       path-to-regexp: 6.3.0
-      unenv: unenv-nightly@2.0.0-20241218-183400-5d6aec3
+      unenv: unenv-nightly@2.0.0-20250109-100802-88ad671
       workerd: 1.20241230.0
     optionalDependencies:
       '@cloudflare/workers-types': 4.20250109.0
