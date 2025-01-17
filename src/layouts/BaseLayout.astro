@@ -16,25 +16,6 @@ const { subtitle } = Astro.props;
 >
     <head>
         <meta charset="UTF-8" />
-
-        <script is:inline>
-            function siteTheme() {
-                const theme = localStorage.getItem("theme");
-                const prefersDark = window.matchMedia(
-                    "(prefers-color-scheme: dark)",
-                ).matches;
-
-                if (theme === "dark" || (!theme && prefersDark)) {
-                    document.documentElement.classList.add("dark");
-                } else {
-                    document.documentElement.classList.remove("dark");
-                }
-            }
-
-            siteTheme();
-            document.addEventListener("astro:after-swap", siteTheme);
-        </script>
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -49,7 +30,27 @@ const { subtitle } = Astro.props;
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <ClientRouter />
+
+        <script is:inline>
+            function siteTheme() {
+                const theme = localStorage.getItem("theme");
+                const prefersDark = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                ).matches;
+
+                if (theme === "dark" || (!theme && prefersDark)) {
+                    document.documentElement.classList.add("dark");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                    localStorage.setItem("theme", "light");
+                }
+            }
+
+            siteTheme();
+            document.addEventListener("astro:after-swap", siteTheme);
+        </script>
+
         <style is:global>
             @tailwind base;
             @tailwind components;
@@ -60,8 +61,11 @@ const { subtitle } = Astro.props;
                 font-optical-sizing: auto;
                 font-style: normal;
             }
-        </style></head
-    >
+        </style>
+
+        <!-- View Transitions -->
+        <ClientRouter />
+    </head>
 
     <body class="bg-white dark:bg-dark font-sans pt-4">
         <Nav />
