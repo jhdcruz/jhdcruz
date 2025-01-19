@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="167.37980387518272" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="167.37980387518272" y="0" width="100.97079678137527" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="268.350600656558" y="0" width="76.39765667786855" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="344.74825733442657" y="0" width="71.90951911828088" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="416.6577764527075" y="0" width="17.50496631332657" height="8" fill="#4F5D95"/>
-                    <rect mask="url(#languages-bar)" x="434.16274276603406" y="0" width="9.664235090527871" height="8" fill="#336790"/>
-                    <rect mask="url(#languages-bar)" x="443.82697785656194" y="0" width="9.183855673911705" height="8" fill="#f7523f"/>
-                    <rect mask="url(#languages-bar)" x="453.01083353047363" y="0" width="6.989166469526442" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="167.37470176731978" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="167.37470176731978" y="0" width="100.9819541379911" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="268.3566559053109" y="0" width="76.39524285963115" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="344.751898764942" y="0" width="71.90724710476321" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="416.65914586970524" y="0" width="17.504413236062558" height="8" fill="#4F5D95"/>
+                    <rect mask="url(#languages-bar)" x="434.1635591057678" y="0" width="9.663929744684472" height="8" fill="#336790"/>
+                    <rect mask="url(#languages-bar)" x="443.82748885045226" y="0" width="9.183565505871487" height="8" fill="#f7523f"/>
+                    <rect mask="url(#languages-bar)" x="453.0110543563237" y="0" width="6.988945643676252" height="8" fill="#3572A5"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -157,14 +157,14 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 4 commits)</small>
+                    <small class="h-details">(computed from last 7 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="facts">
                         <li>Uses spaces for indentation</li>
-                        <li>Has approximately 79.9 characters per line of code written</li>
-                        <li>Mostly pushes code around 00:00</li>
-                        <li>Mostly active on Thursday</li>
+                        <li>Has approximately 120.7 characters per line of code written</li>
+                        <li>Mostly pushes code around 01:00</li>
+                        <li>Mostly active on Monday</li>
                     </ul>
                 </div>
             </section>
@@ -254,7 +254,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="62.763860369609844 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="63.357973990417534 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -290,7 +290,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="15.809999999999999 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="16.43 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" fill-rule="evenodd">
@@ -309,7 +309,7 @@
                                     <span class="prefix">Super</span>
                                     stargazer
                                 </div>
-                                <div class="text">Starred 551 repositories</div>
+                                <div class="text">Starred 553 repositories</div>
                             </div>
                         </div>
                         <div class="achievement b largeable-width-half">
@@ -347,7 +347,7 @@
                                 <div class="title">
                                     <span class="prefix">Great</span>
                                     developer
-                                    <span class="gh">ranked 3.27m out of 153m users</span>
+                                    <span class="gh">ranked 3.28m out of 154m users</span>
                                 </div>
                                 <div class="text">Published 20 public repositories</div>
                             </div>
@@ -431,7 +431,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 12 Jan 2025, 09:54:40 (timezone Asia/Manila) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 19 Jan 2025, 09:49:15 (timezone Asia/Manila) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
