@@ -3,209 +3,209 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer
-    class="p-10 pb-28 md:pb-4 bg-white shadow-md inset-shadow-md md:p-8 lg:p-10 dark:bg-zinc-900"
+	class="inset-shadow-md bg-white p-10 pb-28 shadow-md md:p-8 md:pb-4 lg:p-10 dark:bg-zinc-900"
 >
-    <div class="mx-auto max-w-screen-xl text-center">
-        <div
-            class="flex w-max mx-auto space-x-28 md:space-x-40 justify-between"
-        >
-            <a
-                href="/"
-                class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
-            >
-                <Icon name="tabler:at" size={20} />
-                <span class="font-bold">jhdcruz</span>
-            </a>
+	<div class="mx-auto max-w-screen-xl text-center">
+		<div
+			class="mx-auto flex w-max justify-between space-x-28 md:space-x-40"
+		>
+			<a
+				href="/"
+				class="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
+			>
+				<Icon class="text-brand" name="tabler:at" size={20} />
+				<span class="font-bold">jhdcruz</span>
+			</a>
 
-            <div
-                class="flex space-x-3 align-middle items-center text-gray-900 dark:text-white"
-            >
-                <a
-                    aria-label="Contact using Matrix"
-                    href="https://matrix.to/#/@jhdcruz:beeper.com"
-                    target="__blank"
-                >
-                    <Icon name={"tabler:brand-matrix"} size={20} class="mr-1" />
-                </a>
-                <a
-                    aria-label="Contact using telegram"
-                    href="https://t.me/jhdcruz"
-                    target="__blank"
-                >
-                    <Icon
-                        name={"tabler:brand-telegram"}
-                        size={20}
-                        class="mr-1"
-                    />
-                </a>
-                <a
-                    aria-label="Connect on GitHub"
-                    href="https://github.com/jhdcruz"
-                    target="__blank"
-                >
-                    <Icon name={"tabler:brand-github"} size={20} class="mr-1" />
-                </a>
-                <a
-                    aria-label="Connect on LinkedIn"
-                    href="https://linkedin.com/in/jhdcruz/"
-                    target="__blank"
-                >
-                    <Icon
-                        name={"tabler:brand-linkedin"}
-                        size={20}
-                        class="mr-1"
-                    />
-                </a>
-            </div>
-        </div>
+			<div
+				class="flex items-center space-x-3 align-middle text-gray-900 dark:text-white"
+			>
+				<a
+					aria-label="Contact using telegram"
+					href="https://t.me/jhdcruz"
+					target="__blank"
+				>
+					<Icon
+						name={"tabler:brand-telegram"}
+						size={24}
+						class="mr-1"
+					/>
+				</a>
+				<a
+					aria-label="Contact using Matrix"
+					href="https://matrix.to/#/@jhdcruz:beeper.com"
+					target="__blank"
+				>
+					<Icon name={"tabler:brand-matrix"} size={24} class="mr-1" />
+				</a>
+				<a
+					aria-label="Connect on GitHub"
+					href="https://github.com/jhdcruz"
+					target="__blank"
+				>
+					<Icon name={"tabler:brand-github"} size={24} class="mr-1" />
+				</a>
+				<a
+					aria-label="Connect on LinkedIn"
+					href="https://linkedin.com/in/jhdcruz/"
+					target="__blank"
+				>
+					<Icon
+						name={"tabler:brand-linkedin"}
+						size={24}
+						class="mr-1"
+					/>
+				</a>
+			</div>
+		</div>
 
         <!-- General Services -->
-        <p class="mt-5 mb-7 text-gray-500 dark:text-gray-400">
-            Software Development
-            <span class="mx-3 text-zinc-400 dark:text-zinc-700 select-none"
-                >•</span
-            >
-            System Architecture
-            <span class="mx-3 text-zinc-400 dark:text-zinc-700 select-none"
-                >•</span
-            >
-            Platform Engineering
+        <p class="mb-7 mt-5 text-gray-500 dark:text-gray-400">
+	Software Development
+        	<span class="mx-3 select-none text-zinc-400 dark:text-zinc-700"
+        	>•</span
+        	>
+	System Architecture
+        	<span class="mx-3 select-none text-zinc-400 dark:text-zinc-700"
+        	>•</span
+        	>
+	Platform Engineering
         </p>
 
         <!-- Footer Links -->
         <ul
-            class="flex flex-wrap justify-center align-middle mx-auto items-center mb-8 text-gray-900 dark:text-white"
+        	class="mx-auto mb-8 flex flex-wrap items-center justify-center align-middle text-gray-900 dark:text-white"
         >
             <!-- Compliance Links -->
             <li>
-                <a
-                    href="https://app.fossa.com/projects/git%2Bgithub.com%2Fjhdcruz%2Fjhdcruz?utm_source=share_link"
-                    class="flex items-center align-middle mr-4 hover:underline md:mr-6"
-                    target="_blank"
-                >
-                    Licenses
-                    <Icon
-                        name={"tabler:external-link"}
-                        size={14}
-                        class="ml-1"
-                    />
-                </a>
+            	<a
+            		href="https://app.fossa.com/projects/git%2Bgithub.com%2Fjhdcruz%2Fjhdcruz?utm_source=share_link"
+            		class="mr-4 flex items-center align-middle hover:underline md:mr-6"
+            		target="_blank"
+            	>
+	Licenses
+            		<Icon
+            			name={"tabler:external-link"}
+            			size={14}
+            			class="ml-1"
+            		/>
+            	</a>
             </li>
             <li>
-                <a
-                    href="https://github.com/jhdcruz/jhdcruz/blob/main/SECURITY.md"
-                    class="flex items-center align-middle mr-4 hover:underline md:mr-6"
-                    target="_blank"
-                >
-                    Security
-                    <Icon
-                        name={"tabler:external-link"}
-                        size={14}
-                        class="ml-1"
-                    />
-                </a>
+            	<a
+            		href="https://github.com/jhdcruz/jhdcruz/blob/main/SECURITY.md"
+            		class="mr-4 flex items-center align-middle hover:underline md:mr-6"
+            		target="_blank"
+            	>
+	Security
+            		<Icon
+            			name={"tabler:external-link"}
+            			size={14}
+            			class="ml-1"
+            		/>
+            	</a>
             </li>
             <li>
-                <a
-                    href="mailto:contact@deuz.tech"
-                    class="flex items-center align-middle hover:underline"
-                >
-                    Support
-                    <Icon
-                        name={"tabler:external-link"}
-                        size={14}
-                        class="ml-1"
-                    />
-                </a>
+            	<a
+            		href="mailto:contact@deuz.tech"
+            		class="flex items-center align-middle hover:underline"
+            	>
+	Support
+            		<Icon
+            			name={"tabler:external-link"}
+            			size={14}
+            			class="ml-1"
+            		/>
+            	</a>
             </li>
 
             <!-- Separator -->
             <li
-                class="hidden md:inline mx-8 text-zinc-300 dark:text-zinc-700 select-none"
+            	class="mx-8 hidden select-none text-zinc-300 md:inline dark:text-zinc-700"
             >
-                |
+	|
             </li>
             <hr
-                class="h-px w-full my-3 block md:hidden bg-gray-200 border-0 dark:bg-gray-700"
+            	class="my-3 block h-px w-full border-0 bg-gray-200 md:hidden dark:bg-gray-700"
             />
 
             <!-- Links -->
             <li>
-                <a href="/" class="mr-4 hover:underline md:mr-6">About</a>
+            	<a href="/" class="mr-4 hover:underline md:mr-6">About</a>
             </li>
             <li>
-                <a href="/services" class="mr-4 hover:underline md:mr-6"
-                    >Services</a
-                >
+            	<a href="/services" class="mr-4 hover:underline md:mr-6"
+            	>Services</a
+            	>
             </li>
             <li>
-                <a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>
+            	<a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>
             </li>
             <li>
-                <a href="/login" class="hover:underline">Client</a>
+            	<a href="/login" class="hover:underline">Client</a>
             </li>
 
             <!-- Separator -->
             <li
-                class="hidden md:inline mx-8 text-zinc-300 dark:text-zinc-700 select-none"
+            	class="mx-8 hidden select-none text-zinc-300 md:inline dark:text-zinc-700"
             >
-                |
+	|
             </li>
             <hr
-                class="h-px w-full my-3 block md:hidden bg-gray-200 border-0 dark:bg-gray-700"
+            	class="my-3 block h-px w-full border-0 bg-gray-200 md:hidden dark:bg-gray-700"
             />
 
             <!-- Payments -->
             <li>
-                <a
-                    href="https://wise.com/pay/me/joshuaheroherrerad"
-                    target="__blank"
-                    class="flex items-center align-middle mr-4 hover:underline md:mr-6"
-                >
-                    Wise
-                    <Icon
-                        name={"tabler:external-link"}
-                        size={14}
-                        class="ml-1"
-                    />
-                </a>
+            	<a
+            		href="https://wise.com/pay/me/joshuaheroherrerad"
+            		target="__blank"
+            		class="mr-4 flex items-center align-middle hover:underline md:mr-6"
+            	>
+	Wise
+            		<Icon
+            			name={"tabler:external-link"}
+            			size={14}
+            			class="ml-1"
+            		/>
+            	</a>
             </li>
             <li>
-                <a
-                    href="https://www.paypal.com/paypalme/jhdcruz"
-                    target="__blank"
-                    class="flex items-center align-middle mr-4 hover:underline md:mr-6"
-                >
-                    Paypal
-                    <Icon
-                        name={"tabler:external-link"}
-                        size={14}
-                        class="ml-1"
-                    />
-                </a>
+            	<a
+            		href="https://www.paypal.com/paypalme/jhdcruz"
+            		target="__blank"
+            		class="mr-4 flex items-center align-middle hover:underline md:mr-6"
+            	>
+	Paypal
+            		<Icon
+            			name={"tabler:external-link"}
+            			size={14}
+            			class="ml-1"
+            		/>
+            	</a>
             </li>
             <li>
-                <a
-                    href="https://ud.me/jhdcruz.wallet"
-                    target="__blank"
-                    class="flex items-center align-middle hover:underline"
-                >
-                    Crypto
-                    <Icon
-                        name={"tabler:external-link"}
-                        size={14}
-                        class="ml-1"
-                    />
-                </a>
+            	<a
+            		href="https://ud.me/jhdcruz.wallet"
+            		target="__blank"
+            		class="flex items-center align-middle hover:underline"
+            	>
+	Crypto
+            		<Icon
+            			name={"tabler:external-link"}
+            			size={14}
+            			class="ml-1"
+            		/>
+            	</a>
             </li>
         </ul>
 
         <!-- Copyright / ARR -->
         <span class="text-sm text-zinc-500 sm:text-center dark:text-zinc-400">
-            © 2025
-            <a href="https://linkedin.com/in/jhdcruz/" class="hover:underline">
-                Joshua Hero Dela Cruz</a
-            >{". "} All Rights Reserved.
+	© 2025
+        	<a href="https://linkedin.com/in/jhdcruz/" class="hover:underline">
+	Joshua Hero Dela Cruz</a
+        	>{". "} All Rights Reserved.
         </span>
-    </div>
+	</div>
 </footer>

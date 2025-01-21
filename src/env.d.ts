@@ -1,9 +1,9 @@
 /// <reference types="astro/client" />
 
 type KVNamespace = import("@cloudflare/workers-types").KVNamespace;
-type ENV = {
+interface ENV {
 	jhdcruz: KVNamespace;
-};
+}
 
 // use a default runtime configuration (advanced mode).
 type Runtime = import("@astrojs/cloudflare").Runtime<ENV>;

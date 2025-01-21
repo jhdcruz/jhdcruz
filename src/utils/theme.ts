@@ -1,6 +1,21 @@
-interface ThemeProps {
-	theme: "light" | "dark" | null;
+export interface ThemeProps {
+	theme: "light" | "dark";
 }
+
+/**
+ * Get the current theme.
+ *
+ * @returns The current theme: "light" or "dark".
+ */
+export const getTheme = (): ThemeProps["theme"] => {
+	const theme = localStorage.getItem("theme") as ThemeProps["theme"] | null;
+	return (
+		theme ??
+		(window.matchMedia("(prefers-color-scheme: dark)").matches
+			? "dark"
+			: "light")
+	);
+};
 
 /**
  * Set the theme based on the user's system preference.
@@ -8,7 +23,7 @@ interface ThemeProps {
  *
  * @param theme - The theme to set.
  */
-export const useTheme = ({ theme }: ThemeProps = { theme: null }) => {
+export const useTheme = ({ theme }: ThemeProps = { theme: "light" }) => {
 	switch (theme) {
 		case "dark":
 			localStorage.setItem("theme", "dark");

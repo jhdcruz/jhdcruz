@@ -5,29 +5,29 @@ const { status } = Astro.props;
 ---
 
 <a
-    href="/services"
-    class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-5 text-sm text-zinc-700 bg-gray-100 rounded-full dark:bg-dark_fg dark:text-white hover:bg-zinc-200 dark:hover:bg-zinc-700"
+	href="/services"
+	class="mb-5 inline-flex items-center justify-between rounded-full bg-gray-200 p-1 pr-4 text-sm text-zinc-700 hover:bg-zinc-200 dark:bg-dark_fg dark:text-white dark:hover:bg-zinc-700"
 >
-    <span
-        class="text-xs capitalize rounded-full text-white px-4 py-1.5 mr-3"
-        class:list={[status === "open" ? "bg-green-600" : "bg-red-600"]}
-        >{status}</span
-    >
-    <span class="text-sm font-medium">
-        {
-            (() => {
-                switch (status) {
-                    case "open":
-                        return "I can help you. Let's talk!";
-                    case "vacation":
-                        return "I'm on vacation. I'll be back soon!";
-                    case "busy":
-                        return "I'm working on a project. I'll be back soon!";
-                    default:
-                        return "I'm unavailable. I'll be back soon!";
-                }
-            })()
-        }
-    </span>
-    <Icon class="ml-2" name="tabler:chevron-right" size={16} />
+	<span
+		class="mr-3 rounded-full px-4 py-1.5 text-xs capitalize text-white"
+		class:list={[status === "open" ? "bg-green-600" : "bg-red-600"]}
+	>{status}</span
+	>
+	<span class="text-sm font-medium">
+		{
+			(() => {
+				switch (status) {
+					case "open":
+						return "I can help you. Let's talk!";
+					case "vacation":
+						return "I'm on vacation. I'll be back soon!";
+					case "busy":
+						return "I'm working on a project. I'll be back soon!";
+					default:
+						return "I'm unavailable. I'll be back soon!";
+				}
+			})()
+		}
+	</span>
+	<Icon class="ml-2" name="tabler:chevron-right" size={16} />
 </a>
