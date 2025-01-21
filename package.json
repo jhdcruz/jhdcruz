@@ -1,65 +1,66 @@
 {
-  "name": "jhdcruz",
-  "type": "module",
-  "license": "Apache-2.0",
-  "author": "Joshua Hero Dela Cruz <jhdcruz@proton.me>",
-  "homepage": "https://jhdcruz.pages.dev",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "dev:wr": "wrangler pages dev ./dist",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "fmt": "prettier --write src/ && eslint --fix --cache ./src",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "@astrojs/check": "0.9.4",
-    "@astrojs/cloudflare": "12.2.0",
-    "@astrojs/partytown": "2.1.3",
-    "@astrojs/sitemap": "3.2.1",
-    "@astrojs/solid-js": "5.0.4",
-    "@tabler/icons-solidjs": "3.28.1",
-    "astro": "5.1.8",
-    "astro-icon": "1.1.5",
-    "flowbite": "2.5.2"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "4.20250109.0",
-    "@iconify-json/tabler": "1.2.14",
-    "@stylistic/eslint-plugin": "2.13.0",
-    "@tailwindcss/vite": "4.0.0-beta.9",
-    "@typescript-eslint/parser": "8.21.0",
-    "eslint": "9.18.0",
-    "eslint-plugin-astro": "1.3.1",
-    "eslint-plugin-jsx-a11y": "6.10.2",
-    "husky": "9.1.7",
-    "jiti": "2.4.2",
-    "lightningcss": "1.29.1",
-    "lint-staged": "15.4.1",
-    "prettier": "3.4.2",
-    "prettier-plugin-tailwindcss": "0.6.10",
-    "solid-js": "1.9.4",
-    "tailwindcss": "4.0.0-beta.9",
-    "typescript": "5.7.3",
-    "typescript-eslint": "8.21.0",
-    "wrangler": "3.103.2"
-  },
-  "lint-staged": {
-    "*.{astro,svelte,js,jsx,ts,tsx,cjs,mjs}": [
-      "eslint --fix"
-    ],
-    "*.{json,md,yml,yaml}": [
-      "prettier --write"
-    ]
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp",
-      "workerd"
-    ]
-  }
+	"name": "jhdcruz",
+	"type": "module",
+	"license": "Apache-2.0",
+	"author": "Joshua Hero Dela Cruz <jhdcruz@proton.me>",
+	"homepage": "https://jhdcruz.pages.dev",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"dev:wr": "wrangler pages dev ./dist",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"fmt": "prettier --write src/ && eslint --fix --cache ./src",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@astrojs/check": "0.9.4",
+		"@astrojs/cloudflare": "12.2.0",
+		"@astrojs/partytown": "2.1.3",
+		"@astrojs/sitemap": "3.2.1",
+		"@astrojs/solid-js": "5.0.4",
+		"@tabler/icons-solidjs": "3.28.1",
+		"astro": "5.1.8",
+		"astro-icon": "1.1.5",
+		"flowbite": "2.5.2"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "4.20250109.0",
+		"@iconify-json/tabler": "1.2.14",
+		"@stylistic/eslint-plugin": "2.13.0",
+		"@tailwindcss/vite": "4.0.0-beta.9",
+		"@types/eslint-plugin-jsx-a11y": "6.10.0",
+		"@typescript-eslint/parser": "8.21.0",
+		"eslint": "9.18.0",
+		"eslint-plugin-astro": "1.3.1",
+		"eslint-plugin-jsx-a11y": "6.10.2",
+		"husky": "9.1.7",
+		"jiti": "2.4.2",
+		"lightningcss": "1.29.1",
+		"lint-staged": "15.4.1",
+		"prettier": "3.4.2",
+		"prettier-plugin-tailwindcss": "0.6.10",
+		"solid-js": "1.9.4",
+		"tailwindcss": "4.0.0-beta.9",
+		"typescript": "5.7.3",
+		"typescript-eslint": "8.21.0",
+		"wrangler": "3.103.2"
+	},
+	"lint-staged": {
+		"*.{astro,svelte,js,jsx,ts,tsx,cjs,mjs}": [
+			"eslint --fix"
+		],
+		"*.{json,md,yml,yaml}": [
+			"prettier --write"
+		]
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild",
+			"sharp",
+			"workerd"
+		]
+	}
 }
