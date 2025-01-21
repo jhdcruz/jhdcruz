@@ -12,6 +12,7 @@
 		"build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
+		"fmt": "eslint ./src",
 		"fmt": "prettier --write src/ && eslint --fix --cache ./src",
 		"prepare": "husky"
 	},

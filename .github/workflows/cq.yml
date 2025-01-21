@@ -1,79 +1,87 @@
 name: Code Quality
 
 on:
-  pull_request:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - .vscode/
-      - .husky/
-      - dist/
-      - README.md
-      - LICENSE.txt
-      - renovate.json
+    pull_request:
+    push:
+        branches:
+            - main
+        paths-ignore:
+            - .vscode/
+            - .husky/
+            - dist/
+            - README.md
+            - LICENSE.txt
+            - renovate.json
 
 jobs:
-  scan:
-    name: CQL and Snyk Scans
-    runs-on: ubuntu-latest
-    timeout-minutes: 500
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    scan:
+        name: CQL and Snyk Scans
+        runs-on: ubuntu-latest
+        timeout-minutes: 500
+        permissions:
+            actions: read
+            contents: read
+            security-events: write
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
 
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
-        with:
-          languages: javascript-typescript
+            - name: Initialize CodeQL
+              uses: github/codeql-action/init@v3
+              with:
+                  languages: javascript-typescript
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: latest
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 10
 
-      - name: Use Node.js LTS
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: "pnpm"
+            - name: Use Node.js Latest
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 23
+                  cache: "pnpm"
 
-      - name: install deps
-        run: pnpm i --frozen-lockfile
+            - name: install deps
+              run: pnpm i --frozen-lockfile
 
-      - name: Build
-        run: pnpm run build
+            - name: Build
+              run: pnpm run build
 
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
-        with:
-          category: /language:javascript-typescript
+            - name: Perform CodeQL Analysis
+              uses: github/codeql-action/analyze@v3
+              with:
+                  category: /language:javascript-typescript
 
-      - name: Run Snyk Security Scan
-        uses: snyk/actions/node@master
-        continue-on-error: true
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          args: --sarif-file-output=snyk.sarif
+            - name: Run Snyk Security Scan
+              uses: snyk/actions/node@master
+              continue-on-error: true
+              env:
+                  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+              with:
+                  args: --sarif-file-output=snyk.sarif
 
-      - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: snyk.sarif
+            - name: Upload result to GitHub Code Scanning
+              uses: github/codeql-action/upload-sarif@v3
+              with:
+                  sarif_file: snyk.sarif
 
-  biome:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Biome
-        uses: biomejs/setup-biome@v2
-        with:
-          version: latest
-      - name: Run Biome
-        run: biome ci .
+    eslint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 10
+
+            - name: Use Node.js Latest
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 23
+                  cache: "pnpm"
+
+            - name: Lint checks
+              run: pnpm lint
