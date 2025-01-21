@@ -3,6 +3,8 @@ dist/
 .wrangler
 # generated types
 .astro/
+.eslintignore
+.eslintcache
 
 # dependencies
 node_modules/
