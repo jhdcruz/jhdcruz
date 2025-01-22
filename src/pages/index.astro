@@ -10,357 +10,357 @@ export const prerender = false;
 ---
 
 <BaseLayout>
-	<section class="relative">
-		<div
-			class="mx-auto max-w-screen-xl px-4 py-8 text-center lg:px-12 lg:pt-16"
-		>
+    <section class="relative">
+        <div
+            class="mx-auto max-w-screen-xl px-4 py-8 text-center lg:px-12 lg:pt-16"
+        >
       <!-- Work availability -->
       <WorkStatus status={status ?? "busy"} server:defer>
-      	<div slot="fallback">
-      		<div
-      			class="mb-5 inline-flex h-(36px) w-(378px) animate-pulse items-center justify-between rounded-full bg-gray-200 p-1 pr-4 dark:bg-zinc-700"
-      		>
-      		</div>
-      	</div>
+          <div slot="fallback">
+              <div
+                  class="mb-5 inline-flex h-(36px) w-(378px) animate-pulse items-center justify-between rounded-full bg-gray-200 p-1 pr-4 dark:bg-zinc-700"
+              >
+              </div>
+          </div>
       </WorkStatus>
 
       <div class="rounded-xl backdrop-blur-sm">
         <!-- Title -->
         <h1
-        	class="pb-6 text-6xl leading-tight font-[900] drop-shadow-lg lg:text-7xl"
+            class="pb-6 text-6xl leading-tight font-[900] drop-shadow-lg lg:text-7xl"
         >
-	Delivering
-        	<span class="text-brand">intuitive</span>
-	and
-        	<span class="text-brand">effective</span>
-	technology solutions.
+            Delivering
+            <span class="text-brand">intuitive</span>
+            and
+            <span class="text-brand">effective</span>
+            technology solutions.
         </h1>
 
         <!-- Subtitle -->
         <p
-        	class="mb-10 mt-6 font-normal text-gray-500 dark:text-zinc-400 sm:px-16 lg:text-xl xl:px-48"
+            class="mb-10 mt-6 font-normal text-gray-500 dark:text-zinc-400 sm:px-16 lg:text-xl xl:px-48"
         >
-	Whether you need assistance with product realization, infrastructure
-	platform, or a reliable partner,
-        	<span class="font-bold text-brand">I can help with that.</span>
+            Whether you need assistance with product realization, infrastructure
+            platform, or a reliable partner,
+            <span class="font-bold text-brand">I can help with that.</span>
         </p>
       </div>
 
       <!-- CTAs -->
       <div
-      	class="mb-8 flex flex-col space-y-8 sm:flex-row sm:justify-center sm:space-x-8 sm:space-y-0 lg:mb-10"
+          class="mb-8 flex flex-col space-y-8 sm:flex-row sm:justify-center sm:space-x-8 sm:space-y-0 lg:mb-10"
       >
-      	<a
-      		href="/services"
-      		class="inline-flex items-center justify-center rounded-full bg-brand hover:bg-primary px-9 py-3 text-center text-base font-medium text-white dark:bg-primary dark:hover:bg-amber-700 focus:ring-4 focus:ring-primary/50 dark:focus:ring-primary/100"
-      	>
-	I want something built
-      		<Icon class="ml-2" name="tabler:code" size={20} />
-      	</a>
-      	<a
-      		href="/connect"
-      		class="inline-flex items-center justify-center text-center text-base font-medium text-gray-800 dark:text-gray-200 decoration-2 underline-offset-8 hover:underline"
-      	>
-	Connect with me
-      		<Icon class="ml-2" name="tabler:arrow-right" size={20} />
-      	</a>
+          <a
+              href="/services"
+              class="inline-flex items-center justify-center rounded-full bg-brand hover:bg-primary px-9 py-3 text-center text-base font-medium text-white dark:bg-primary dark:hover:bg-amber-700 focus:ring-4 focus:ring-primary/50 dark:focus:ring-primary/100"
+          >
+              I want something built
+              <Icon class="ml-2" name="tabler:code" size={20} />
+          </a>
+          <a
+              href="/connect"
+              class="inline-flex items-center justify-center text-center text-base font-medium text-gray-800 dark:text-gray-200 decoration-2 underline-offset-8 hover:underline"
+          >
+              Connect with me
+              <Icon class="ml-2" name="tabler:arrow-right" size={20} />
+          </a>
       </div>
-		</div>
-	</section>
+        </div>
+    </section>
 
-	<hr
-		class="my-12 block h-px w-full mx-auto border-0 bg-gray-200 dark:bg-zinc-800"
-	/>
+    <hr
+        class="my-12 block h-px w-full mx-auto border-0 bg-gray-200 dark:bg-zinc-800"
+    />
 
   <!-- Core Values -->
   <section class="mt-4 bg-light text-center dark:bg-dark">
-  	<div class="mx-auto max-w-screen-xl px-4 pb-16 pt-8">
-  		<div class="mb-6 lg:mb-12">
-  			<h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
-	Core Values
-  			</h2>
-  			<p
-  				class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
-  			>
-	When part of the team, I am committed to upholding key principles that
-	governs my work.
-  			</p>
-  		</div>
-  		<div
-  			class="mx-auto space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3"
-  		>
-  			<div>
-  				<div
-  					class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
-  				>
-  					<Icon
-  						class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
-  						name="tabler:code-asterisk"
-  						size={32}
-  					/>
-  				</div>
-  				<h3 class="mb-2 text-xl font-bold dark:text-white">Clean Code</h3>
-  				<p class="text-gray-500 dark:text-gray-400">
-	Writing clean, well-structured code that is easy to understand and
-	maintain. Adhering on established practices.
-  				</p>
-  			</div>
-  			<div>
-  				<div
-  					class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
-  				>
-  					<Icon
-  						class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
-  						name="tabler:infinity"
-  						size={32}
-  					/>
-  				</div>
-  				<h3 class="mb-2 text-xl font-bold dark:text-white">
-	Continuous Learning
-  				</h3>
-  				<p class="text-gray-500 dark:text-gray-400">
-	Passionate about continuously improving my skills and adopting new
-	technologies to deliver the best possible solutions for my clients.
-  				</p>
-  			</div>
-  			<div>
-  				<div
-  					class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
-  				>
-  					<Icon
-  						class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
-  						name="tabler:users-group"
-  						size={32}
-  					/>
-  				</div>
-  				<h3 class="mb-2 text-xl font-bold dark:text-white">
-	Collaborative Approach
-  				</h3>
-  				<p class="text-gray-500 dark:text-gray-400">
-	I believe in an open and communicative work style,
-	actively engaging with clients and teammates to ensure
-	alignment.
-  				</p>
-  			</div>
-  		</div>
-  	</div>
+      <div class="mx-auto max-w-screen-xl px-4 pb-16 pt-8">
+          <div class="mb-6 lg:mb-12">
+              <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+                  Core Values
+              </h2>
+              <p
+                  class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
+              >
+                  When part of the team, I am committed to upholding key principles that
+                  governs my work.
+              </p>
+          </div>
+          <div
+              class="mx-auto space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3"
+          >
+              <div>
+                  <div
+                      class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
+                  >
+                      <Icon
+                          class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
+                          name="tabler:code-asterisk"
+                          size={32}
+                      />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold dark:text-white">Clean Code</h3>
+                  <p class="text-gray-500 dark:text-gray-400">
+                      Writing clean, well-structured code that is easy to understand and
+                      maintain. Adhering on established practices.
+                  </p>
+              </div>
+              <div>
+                  <div
+                      class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
+                  >
+                      <Icon
+                          class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
+                          name="tabler:infinity"
+                          size={32}
+                      />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold dark:text-white">
+                      Continuous Learning
+                  </h3>
+                  <p class="text-gray-500 dark:text-gray-400">
+                      Passionate about continuously improving my skills and adopting new
+                      technologies to deliver the best possible solutions for my clients.
+                  </p>
+              </div>
+              <div>
+                  <div
+                      class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
+                  >
+                      <Icon
+                          class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
+                          name="tabler:users-group"
+                          size={32}
+                      />
+                  </div>
+                  <h3 class="mb-2 text-xl font-bold dark:text-white">
+                      Collaborative Approach
+                  </h3>
+                  <p class="text-gray-500 dark:text-gray-400">
+                      I believe in an open and communicative work style,
+                      actively engaging with clients and teammates to ensure
+                      alignment.
+                  </p>
+              </div>
+          </div>
+      </div>
   </section>
 
   <hr
-  	class="my-12 block h-px w-full mx-auto border-0 bg-gray-200 dark:bg-zinc-800"
+      class="my-12 block h-px w-full mx-auto border-0 bg-gray-200 dark:bg-zinc-800"
   />
 
   <!-- My Expertise -->
   <section class="bg-light pb-6 text-center md:pb-12 dark:bg-dark">
-  	<div class="mx-auto max-w-screen-xl px-4 pt-8 pb-16">
-  		<div class="mb-6 md:mb-0">
-  			<h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
-	My Expertise
-  			</h2>
-  			<p
-  				class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
-  			>
-	I strive to deliver performant and high-quality software solutions
-	that meets user needs and make a positive impact.
-  			</p>
-  		</div>
-  	</div>
+      <div class="mx-auto max-w-screen-xl px-4 pt-8 pb-16">
+          <div class="mb-6 md:mb-0">
+              <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+                  My Expertise
+              </h2>
+              <p
+                  class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
+              >
+                  I strive to deliver performant and high-quality software solutions
+                  that meets user needs and make a positive impact.
+              </p>
+          </div>
+      </div>
 
     <!-- Tech Stack Image Grid -->
     <div
-    	class="mx-auto grid grid-cols-1 gap-4 px-10 sm:grid-cols-2 md:max-w-screen-xl md:grid-cols-3"
+        class="mx-auto grid grid-cols-1 gap-4 px-10 sm:grid-cols-2 md:max-w-screen-xl md:grid-cols-3"
     >
-    	<div class="px-4">
-    		<h3 class="text-xl font-bold dark:text-white">Languages:</h3>
-    		<hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-    		<div class="flex flex-wrap justify-center gap-4">
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/JavaScript.svg"
-    				alt="JavaScript"
-    				title="JavaScript"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/TypeScript.svg"
-    				alt="TypeScript"
-    				title="TypeScript"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Kotlin.svg"
-    				alt="Kotlin"
-    				title="Kotlin"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Java.svg"
-    				alt="Java"
-    				title="Java"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Amber.png"
-    				alt="Amber"
-    				title="Amber"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
-    				src="/assets/tech/Bash.svg"
-    				alt="Bash"
-    				title="Bash"
-    			/>
-    		</div>
-    	</div>
+        <div class="px-4">
+            <h3 class="text-xl font-bold dark:text-white">Languages:</h3>
+            <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+            <div class="flex flex-wrap justify-center gap-4">
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/JavaScript.svg"
+                    alt="JavaScript"
+                    title="JavaScript"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/TypeScript.svg"
+                    alt="TypeScript"
+                    title="TypeScript"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Kotlin.svg"
+                    alt="Kotlin"
+                    title="Kotlin"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Java.svg"
+                    alt="Java"
+                    title="Java"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Amber.png"
+                    alt="Amber"
+                    title="Amber"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
+                    src="/assets/tech/Bash.svg"
+                    alt="Bash"
+                    title="Bash"
+                />
+            </div>
+        </div>
 
-    	<div class="px-4">
-    		<h3 class="text-xl font-bold dark:text-white">
-	Frameworks & Libraries:
-    		</h3>
-    		<hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-    		<div class="flex flex-wrap justify-center gap-4">
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/React.svg"
-    				alt="React"
-    				title="React"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
-    				src="/assets/tech/Next.js.svg"
-    				alt="Next.js"
-    				title="Next.js"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Astro.svg"
-    				alt="Astro"
-    				title="Astro"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Solid.js.svg"
-    				alt="Solid.js"
-    				title="Solid.js"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
-    				src="/assets/tech/Express.svg"
-    				alt="Express"
-    				title="Express"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Node.js.svg"
-    				alt="Node.js"
-    				title="Node.js"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Android.svg"
-    				alt="Android"
-    				title="Android"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/JUnit.svg"
-    				alt="JUnit"
-    				title="JUnit"
-    			/>
-    		</div>
-    	</div>
+        <div class="px-4">
+            <h3 class="text-xl font-bold dark:text-white">
+                Frameworks & Libraries:
+            </h3>
+            <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+            <div class="flex flex-wrap justify-center gap-4">
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/React.svg"
+                    alt="React"
+                    title="React"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
+                    src="/assets/tech/Next.js.svg"
+                    alt="Next.js"
+                    title="Next.js"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Astro.svg"
+                    alt="Astro"
+                    title="Astro"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Solid.js.svg"
+                    alt="Solid.js"
+                    title="Solid.js"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
+                    src="/assets/tech/Express.svg"
+                    alt="Express"
+                    title="Express"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Node.js.svg"
+                    alt="Node.js"
+                    title="Node.js"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Android.svg"
+                    alt="Android"
+                    title="Android"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/JUnit.svg"
+                    alt="JUnit"
+                    title="JUnit"
+                />
+            </div>
+        </div>
 
-    	<div class="px-4">
-    		<h3 class="text-xl font-bold dark:text-white">Tooling:</h3>
-    		<hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-    		<div class="flex flex-wrap justify-center gap-4">
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Docker.svg"
-    				alt="Docker"
-    				title="Docker"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/GitHub Actions.svg"
-    				alt="GitHub Actions"
-    				title="GitHub Actions"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Git.svg"
-    				alt="Git"
-    				title="Git"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
-    				src="/assets/tech/GitHub.svg"
-    				alt="GitHub"
-    				title="GitHub"
-    			/>
+        <div class="px-4">
+            <h3 class="text-xl font-bold dark:text-white">Tooling:</h3>
+            <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+            <div class="flex flex-wrap justify-center gap-4">
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Docker.svg"
+                    alt="Docker"
+                    title="Docker"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/GitHub Actions.svg"
+                    alt="GitHub Actions"
+                    title="GitHub Actions"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Git.svg"
+                    alt="Git"
+                    title="Git"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
+                    src="/assets/tech/GitHub.svg"
+                    alt="GitHub"
+                    title="GitHub"
+                />
 
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/GitLab.svg"
-    				alt="GitLab"
-    				title="GitLab"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/AWS.svg"
-    				alt="AWS"
-    				title="AWS"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Firebase.svg"
-    				alt="Firebase"
-    				title="Firebase"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Cloudflare.svg"
-    				alt="Cloudflare"
-    				title="Cloudflare"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
-    				src="/assets/tech/Gradle.svg"
-    				alt="Gradle"
-    				title="Gradle"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/PostgresSQL.svg"
-    				alt="PostgreSQL"
-    				title="PostgreSQL"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Linux.svg"
-    				alt="Linux"
-    				title="Linux"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Ubuntu.svg"
-    				alt="Ubuntu"
-    				title="Ubuntu"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Fedora.svg"
-    				alt="Fedora"
-    				title="Fedora"
-    			/>
-    			<img
-    				class="h-14 max-w-full rounded-lg"
-    				src="/assets/tech/Red Hat.svg"
-    				alt="Red Hat"
-    				title="Red Hat Linux Enterprise (RHEL)"
-    			/>
-    		</div>
-    	</div>
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/GitLab.svg"
+                    alt="GitLab"
+                    title="GitLab"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/AWS.svg"
+                    alt="AWS"
+                    title="AWS"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Firebase.svg"
+                    alt="Firebase"
+                    title="Firebase"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Cloudflare.svg"
+                    alt="Cloudflare"
+                    title="Cloudflare"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg dark:brightness-0 dark:invert"
+                    src="/assets/tech/Gradle.svg"
+                    alt="Gradle"
+                    title="Gradle"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/PostgresSQL.svg"
+                    alt="PostgreSQL"
+                    title="PostgreSQL"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Linux.svg"
+                    alt="Linux"
+                    title="Linux"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Ubuntu.svg"
+                    alt="Ubuntu"
+                    title="Ubuntu"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Fedora.svg"
+                    alt="Fedora"
+                    title="Fedora"
+                />
+                <img
+                    class="h-14 max-w-full rounded-lg"
+                    src="/assets/tech/Red Hat.svg"
+                    alt="Red Hat"
+                    title="Red Hat Linux Enterprise (RHEL)"
+                />
+            </div>
+        </div>
     </div>
   </section>
 </BaseLayout>

@@ -9,47 +9,47 @@ import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://deuz.tech",
-	prefetch: {
-		prefetchAll: true,
-	},
-	experimental: {
-		responsiveImages: true,
-	},
-	server: {
-		port: 3000,
-		host: true,
-	},
-	adapter: cloudflare({
-		platformProxy: {
-			enabled: true,
-		},
-		imageService: "cloudflare"
-	}),
-	vite: {
-		ssr: {
-			noExternal: ["workerd", "astrojs/cloudflare"],
-		},
-		plugins: [tailwindcss()],
-		css: {
-			transformer: 'lightningcss',
-		},
-		build: {
-			cssMinify: 'lightningcss'
-		},
-	},
-	image: {
-		service: passthroughImageService(),
-		experimentalLayout: "responsive",
-	},
-	integrations: [
-		partytown(),
-		sitemap(),
-		icon({
-			include: {
-				tabler: ["*"],
-			},
-		}),
-		solidJs(),
-	],
+    site: "https://deuz.tech",
+    prefetch: {
+        prefetchAll: true,
+    },
+    experimental: {
+        responsiveImages: true,
+    },
+    server: {
+        port: 3000,
+        host: true,
+    },
+    adapter: cloudflare({
+        platformProxy: {
+            enabled: true,
+        },
+        imageService: "cloudflare"
+    }),
+    vite: {
+        ssr: {
+            noExternal: ["workerd", "astrojs/cloudflare"],
+        },
+        plugins: [tailwindcss()],
+        css: {
+            transformer: 'lightningcss',
+        },
+        build: {
+            cssMinify: 'lightningcss'
+        },
+    },
+    image: {
+        service: passthroughImageService(),
+        experimentalLayout: "responsive",
+    },
+    integrations: [
+        partytown(),
+        sitemap(),
+        icon({
+            include: {
+                tabler: ["*"],
+            },
+        }),
+        solidJs(),
+    ],
 });

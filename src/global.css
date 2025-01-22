@@ -5,13 +5,13 @@
 @source "../node_modules/flowbite/**/*.js";
 
 @theme {
-	--font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
 
-	--color-transparent: transparent;
-	--color-current: currentColor;
-	--color-primary: var(--color-amber-600);
-	--color-brand: var(--color-amber-500);
-	--color-light: var(--color-zinc-50);
-	--color-dark: var(--color-zinc-950);
-	--color-dark_fg: var(--color-zinc-800);
+    --color-transparent: transparent;
+    --color-current: currentColor;
+    --color-primary: var(--color-amber-600);
+    --color-brand: var(--color-amber-500);
+    --color-light: var(--color-zinc-50);
+    --color-dark: var(--color-zinc-950);
+    --color-dark_fg: var(--color-zinc-800);
 }

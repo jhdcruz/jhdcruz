@@ -1,5 +1,5 @@
 export interface ThemeProps {
-	theme: "light" | "dark";
+    theme: "light" | "dark";
 }
 
 /**
@@ -8,13 +8,13 @@ export interface ThemeProps {
  * @returns The current theme: "light" or "dark".
  */
 export const getTheme = (): ThemeProps["theme"] => {
-	const theme = localStorage.getItem("theme") as ThemeProps["theme"] | null;
-	return (
-		theme ??
-		(window.matchMedia("(prefers-color-scheme: dark)").matches
-			? "dark"
-			: "light")
-	);
+    const theme = localStorage.getItem("theme") as ThemeProps["theme"] | null;
+    return (
+        theme ??
+        (window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light")
+    );
 };
 
 /**
@@ -24,31 +24,31 @@ export const getTheme = (): ThemeProps["theme"] => {
  * @param theme - The theme to set.
  */
 export const useTheme = ({ theme }: ThemeProps = { theme: "light" }) => {
-	switch (theme) {
-		case "dark":
-			localStorage.setItem("theme", "dark");
-			document.documentElement.classList.add("dark");
-			document.documentElement.classList.remove("light");
-			break;
+    switch (theme) {
+        case "dark":
+            localStorage.setItem("theme", "dark");
+            document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("light");
+            break;
 
-		case "light":
-			localStorage.setItem("theme", "light");
-			document.documentElement.classList.remove("dark");
-			document.documentElement.classList.add("light");
-			break;
+        case "light":
+            localStorage.setItem("theme", "light");
+            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.add("light");
+            break;
 
-		default: {
-			// Current/system preference for theme
-			const prefersDarkScheme = window.matchMedia(
-				"(prefers-color-scheme: dark)",
-			);
-			const currentTheme = localStorage.getItem("theme");
+        default: {
+            // Current/system preference for theme
+            const prefersDarkScheme = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            );
+            const currentTheme = localStorage.getItem("theme");
 
-			if (currentTheme === "dark" || prefersDarkScheme.matches) {
-				useTheme({ theme: "dark" });
-			} else {
-				useTheme({ theme: "light" });
-			}
-		}
-	}
+            if (currentTheme === "dark" || prefersDarkScheme.matches) {
+                useTheme({ theme: "dark" });
+            } else {
+                useTheme({ theme: "light" });
+            }
+        }
+    }
 };

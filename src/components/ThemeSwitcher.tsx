@@ -3,27 +3,27 @@ import { IconMoonStars, IconSun } from "@tabler/icons-solidjs";
 import { useTheme, type ThemeProps } from "@/utils/theme";
 
 export const ThemeSwitcher = () => {
-	const [theme, setTheme] = createSignal<ThemeProps["theme"]>("light");
+    const [theme, setTheme] = createSignal<ThemeProps["theme"]>("light");
 
-	return (
-		<button
-			type="button"
-			aria-label="Toggle theme"
-			onClick={() => {
-				setTheme(theme() === "light" ? "dark" : "light");
-				useTheme({ theme: theme() ?? "light" });
-			}}
-			class="hover:inset-shadow-md rounded-full p-2.5 text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
-		>
-			<Switch>
-				<Match when={theme() === "dark"}>
-					<IconSun size={20} />
-				</Match>
+    return (
+        <button
+            type="button"
+            aria-label="Toggle theme"
+            onClick={() => {
+                setTheme(theme() === "light" ? "dark" : "light");
+                useTheme({ theme: theme() ?? "light" });
+            }}
+            class="hover:inset-shadow-md rounded-full p-2.5 text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
+        >
+            <Switch>
+                <Match when={theme() === "dark"}>
+                    <IconSun size={20} />
+                </Match>
 
-				<Match when={theme() === "light"}>
-					<IconMoonStars size={20} />
-				</Match>
-			</Switch>
-		</button>
-	);
+                <Match when={theme() === "light"}>
+                    <IconMoonStars size={20} />
+                </Match>
+            </Switch>
+        </button>
+    );
 };

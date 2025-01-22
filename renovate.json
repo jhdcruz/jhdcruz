@@ -1,17 +1,17 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:base", "customManagers:biomeVersions"],
-	"baseBranches": ["main"],
-	"packageRules": [
-		{
-			"updateTypes": ["major", "minor", "patch", "pin", "digest"],
-			"automerge": true
-		}
-	],
-	"lockFileMaintenance": {
-		"enabled": true,
-		"automerge": true
-	},
-	"dependencyDashboard": false,
-	"commitMessagePrefix": "chore(deps):"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", "customManagers:biomeVersions"],
+  "baseBranches": ["main"],
+  "packageRules": [
+    {
+      "updateTypes": ["major", "minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "dependencyDashboard": false,
+  "commitMessagePrefix": "chore(deps):"
 }
