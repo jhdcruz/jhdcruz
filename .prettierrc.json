@@ -1,6 +1,13 @@
 {
-	"plugins": ["prettier-plugin-tailwindcss"],
-	"endOfLine": "lf",
-	"tabWidth": 4,
-	"useTabs": true
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "endOfLine": "lf",
+  "tabWidth": 4,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
 }
