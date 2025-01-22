@@ -1,12 +1,15 @@
 ---
 import { Icon } from "astro-icon/components";
 import { type Page, links } from "./Nav.astro";
+
+const path = typeof window !== "undefined" ? window.location.pathname : "/";
 ---
 
 <nav
-	class="fixed inset-x-0 bottom-0 z-20 mx-3 mb-3 flex h-max justify-between overflow-hidden rounded-xl border bg-white p-2 shadow-lg md:hidden dark:border-dark_fg dark:bg-zinc-900"
+	class="fixed inset-x-0 bottom-0 z-20 mx-3 mb-3 flex h-max justify-between overflow-hidden rounded-xl bg-white p-2 shadow-lg md:hidden dark:bg-zinc-900 border border-gray-300 dark:border-dark_fg"
 >
 	<a
+		class:list={[ path === "/" ? "bg-zinc-300 dark:bg-zinc-600" : "" ]}
 		class="hover:inset-shadow-md flex-1 rounded-lg py-1 text-center align-middle text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
 		href="/"
 		aria-label="Back to homepage"
@@ -18,11 +21,18 @@ import { type Page, links } from "./Nav.astro";
 	{
 		links.map((link: Page) => (
 			<a
+				class:list={[
+					link.url === path ? "bg-zinc-300 dark:bg-zinc-600" : "",
+				]}
 				class="hover:inset-shadow-md flex-1 rounded-lg py-1 text-center align-middle text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
 				href={link.url}
 				aria-label={`Navigate to ${link.name}`}
 			>
-				<Icon name={`tabler:${link.icon}`} class="mx-auto my-2" size={18} />
+				<Icon
+					name={`tabler:${link.icon}`}
+					class="mx-auto my-2"
+					size={18}
+				/>
 				<span class="font-medium">{link.name}</span>
 			</a>
 		))
