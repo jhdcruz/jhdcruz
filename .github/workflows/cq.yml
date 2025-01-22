@@ -83,5 +83,8 @@ jobs:
                   node-version: 23
                   cache: "pnpm"
 
+            - name: Install deps
+              run: pnpm i --frozen-lockfile
+
             - name: Lint checks
               run: pnpm lint
