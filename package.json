@@ -28,7 +28,7 @@
     "flowbite": "2.5.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20250109.0",
+    "@cloudflare/workers-types": "4.20250121.0",
     "@iconify-json/tabler": "1.2.14",
     "@stylistic/eslint-plugin": "2.13.0",
     "@tailwindcss/vite": "4.0.0",
