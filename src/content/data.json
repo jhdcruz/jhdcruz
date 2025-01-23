@@ -1,0 +1,39 @@
+{
+  "languages": [
+    { "name": "JavaScript", "src": "/assets/tech/JavaScript.svg" },
+    { "name": "TypeScript", "src": "/assets/tech/TypeScript.svg" },
+    { "name": "Kotlin", "src": "/assets/tech/Kotlin.svg" },
+    { "name": "Java", "src": "/assets/tech/Java.svg" },
+    { "name": "Amber", "src": "/assets/tech/Amber.png" },
+    { "name": "Bash", "src": "/assets/tech/Bash.svg" }
+  ],
+  "frameworks": [
+    { "name": "React", "src": "/assets/tech/React.svg" },
+    { "name": "Next.js", "src": "/assets/tech/Next.js.svg" },
+    { "name": "Astro", "src": "/assets/tech/Astro.svg" },
+    { "name": "Solid.js", "src": "/assets/tech/Solid.js.svg" },
+    { "name": "Express", "src": "/assets/tech/Express.svg" },
+    { "name": "Node.js", "src": "/assets/tech/Node.js.svg" },
+    { "name": "Android", "src": "/assets/tech/Android.svg" },
+    { "name": "JUnit", "src": "/assets/tech/JUnit.svg" }
+  ],
+  "tooling": [
+    { "name": "AWS", "src": "/assets/tech/AWS.svg" },
+    { "name": "Docker", "src": "/assets/tech/Docker.svg" },
+    { "name": "Git", "src": "/assets/tech/Git.svg" },
+    { "name": "GitHub", "src": "/assets/tech/GitHub.svg" },
+    { "name": "GitHub Actions", "src": "/assets/tech/GitHub Actions.svg" },
+    { "name": "GitLab", "src": "/assets/tech/GitLab.svg" },
+    { "name": "Firebase", "src": "/assets/tech/Firebase.svg" },
+    { "name": "Cloudflare", "src": "/assets/tech/Cloudflare.svg" },
+    { "name": "Gradle", "src": "/assets/tech/Gradle.svg" },
+    { "name": "PostgreSQL", "src": "/assets/tech/PostgreSQL.svg" },
+    { "name": "Linux", "src": "/assets/tech/Linux.svg" },
+    { "name": "Ubuntu", "src": "/assets/tech/Ubuntu.svg" },
+    { "name": "Fedora", "src": "/assets/tech/Fedora.svg" },
+    {
+      "name": "Red Hat Linux Enterprise (RHEL)",
+      "src": "/assets/tech/Red Hat.svg"
+    }
+  ]
+}
