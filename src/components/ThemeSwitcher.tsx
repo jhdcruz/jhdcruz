@@ -13,7 +13,7 @@ export const ThemeSwitcher = () => {
                 setTheme(theme() === "light" ? "dark" : "light");
                 useTheme({ theme: theme() ?? "light" });
             }}
-            class="hover:inset-shadow-md rounded-full p-2.5 text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
+            class="hover:inset-shadow-md rounded-full p-2 text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
         >
             <Switch>
                 <Match when={theme() === "dark"}>

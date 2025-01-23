@@ -10,6 +10,11 @@ export interface Page {
 
 export const links: Page[] = [
     {
+        name: "Projects",
+        url: "/projects",
+        icon: "layout-2",
+    },
+    {
         name: "Services",
         url: "/services",
         icon: "cube-3d-sphere",
@@ -25,34 +30,33 @@ export const links: Page[] = [
         icon: "affiliate",
     },
 ];
-
-const path = typeof window !== "undefined" ? window.location.pathname : "/";
 ---
 
 <nav
     class="z-10 static mx-auto mb-3 flex h-max w-[97%] px-4 items-center justify-between overflow-hidden rounded-full border border-gray-300 bg-white p-2 align-middle shadow-lg md:w-max dark:border-dark_fg dark:bg-zinc-900"
 >
     <a
-        class="hover:inset-shadow-md mr-4 flex items-center rounded-full px-5 py-2 text-center align-middle text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
+        class="hover:inset-shadow-md flex items-center rounded-full px-5 py-2 text-center align-middle text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
         href="/"
         aria-label="Return to homepage"
     >
-        <Icon class="text-brand" name="tabler:at" size={16} />
+        <Icon class="text-brand" name="tabler:at" size={18} />
         <span class="font-bold text-lg">jhdcruz</span>
     </a>
 
-    <div
-        class="hidden items-center border border-gray-200 rounded-full inset-shadow-sm bg-zinc-100 p-1 md:flex dark:border-zinc-800 dark:bg-dark_fg"
-    >
+    <div class="hidden items-center rounded-full p-1 md:flex">
         {
             links.map((link: Page) => (
                 <a
                     class="hover:inset-shadow-md flex items-center rounded-full px-4 py-1 text-center align-middle text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
-                    class:list={[link.url === path ? "bg-zinc-300 dark:bg-zinc-600" : ""]}
                     href={link.url}
                     aria-label={`Navigate to ${link.name}`}
                 >
-                    <Icon name={`tabler:${link.icon}`} class="mx-0 my-1" size={18} />
+                    <Icon
+                        name={`tabler:${link.icon}`}
+                        class="mx-0 my-1"
+                        size={18}
+                    />
                     <span class="ml-1 font-medium">{link.name}</span>
                 </a>
             ))
