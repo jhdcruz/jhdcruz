@@ -24,8 +24,8 @@ importers:
         specifier: 5.0.4
         version: 5.0.4(@types/node@22.10.7)(jiti@2.4.2)(lightningcss@1.29.1)(solid-js@1.9.4)(yaml@2.7.0)
       '@tabler/icons-solidjs':
-        specifier: 3.28.1
-        version: 3.28.1(solid-js@1.9.4)
+        specifier: 3.29.0
+        version: 3.29.0(solid-js@1.9.4)
       astro:
         specifier: 5.1.8
         version: 5.1.8(@types/node@22.10.7)(jiti@2.4.2)(lightningcss@1.29.1)(rollup@4.31.0)(typescript@5.7.3)(yaml@2.7.0)
@@ -968,13 +968,13 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@tabler/icons-solidjs@3.28.1':
-    resolution: {integrity: sha512-C9heRthkV5c0kX+fxIgY7pdWRgGEVcvy15I6G5vLHBLO7N1Y5+i3VSlRbhYcEmFm6ewGjp1cdI456Cw7q8NZZg==}
+  '@tabler/icons-solidjs@3.29.0':
+    resolution: {integrity: sha512-lOKJwTIVBcfDlBsdtAu3VnpbYa5BfWW/xv6zpZWSU6N0KMPxVhPArPLn9xGT13ae9kXLKMrhiBtCExdc29NayQ==}
     peerDependencies:
       solid-js: ^1.4.7
 
-  '@tabler/icons@3.28.1':
-    resolution: {integrity: sha512-h7nqKEvFooLtFxhMOC1/2eiV+KRXhBUuDUUJrJlt6Ft6tuMw2eU/9GLQgrTk41DNmIEzp/LI83K9J9UUU8YBYQ==}
+  '@tabler/icons@3.29.0':
+    resolution: {integrity: sha512-VWNINymdmhay3MDvWVREmRwuWLSrX3YiInKvs5L4AHRF4bAfJabLlEReE0BW/XFsBt22ff8/C8Eam/LXlF97mA==}
 
   '@tailwindcss/node@4.0.0':
     resolution: {integrity: sha512-tfG2uBvo6j6kDIPmntxwXggCOZAt7SkpAXJ6pTIYirNdk5FBqh/CZZ9BZPpgcl/tNFLs6zc4yghM76sqiELG9g==}
@@ -4712,12 +4712,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tabler/icons-solidjs@3.28.1(solid-js@1.9.4)':
+  '@tabler/icons-solidjs@3.29.0(solid-js@1.9.4)':
     dependencies:
-      '@tabler/icons': 3.28.1
+      '@tabler/icons': 3.29.0
       solid-js: 1.9.4
 
-  '@tabler/icons@3.28.1': {}
+  '@tabler/icons@3.29.0': {}
 
   '@tailwindcss/node@4.0.0':
     dependencies:
