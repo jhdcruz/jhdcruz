@@ -5,6 +5,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 import expertiseData from "@/content/data.json";
 import projectsData from "@/content/projects.json";
+import Badge from "@/components/Badge.astro";
 
 const KV = Astro.locals.runtime.env.jhdcruz;
 const status = await KV.get("status");
@@ -235,7 +236,9 @@ export const prerender = false;
     </section>
 
     <!-- Featured Projects -->
-    <section class="bg-light mx-auto pb-6 mt-12 mb-6 md:mt-20 md:pb-8 dark:bg-dark">
+    <section
+        class="bg-light mx-auto pb-6 mt-12 mb-6 md:mt-20 md:pb-8 dark:bg-dark"
+    >
         <div class="mx-auto text-center max-w-screen-xl px-4 pt-8">
             <h2
                 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
@@ -266,9 +269,8 @@ export const prerender = false;
                             <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white text-center md:text-left">
                                 {project.title}
                             </h2>
-                            <p class="mt-1 mb-4 text-gray-500 dark:text-gray-400 text-center md:text-left">
-                                {project.type}
-                            </p>
+
+                            <Badge type={project.type} />
 
                             <p class="mb-6 text-gray-600 md:text-lg dark:text-gray-300">
                                 {project.description}

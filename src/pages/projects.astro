@@ -1,0 +1,72 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import projectsList from "@/content/projects.json";
+import { Icon } from "astro-icon/components";
+import Badge from "@/components/Badge.astro";
+---
+
+<BaseLayout subtitle="Projects">
+    <section
+        class="bg-light max-w-screen-lg pb-6 my-12 mx-auto mb-6 md:my-20 md:pb-8 dark:bg-dark antialiased px-10 md:px-6"
+    >
+        <h2 class="mb-1 text-4xl font-extrabold text-gray-900 dark:text-white">
+            Projects Directory
+        </h2>
+        <p
+            class="text-gray-500 sm:text-lg dark:text-gray-400"
+        >
+            Here are some of the public projects that I can share with you
+        </p>
+
+        <div
+            class="grid grid-cols-1 mt-8 sm:mt-10 gap-x-20 gap-y-12 lg:grid-cols-2"
+        >
+            {
+                projectsList.projects.map((project) => (
+                    <div class="space-y-4">
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            class="w-full h-72 aspect-video object-cover rounded-lg"
+                        />
+
+                        <Badge type={project.type} />
+                        <a
+                            href={project.url}
+                            class="text-2xl font-bold leading-tight text-gray-900 dark:text-white"
+                        >
+                            {project.title}
+                        </a>
+
+                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mt-3">
+                            {project.description}
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 mt-6 mb-10">
+                            {project.stack.map((tech) => (
+                                <img
+                                    class="h-9 max-w-full"
+                                    src={`/assets/tech/${tech}.svg`}
+                                    alt={tech}
+                                    title={tech}
+                                />
+                            ))}
+                        </div>
+
+                        <a
+                            href={project.url}
+                            class="inline-flex items-center justify-center w-full sm:w-auto text-center text-base font-semibold text-gray-800 dark:text-gray-200 decoration-2 underline-offset-8 hover:underline"
+                        >
+                            View repository
+                            <Icon
+                                class="ml-2"
+                                name="tabler:arrow-right"
+                                size={18}
+                            />
+                        </a>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+</BaseLayout>

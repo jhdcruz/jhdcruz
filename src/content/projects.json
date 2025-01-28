@@ -1,16 +1,16 @@
 {
   "projects": [
     {
-      "title": "Kipher",
-      "type": "JVM Library",
-      "description": "A multi-module cryptographic library for JVM applications that simplifies encryption/decryption using abstraction, with an automated CI/CD workflow for tests, builds, and publishing, streamlining the deployment process.",
+      "title": "Kipher Cryptography Library",
+      "type": "Library",
+      "description": "A multi-module cryptographic library for JVM applications that simplifies data encryption using method abstraction, built with an automated CI/CD workflow for tests, builds, and publishing, streamlining the deployment process.",
       "image": "/assets/projects/kipher.png",
       "url": "https://github.com/jhdcruz/kipher",
       "stack": ["Kotlin", "JUnit", "GitHub Actions", "Gradle"]
     },
     {
-      "title": "ProCESO",
-      "type": "Web Application",
+      "title": "ProCESO Outreach Platform",
+      "type": "Web App",
       "description": "An AI-powered web platform to streamline and centralize community outreach management, such as faculty delegation, activity reporting, archiving, automated e-certificate generation and distribution, and AI-driven feedback analysis.",
       "image": "/assets/projects/proceso.png",
       "url": "https://github.com/jhdcruz/ProCESO",
