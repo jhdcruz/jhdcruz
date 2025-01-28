@@ -1,9 +1,9 @@
 import { createSignal, Match, Switch } from "solid-js";
 import { IconMoonStars, IconSun } from "@tabler/icons-solidjs";
-import { useTheme, type ThemeProps } from "@/utils/theme";
+import { getTheme, useTheme, type ThemeProps } from "@/utils/theme";
 
 export const ThemeSwitcher = () => {
-    const [theme, setTheme] = createSignal<ThemeProps["theme"]>("light");
+    const [theme, setTheme] = createSignal<ThemeProps["theme"]>(getTheme() ?? "light");
 
     return (
         <button
