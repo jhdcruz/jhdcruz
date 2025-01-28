@@ -235,7 +235,7 @@ export const prerender = false;
     </section>
 
     <!-- Featured Projects -->
-    <section class="bg-light pb-6 mt-12 mb-6 md:mt-20 md:pb-8 dark:bg-dark">
+    <section class="bg-light mx-auto pb-6 mt-12 mb-6 md:mt-20 md:pb-8 dark:bg-dark">
         <div class="mx-auto text-center max-w-screen-xl px-4 pt-8">
             <h2
                 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
@@ -251,21 +251,22 @@ export const prerender = false;
         </div>
 
         <!-- Project Cards -->
-        <div class="mx-auto px-4">
+        <div class="mx-auto max-w-screen-xl px-4">
             {
                 // only get the first 2 projects
                 projectsData.projects.slice(0, 2).map((project) => (
-                    <div class="bg-white rounded-xl shadow-lg m-4 md:m-10 p-6 text-center md:text-left md:p-10 dark:bg-dark_fg gap-8 items-center xl:gap-16 md:grid md:grid-cols-2">
+                    <div class="bg-white rounded-xl shadow-lg m-4 lg:m-8 p-6 text-left md:p-10 dark:bg-dark_fg items-center lg:inline-flex">
                         <img
-                            class="w-full object-cover h-[380px] rounded-xl"
+                            class="object-cover h-[380px] w-[480px] aspect-video rounded-xl"
                             src={project.image}
                             alt=""
                         />
-                        <div class="mt-4 md:mt-0">
-                            <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white">
+
+                        <div class="mt-4 lg:mt-0 lg:ml-8 w-auto m-w-lg">
+                            <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white text-center md:text-left">
                                 {project.title}
                             </h2>
-                            <p class="mt-1 mb-4 text-gray-500 dark:text-gray-400">
+                            <p class="mt-1 mb-4 text-gray-500 dark:text-gray-400 text-center md:text-left">
                                 {project.type}
                             </p>
 
@@ -273,7 +274,7 @@ export const prerender = false;
                                 {project.description}
                             </p>
 
-                            <div class="flex flex-wrap gap-3 mt-3 mb-7">
+                            <div class="flex flex-wrap place-self-center md:place-self-start gap-3 mt-3 mb-7">
                                 {project.stack.map((tech) => (
                                     <img
                                         class="h-9 max-w-full"
@@ -286,7 +287,7 @@ export const prerender = false;
 
                             <a
                                 href={project.url}
-                                class="inline-flex justify-center items-center text-white bg-brand hover:bg-primary dark:bg-primary dark:hover:bg-amber-700 font-medium rounded-full text-sm px-6 py-2.5 text-center"
+                                class="inline-flex justify-center items-center w-full md:w-auto text-white bg-brand hover:bg-primary dark:bg-primary dark:hover:bg-amber-700 font-medium rounded-full text-sm px-6 py-2.5 text-center"
                             >
                                 View project
                                 <Icon
