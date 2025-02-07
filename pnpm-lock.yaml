@@ -33,8 +33,8 @@ importers:
         specifier: 1.1.5
         version: 1.1.5
       flowbite:
-        specifier: 3.1.1
-        version: 3.1.1(rollup@4.34.0)
+        specifier: 3.1.2
+        version: 3.1.2(rollup@4.34.0)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20250204.0
@@ -1937,8 +1937,8 @@ packages:
   flowbite@2.5.2:
     resolution: {integrity: sha512-kwFD3n8/YW4EG8GlY3Od9IoKND97kitO+/ejISHSqpn3vw2i5K/+ZI8Jm2V+KC4fGdnfi0XZ+TzYqQb4Q1LshA==}
 
-  flowbite@3.1.1:
-    resolution: {integrity: sha512-ZYj519lS7Ls+ek6jOi12JRJytDtwekJdnwSjDXhiS8G+k2j3X8HfFOGtbdrYey6h2+z/seEDSqsSjDca/wClxw==}
+  flowbite@3.1.2:
+    resolution: {integrity: sha512-MkwSgbbybCYgMC+go6Da5idEKUFfMqc/AmSjm/2ZbdmvoKf5frLPq/eIhXc9P+rC8t9boZtUXzHDgt5whZ6A/Q==}
 
   follow-redirects@1.15.9:
     resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
@@ -6035,7 +6035,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  flowbite@3.1.1(rollup@4.34.0):
+  flowbite@3.1.2(rollup@4.34.0):
     dependencies:
       '@popperjs/core': 2.11.8
       flowbite-datepicker: 1.3.2(rollup@4.34.0)
