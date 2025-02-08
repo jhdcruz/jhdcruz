@@ -40,8 +40,8 @@ importers:
         specifier: 4.20250204.0
         version: 4.20250204.0
       '@iconify-json/tabler':
-        specifier: 1.2.15
-        version: 1.2.15
+        specifier: 1.2.16
+        version: 1.2.16
       '@stylistic/eslint-plugin':
         specifier: 3.1.0
         version: 3.1.0(eslint@9.20.0(jiti@2.4.2))(typescript@5.7.3)
@@ -670,8 +670,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/tabler@1.2.15':
-    resolution: {integrity: sha512-EMEOt1PubLxcbwHMO9XmHT601A/2fCNd7fK50p5Qh42xvVxCvO3YhhGuGMAk6t6VkdSZYLQ14Y2bYPcom1aFeQ==}
+  '@iconify-json/tabler@1.2.16':
+    resolution: {integrity: sha512-gjvKz38+aOxfZtRvycYrASYipCsHRbCZ/Df49T0tfPntT0ur+qsgJ7PxCM4JF/Xs6+n3JkaFdiUz/N4ZZxDKdQ==}
 
   '@iconify/tools@4.1.1':
     resolution: {integrity: sha512-Hybu/HGhv6T8nLQhiG9rKx+ekF7NNpPOEQAy7JRSKht3s3dcFSsPccYzk24Znc9MTxrR6Gak3cg6CPP5dyvS2Q==}
@@ -4453,7 +4453,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@iconify-json/tabler@1.2.15':
+  '@iconify-json/tabler@1.2.16':
     dependencies:
       '@iconify/types': 2.0.0
 
