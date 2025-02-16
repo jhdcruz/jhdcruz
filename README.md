@@ -2,12 +2,9 @@
 
 ## Hi there :wave:
 
-- 🌐 I'm a full-stack web developer, with forte in front-end development.
-- ♾️ Long-term goal of being a DevOps/Platform Engineer that focuses on DX, and streamlining development pipelines.
-- 📚 Currently pursuing my last year of Bachelor's in Information Technology _(BSIT)_
-- 🌱 I’m interested in some Web3 space. ([Radicle](https://radicle.xyz), [Arweave](https://arweave.org/), [Hyperledger](https://www.hyperledger.org/))
-
-- [![wakatime](https://wakatime.com/badge/user/2537b94e-c04e-4938-8799-d88869388d8f.svg?style=flat-square)](https://wakatime.com/@2537b94e-c04e-4938-8799-d88869388d8f)
+- 🌐 I'm a software engineer, with forte in web development.
+- ♾️ Long-term goal of being a DevOps/Platform Engineer that focuses on DX, infrastructure, and streamlining development pipelines.
+- 🏆 Endgame as a Software Architect.
 
 <hr />
 
