@@ -39,16 +39,9 @@ export const useTheme = ({ theme }: ThemeProps = { theme: "light" }) => {
 
         default: {
             // Current/system preference for theme
-            const prefersDarkScheme = window.matchMedia(
-                "(prefers-color-scheme: dark)",
-            );
-            const currentTheme = localStorage.getItem("theme");
-
-            if (currentTheme === "dark" || prefersDarkScheme.matches) {
-                useTheme({ theme: "dark" });
-            } else {
-                useTheme({ theme: "light" });
-            }
+            localStorage.removeItem("theme");
+            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.remove("light");
         }
     }
 };

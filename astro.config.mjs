@@ -2,7 +2,7 @@
 import { defineConfig, passthroughImageService } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
 import partytown from "@astrojs/partytown";
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 import solidJs from "@astrojs/solid-js";
@@ -24,19 +24,14 @@ export default defineConfig({
         platformProxy: {
             enabled: true,
         },
-        imageService: "cloudflare"
+        imageService: "cloudflare",
     }),
     vite: {
         ssr: {
             noExternal: ["workerd", "astrojs/cloudflare"],
         },
+
         plugins: [tailwindcss()],
-        css: {
-            transformer: 'lightningcss',
-        },
-        build: {
-            cssMinify: 'lightningcss'
-        },
     },
     image: {
         service: passthroughImageService(),
