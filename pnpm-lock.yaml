@@ -24,8 +24,8 @@ importers:
         specifier: 5.0.5
         version: 5.0.5(@types/node@22.13.8)(jiti@2.4.2)(lightningcss@1.29.1)(solid-js@1.9.5)(yaml@2.7.0)
       '@tabler/icons-solidjs':
-        specifier: 3.30.0
-        version: 3.30.0(solid-js@1.9.5)
+        specifier: 3.31.0
+        version: 3.31.0(solid-js@1.9.5)
       '@tailwindcss/vite':
         specifier: ^4.0.6
         version: 4.0.9(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
@@ -962,13 +962,13 @@ packages:
     peerDependencies:
       eslint: '>=9.0.0'
 
-  '@tabler/icons-solidjs@3.30.0':
-    resolution: {integrity: sha512-tBtwAVw5Hc/3ESC7Zyr2sUPPU1JOvqlGrt8PuEATcjb5u2hogEm0aFwDvjUtYxKerswJA6ICckohDGYuJM9o/Q==}
+  '@tabler/icons-solidjs@3.31.0':
+    resolution: {integrity: sha512-NB0Tk8++ibD7L7qtabzqBs//G5U9mhq3UkTvEjCWnHg/W4TROeUZqksSXZ9venU9iRZ5rPIqkV20DEsIi8z9vw==}
     peerDependencies:
       solid-js: ^1.4.7
 
-  '@tabler/icons@3.30.0':
-    resolution: {integrity: sha512-c8OKLM48l00u9TFbh2qhSODMONIzML8ajtCyq95rW8vzkWcBrKRPM61tdkThz2j4kd5u17srPGIjqdeRUZdfdw==}
+  '@tabler/icons@3.31.0':
+    resolution: {integrity: sha512-dblAdeKY3+GA1U+Q9eziZ0ooVlZMHsE8dqP0RkwvRtEsAULoKOYaCUOcJ4oW1DjWegdxk++UAt2SlQVnmeHv+g==}
 
   '@tailwindcss/node@4.0.9':
     resolution: {integrity: sha512-tOJvdI7XfJbARYhxX+0RArAhmuDcczTC46DGCEziqxzzbIaPnfYaIyRT31n4u8lROrsO7Q6u/K9bmQHL2uL1bQ==}
@@ -4726,12 +4726,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tabler/icons-solidjs@3.30.0(solid-js@1.9.5)':
+  '@tabler/icons-solidjs@3.31.0(solid-js@1.9.5)':
     dependencies:
-      '@tabler/icons': 3.30.0
+      '@tabler/icons': 3.31.0
       solid-js: 1.9.5
 
-  '@tabler/icons@3.30.0': {}
+  '@tabler/icons@3.31.0': {}
 
   '@tailwindcss/node@4.0.9':
     dependencies:
