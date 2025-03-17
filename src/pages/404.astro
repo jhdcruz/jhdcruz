@@ -4,23 +4,24 @@ import { Icon } from "astro-icon/components";
 ---
 
 <BaseLayout subtitle="404 - Page not found">
-    <section>
-        <div class="mx-auto max-w-screen-xl px-4 py-12 lg:px-6 lg:py-28">
-            <div class="mx-auto text-center">
-                <h1 class="mb-8 text-5xl font-bold tracking-tight md:text-7xl">
-                    This page does <span class="font-extrabold text-brand">not exist</span>.
-                </h1>
-                <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
-                    Perhaps you're not allowed to access it?
-                </p>
-                <a
-                    href="/"
-                    class="my-4 inline-flex rounded-full bg-primary-600 px-7 py-3 text-center text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                >
-                    <Icon name="tabler:home-spark" size={20} class="mr-2" />
-                    Back to Homepage
-                </a>
-            </div>
-        </div>
-    </section>
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-12 lg:px-6 lg:py-28">
+      <div class="mx-auto text-center">
+        <h1 class="mb-8 text-5xl font-bold tracking-tight md:text-7xl">
+          This page does <span class="text-brand font-extrabold">not exist</span
+          >.
+        </h1>
+        <p class="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
+          Perhaps you're not allowed to access it?
+        </p>
+        <a
+          href="/"
+          class="bg-primary-600 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 my-4 inline-flex rounded-full px-7 py-3 text-center text-sm font-medium text-white focus:ring-4 focus:outline-none"
+        >
+          <Icon name="tabler:home-spark" size={20} class="mr-2" />
+          Back to Homepage
+        </a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

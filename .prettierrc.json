@@ -1,12 +1,12 @@
 {
-  "plugins": ["prettier-plugin-tailwindcss"],
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   "endOfLine": "lf",
-  "tabWidth": 4,
+  "tabWidth": 2,
   "overrides": [
     {
-      "files": "*.json",
+      "files": "*.astro",
       "options": {
-        "tabWidth": 2
+        "parser": "astro"
       }
     }
   ]

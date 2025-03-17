@@ -9,42 +9,42 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://deuz.tech",
-    prefetch: {
-        prefetchAll: true,
+  site: "https://deuz.tech",
+  prefetch: {
+    prefetchAll: true,
+  },
+  experimental: {
+    responsiveImages: true,
+  },
+  server: {
+    port: 3000,
+    host: true,
+  },
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true,
     },
-    experimental: {
-        responsiveImages: true,
+    imageService: "cloudflare",
+  }),
+  vite: {
+    ssr: {
+      noExternal: ["workerd", "astrojs/cloudflare"],
     },
-    server: {
-        port: 3000,
-        host: true,
-    },
-    adapter: cloudflare({
-        platformProxy: {
-            enabled: true,
-        },
-        imageService: "cloudflare",
-    }),
-    vite: {
-        ssr: {
-            noExternal: ["workerd", "astrojs/cloudflare"],
-        },
 
-        plugins: [tailwindcss()],
-    },
-    image: {
-        service: passthroughImageService(),
-        experimentalLayout: "responsive",
-    },
-    integrations: [
-        react(),
-        partytown(),
-        sitemap(),
-        icon({
-            include: {
-                tabler: ["*"],
-            },
-        }),
-    ],
+    plugins: [tailwindcss()],
+  },
+  image: {
+    service: passthroughImageService(),
+    experimentalLayout: "responsive",
+  },
+  integrations: [
+    react(),
+    partytown(),
+    sitemap(),
+    icon({
+      include: {
+        tabler: ["*"],
+      },
+    }),
+  ],
 });

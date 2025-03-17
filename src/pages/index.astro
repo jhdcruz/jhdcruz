@@ -1,361 +1,298 @@
 ---
+import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
-import WorkStatus from "@/components/WorkStatus.astro";
+import LandingHero from "@/features/Landing/LandingHero.astro";
 import Badge from "@/components/Badge.astro";
+import { WarpBackground } from "@/components/magicui/warp-background";
 
 import expertiseData from "@/content/data.json";
 import projectsData from "@/content/projects.json";
-
-// Get the availability status from CF KV
-const KV = Astro.locals.runtime.env.jhdcruz;
-const status = await KV.get("status");
 
 export const prerender = false;
 ---
 
 <BaseLayout>
-    <section class="relative">
-        <div
-            class="mx-auto max-w-screen-xl px-4 py-8 text-center lg:px-12 lg:pt-16"
+  <WarpBackground beamSize={2} client:only="react">
+    <div slot="fallback" class="p-8">
+      <LandingHero />
+    </div>
+
+    <LandingHero />
+  </WarpBackground>
+
+  <hr class="mx-auto block h-px w-full border-0 bg-gray-200 dark:bg-zinc-800" />
+
+  <!-----------------------------------------------------------
+    CORE VALUES SECTION
+  ------------------------------------------------------------>
+  <section class="dark:bg-dark mt-4 text-center">
+    <div class="mx-auto max-w-screen-xl px-4 pt-8 pb-16">
+      <div class="mb-6 lg:mb-12">
+        <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+          Core Values
+        </h2>
+        <p
+          class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
         >
-            <!-- Work availability -->
-            <WorkStatus status={status ?? "busy"} server:defer>
-                <div slot="fallback">
-                    <div
-                        class="mb-5 inline-flex h-(36px) w-(378px) animate-pulse items-center justify-between rounded-full bg-gray-200 p-1 pr-4 dark:bg-zinc-700"
-                    >
-                    </div>
-                </div>
-            </WorkStatus>
-
-            <div class="rounded-xl backdrop-blur-sm">
-                <!-- Title -->
-                <h1
-                    class="pb-6 mt-2 md:mt-0 text-6xl leading-tight font-[900] drop-shadow-lg lg:text-7xl"
-                >
-                    Delivering
-                    <span class="text-brand">intuitive</span>
-                    and
-                    <span class="text-brand">effective</span>
-                    technology solutions.
-                </h1>
-
-                <!-- Subtitle -->
-                <p
-                    class="mb-10 mt-6 font-normal text-gray-500 dark:text-zinc-400 sm:px-16 lg:text-xl xl:px-48"
-                >
-                    Whether you need assistance with product realization,
-                    infrastructure platform, or a reliable partner,
-                    <span class="font-bold text-brand"
-                    >I can help with that.</span
-                    >
-                </p>
-            </div>
-
-            <!-- CTAs -->
-            <div
-                class="mb-8 flex flex-col space-y-8 sm:flex-row sm:justify-center sm:space-x-8 sm:space-y-0 lg:mb-10"
-            >
-                <a
-                    href="/services"
-                    class="inline-flex items-center justify-center rounded-full bg-brand hover:bg-primary px-9 py-3 text-center text-base font-medium text-white dark:bg-primary dark:hover:bg-amber-700 focus:ring-4 focus:ring-primary/50 dark:focus:ring-primary/100"
-                >
-                    I want something built
-                    <Icon class="ml-2" name="tabler:code" size={20} />
-                </a>
-                <a
-                    href="/connect"
-                    class="inline-flex items-center justify-center text-center text-base font-medium text-gray-800 dark:text-gray-200 decoration-2 underline-offset-8 hover:underline"
-                >
-                    Connect with me
-                    <Icon class="ml-2" name="tabler:arrow-right" size={20} />
-                </a>
-            </div>
+          When part of the team, I am committed to upholding key principles that
+          governs my work.
+        </p>
+      </div>
+      <div
+        class="mx-auto space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3"
+      >
+        <div>
+          <div
+            class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
+          >
+            <Icon
+              class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
+              name="tabler:code-asterisk"
+              size={32}
+            />
+          </div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Clean Code</h3>
+          <p class="text-gray-500 dark:text-gray-400">
+            Writing clean, well-structured code that is easy to understand and
+            maintain. Adhering on established practices.
+          </p>
         </div>
-    </section>
-
-    <hr
-        class="my-12 block h-px w-full mx-auto border-0 bg-gray-200 dark:bg-zinc-800"
-    />
-
-    <!-- Core Values -->
-    <section class="mt-4 bg-light text-center dark:bg-dark">
-        <div class="mx-auto max-w-screen-xl px-4 pb-16 pt-8">
-            <div class="mb-6 lg:mb-12">
-                <h2
-                    class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
-                >
-                    Core Values
-                </h2>
-                <p
-                    class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
-                >
-                    When part of the team, I am committed to upholding key
-                    principles that governs my work.
-                </p>
-            </div>
-            <div
-                class="mx-auto space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3"
-            >
-                <div>
-                    <div
-                        class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
-                    >
-                        <Icon
-                            class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
-                            name="tabler:code-asterisk"
-                            size={32}
-                        />
-                    </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">
-                        Clean Code
-                    </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Writing clean, well-structured code that is easy to
-                        understand and maintain. Adhering on established
-                        practices.
-                    </p>
-                </div>
-                <div>
-                    <div
-                        class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
-                    >
-                        <Icon
-                            class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
-                            name="tabler:infinity"
-                            size={32}
-                        />
-                    </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">
-                        Continuous Learning
-                    </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
-                        Passionate about continuously improving my skills and
-                        adopting new technologies to deliver the best possible
-                        solutions for my clients.
-                    </p>
-                </div>
-                <div>
-                    <div
-                        class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
-                    >
-                        <Icon
-                            class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
-                            name="tabler:users-group"
-                            size={32}
-                        />
-                    </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">
-                        Collaborative Approach
-                    </h3>
-                    <p class="text-gray-500 dark:text-gray-400">
-                        I believe in an open and communicative work style,
-                        actively engaging with clients and teammates to ensure
-                        alignment.
-                    </p>
-                </div>
-            </div>
+        <div>
+          <div
+            class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
+          >
+            <Icon
+              class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
+              name="tabler:infinity"
+              size={32}
+            />
+          </div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">
+            Continuous Learning
+          </h3>
+          <p class="text-gray-500 dark:text-gray-400">
+            Passionate about continuously improving my skills and adopting new
+            technologies to deliver the best possible solutions for my clients.
+          </p>
         </div>
-    </section>
+        <div>
+          <div
+            class="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-amber-100 lg:size-14 dark:bg-amber-900"
+          >
+            <Icon
+              class="size-6 text-amber-600 lg:size-7 dark:text-amber-300"
+              name="tabler:users-group"
+              size={32}
+            />
+          </div>
+          <h3 class="mb-2 text-xl font-bold dark:text-white">
+            Collaborative Approach
+          </h3>
+          <p class="text-gray-500 dark:text-gray-400">
+            I believe in an open and communicative work style, actively engaging
+            with clients and teammates to ensure alignment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- My Expertise -->
-    <section
-        class="bg-light pb-6 text-center my-12 md:my-20 md:pb-12 dark:bg-dark"
+  <!-----------------------------------------------------------
+    MY EXPERTISE SECTION
+  ------------------------------------------------------------>
+  <section class="dark:bg-dark my-12 pb-6 text-center md:my-20 md:pb-12">
+    <div class="mx-auto max-w-screen-xl px-4 pt-8 pb-8 md:pb-16">
+      <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+        My Expertise
+      </h2>
+      <p
+        class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
+      >
+        I strive to deliver performant and high-quality software solutions that
+        meets user needs and make a positive impact.
+      </p>
+    </div>
+
+    <!-- Tech Stack Image Grid -->
+    <div
+      class="mx-auto grid grid-cols-1 gap-4 px-10 sm:grid-cols-2 md:max-w-screen-xl md:grid-cols-3"
     >
-        <div class="mx-auto max-w-screen-xl px-4 pt-8 pb-8 md:pb-16">
-            <h2
-                class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
-            >
-                My Expertise
-            </h2>
-            <p
-                class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
-            >
-                I strive to deliver performant and high-quality software
-                solutions that meets user needs and make a positive impact.
-            </p>
+      <div class="px-4">
+        <h3 class="text-xl font-bold dark:text-white">Languages:</h3>
+        <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+        <div class="flex flex-wrap justify-center gap-4">
+          {
+            expertiseData.languages.map((language) => (
+              <Image
+                width={48}
+                height={48}
+                class="rounded-lg"
+                src={language.src}
+                alt={language.name}
+                title={language.name}
+              />
+            ))
+          }
         </div>
+      </div>
 
-        <!-- Tech Stack Image Grid -->
-        <div
-            class="mx-auto grid grid-cols-1 gap-4 px-10 sm:grid-cols-2 md:max-w-screen-xl md:grid-cols-3"
-        >
-            <div class="px-4">
-                <h3 class="text-xl font-bold dark:text-white">Languages:</h3>
-                <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-                <div class="flex flex-wrap justify-center gap-4">
-                    {
-                        expertiseData.languages.map((language) => (
-                            <img
-                                class="h-14 max-w-full rounded-lg"
-                                src={language.src}
-                                alt={language.name}
-                                title={language.name}
-                            />
-                        ))
-                    }
-                </div>
-            </div>
-
-            <div class="px-4">
-                <h3 class="text-xl font-bold dark:text-white">
-                    Frameworks & Libraries:
-                </h3>
-                <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-                <div class="flex flex-wrap justify-center gap-4">
-                    {
-                        expertiseData.frameworks.map((framework) => (
-                            <img
-                                class="h-14 max-w-full rounded-lg"
-                                src={framework.src}
-                                alt={framework.name}
-                                title={framework.name}
-                            />
-                        ))
-                    }
-                </div>
-            </div>
-
-            <div class="px-4">
-                <h3 class="text-xl font-bold dark:text-white">Tooling:</h3>
-                <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-                <div class="flex flex-wrap justify-center gap-4">
-                    {
-                        expertiseData.tooling.map((tool) => (
-                            <img
-                                class="h-14 max-w-full rounded-lg"
-                                src={tool.src}
-                                alt={tool.name}
-                                title={tool.name}
-                            />
-                        ))
-                    }
-                </div>
-            </div>
+      <div class="px-4">
+        <h3 class="text-xl font-bold dark:text-white">
+          Frameworks & Libraries:
+        </h3>
+        <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+        <div class="flex flex-wrap justify-center gap-4">
+          {
+            expertiseData.frameworks.map((framework) => (
+              <Image
+                width={48}
+                height={48}
+                class="rounded-lg"
+                src={framework.src}
+                alt={framework.name}
+                title={framework.name}
+              />
+            ))
+          }
         </div>
-    </section>
+      </div>
 
-    <!-- Featured Projects -->
-    <section
-        class="bg-light mx-auto pb-6 mt-12 mb-6 md:mt-20 md:pb-8 dark:bg-dark"
-    >
-        <div class="mx-auto text-center max-w-screen-xl px-4 pt-8">
-            <h2
-                class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
-            >
-                Featured Projects
-            </h2>
-            <p
-                class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
-            >
-                Here are some of the projects I've worked on that showcases my
-                skills and expertise.
-            </p>
+      <div class="px-4">
+        <h3 class="text-xl font-bold dark:text-white">Tooling:</h3>
+        <hr class="my-6 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+        <div class="flex flex-wrap justify-center gap-4">
+          {
+            expertiseData.tooling.map((tool) => (
+              <Image
+                width={48}
+                height={48}
+                class="rounded-lg"
+                src={tool.src}
+                alt={tool.name}
+                title={tool.name}
+              />
+            ))
+          }
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Project Cards -->
-        <div class="mx-auto max-w-screen-xl px-4">
-            {
-                // only get the first 2 projects
-                projectsData.projects.slice(0, 2).map((project) => (
-                    <div class="bg-white rounded-xl shadow-lg m-4 lg:m-8 p-6 text-left md:p-10 dark:bg-dark_fg items-center lg:inline-flex">
-                        <img
-                            class="object-cover h-[380px] w-[480px] aspect-video rounded-xl"
-                            src={project.image}
-                            alt=""
-                        />
+  <!-----------------------------------------------------------
+    FEATURED PROJECTS SECTION
+  ------------------------------------------------------------>
+  <section class="dark:bg-dark mx-auto mt-12 mb-6 pb-6 md:mt-20 md:pb-8">
+    <div class="mx-auto max-w-screen-xl px-4 pt-8 text-center">
+      <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+        Featured Projects
+      </h2>
+      <p
+        class="mx-auto max-w-screen-md text-gray-500 sm:text-lg dark:text-gray-400"
+      >
+        Here are some of the projects I've worked on that showcases my skills
+        and expertise.
+      </p>
+    </div>
 
-                        <div class="mt-4 lg:mt-0 lg:ml-8 w-auto m-w-lg">
-                            <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white text-center md:text-left">
-                                {project.title}
-                            </h2>
+    <!-- Project Cards -->
+    <div class="mx-auto max-w-screen-xl px-4">
+      {
+        // only get the first 2 projects
+        projectsData.projects.slice(0, 2).map((project) => (
+          <div class="dark:bg-dark_fg m-4 items-center rounded-xl bg-white p-6 text-left md:p-10 lg:m-8 lg:inline-flex">
+            <Image
+              width={540}
+              height={352}
+              class="rounded-xl object-cover"
+              src={project.image}
+              alt=""
+            />
 
-                            <Badge type={project.type} />
+            <div class="m-w-lg mt-4 w-auto lg:mt-0 lg:ml-8">
+              <h2 class="text-center text-4xl font-extrabold text-gray-900 md:text-left dark:text-white">
+                {project.title}
+              </h2>
 
-                            <p class="mb-6 text-gray-600 md:text-lg dark:text-gray-300">
-                                {project.description}
-                            </p>
+              <span class="flex justify-self-center md:justify-self-start">
+                <Badge type={project.type} />
+              </span>
 
-                            <div class="flex flex-wrap place-self-center md:place-self-start gap-3 mt-3 mb-7">
-                                {project.stack.map((tech) => (
-                                    <img
-                                        class="h-9 max-w-full"
-                                        src={`/assets/tech/${tech}.svg`}
-                                        alt={tech}
-                                        title={tech}
-                                    />
-                                ))}
-                            </div>
+              <p class="mb-6 text-gray-600 md:text-lg dark:text-gray-300">
+                {project.description}
+              </p>
 
-                            <a
-                                href={project.url}
-                                class="inline-flex justify-center items-center w-full md:w-auto text-white bg-brand hover:bg-primary dark:bg-primary dark:hover:bg-amber-700 font-medium rounded-full text-sm px-6 py-2.5 text-center"
-                            >
-                                View project
-                                <Icon
-                                    class="ml-2"
-                                    name="tabler:arrow-right"
-                                    size={18}
-                                />
-                            </a>
-                        </div>
-                    </div>
-                ))
-            }
+              <div class="mt-3 mb-7 flex flex-wrap gap-3 place-self-center md:place-self-start">
+                {project.stack.map((tech) => (
+                  <Image
+                    width={40}
+                    height={40}
+                    src={`/assets/tech/${tech}.svg`}
+                    alt={tech}
+                    title={tech}
+                  />
+                ))}
+              </div>
 
-            <!-- All projects redirect -->
-            <a
-                href="/projects"
-                class="mt-12 flex items-center justify-center text-center text-base font-medium text-gray-800 dark:text-gray-200 decoration-2 underline-offset-8 hover:underline"
-            >
-                View all projects
+              <a
+                href={project.url}
+                class="bg-brand hover:bg-primary dark:bg-primary inline-flex w-full items-center justify-center rounded-full px-6 py-2.5 text-center text-sm font-medium text-white md:w-auto dark:hover:bg-amber-700"
+              >
+                View project
                 <Icon class="ml-2" name="tabler:arrow-right" size={18} />
-            </a>
-        </div>
-
-        <!-- Bottom CTA -->
-        <section class="text-center md:p-10 mt-10 md:mt-20">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                <div class="mx-auto text-center max-w-screen-md">
-                    <h2
-                        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-                    >
-                        Let's create tools and apps that makes a difference.
-                    </h2>
-                    <p
-                        class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
-                    >
-                        Let me be your partner in developing cutting-edge
-                        applications and tools that drive real business impact.
-                        Together, we can build impactful and innovative
-                        applications that brings user satisfaction.
-                    </p>
-                    <div
-                        class="flex flex-wrap flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6"
-                    >
-                        <a
-                            href="/connect"
-                            class="inline-flex justify-center items-center text-white bg-brand hover:bg-primary dark:bg-primary dark:hover:bg-amber-700 font-medium rounded-full text-sm px-7 py-2.5 text-center"
-                        >
-                            Get in touch
-                            <Icon class="ml-2" name="tabler:send-2" size={20} />
-                        </a>
-                        <a
-                            href="/services"
-                            class="inline-flex items-center justify-center text-center text-base font-medium text-gray-800 dark:text-gray-200 decoration-2 underline-offset-8 hover:underline"
-                        >
-                            View offered services
-                            <Icon
-                                class="ml-2"
-                                name="tabler:arrow-right"
-                                size={18}
-                            />
-                        </a>
-                    </div>
-                </div>
+              </a>
             </div>
-        </section>
+          </div>
+        ))
+      }
+
+      <!-- All projects redirect -->
+      <a
+        href="/projects"
+        class="mt-12 flex items-center justify-center text-center text-base font-medium text-gray-800 decoration-2 underline-offset-8 hover:underline dark:text-gray-200"
+      >
+        View all projects
+        <Icon class="ml-2" name="tabler:arrow-right" size={18} />
+      </a>
+    </div>
+
+    <!-----------------------------------------------------------
+      BOTTOM CTA SECTION
+    ------------------------------------------------------------>
+    <section class="mt-10 text-center md:mt-20 md:p-10">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md text-center">
+          <h2
+            class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+          >
+            Together, we can create innovative solutions
+          </h2>
+          <p class="mb-6 text-gray-500 md:text-lg dark:text-gray-400">
+            Let me be your partner in providing technology solutions that drive
+            real business impact. <br /> We will build solutions that brings users'
+            satisfaction.
+          </p>
+          <div
+            class="flex flex-col flex-wrap items-center justify-center gap-4 sm:flex-row sm:gap-6"
+          >
+            <a
+              href="/connect"
+              class="bg-brand hover:bg-primary dark:bg-primary inline-flex items-center justify-center rounded-full px-7 py-2.5 text-center text-sm font-medium text-white dark:hover:bg-amber-700"
+            >
+              Get in touch
+              <Icon class="ml-2" name="tabler:send-2" size={20} />
+            </a>
+            <a
+              href="/services"
+              class="inline-flex items-center justify-center text-center text-base font-medium text-gray-800 decoration-2 underline-offset-8 hover:underline dark:text-gray-200"
+            >
+              View offered services
+              <Icon class="ml-2" name="tabler:arrow-right" size={18} />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
+  </section>
 </BaseLayout>

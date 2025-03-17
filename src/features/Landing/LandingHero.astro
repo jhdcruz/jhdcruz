@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon/components";
+import WorkStatus from "@/components/WorkStatus.astro";
+
+// Get the availability status from CF KV
+const KV = Astro.locals.runtime.env.jhdcruz;
+const status = await KV.get("status");
+---
+
+<>
+  <div class="mx-auto max-w-screen-xl py-8 text-center lg:px-12">
+    <!-- Work availability -->
+    <WorkStatus status={status ?? "busy"} server:defer>
+      <div slot="fallback">
+        <div
+          class="mb-5 inline-flex h-[36px] w-[378px] animate-pulse items-center justify-between rounded-full bg-gray-200 p-1 align-middle dark:bg-zinc-700"
+        >
+        </div>
+      </div>
+    </WorkStatus>
+
+    <div class="rounded-xl">
+      <!-- Title -->
+      <h1
+        class="mt-2 text-6xl leading-tight font-[900] drop-shadow-lg md:mt-0 lg:text-7xl"
+      >
+        I deliver
+        <span class="text-brand">Efficient</span>
+        and
+        <span class="text-brand">Quality</span>
+        technology solutions.
+      </h1>
+
+      <!-- Subtitle -->
+      <p
+        class="mt-6 mb-6 font-normal text-gray-500 sm:px-16 lg:text-xl xl:px-48 dark:text-zinc-400"
+      >
+        Whether you need assistance with product realization, infrastructure
+        platform, or a reliable partner,
+        <span class="text-brand font-bold">I can help with that.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- CTAs -->
+  <div
+    class="mb-8 flex flex-col space-y-8 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-8 lg:mb-10"
+  >
+    <a
+      href="/services"
+      class="bg-brand hover:bg-primary dark:bg-primary focus:ring-primary/50 dark:focus:ring-primary/100 inline-flex items-center justify-center rounded-full px-9 py-3 text-center text-base font-medium text-white focus:ring-4 dark:hover:bg-amber-700"
+    >
+      I want something built <Icon class="ml-2" name="tabler:code" size={20} />
+    </a>
+    <a
+      href="/connect"
+      class="inline-flex items-center justify-center text-center text-base font-medium text-gray-800 decoration-2 underline-offset-8 hover:underline dark:text-gray-200"
+    >
+      Connect with me
+      <Icon class="ml-2" name="tabler:arrow-right" size={20} />
+    </a>
+  </div>
+</>

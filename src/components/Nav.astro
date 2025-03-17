@@ -3,81 +3,77 @@ import { Icon } from "astro-icon/components";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export interface Page {
-    name: string;
-    url: string;
-    icon: string;
+  name: string;
+  url: string;
+  icon: string;
 }
 
 export const links: Page[] = [
-    {
-        name: "Projects",
-        url: "/projects",
-        icon: "layout-2",
-    },
-    {
-        name: "Services",
-        url: "/services",
-        icon: "cube-3d-sphere",
-    },
-    {
-        name: "Blog",
-        url: "/blog",
-        icon: "news",
-    },
-    {
-        name: "Connect",
-        url: "/connect",
-        icon: "affiliate",
-    },
+  {
+    name: "Projects",
+    url: "/projects",
+    icon: "layout-2",
+  },
+  {
+    name: "Services",
+    url: "/services",
+    icon: "cube-3d-sphere",
+  },
+  {
+    name: "Blog",
+    url: "/blog",
+    icon: "news",
+  },
+  {
+    name: "Connect",
+    url: "/connect",
+    icon: "affiliate",
+  },
 ];
 ---
 
 <nav
-    class="z-10 static mx-auto mb-3 flex h-max w-[97%] px-4 items-center justify-between overflow-hidden rounded-full border border-gray-300 bg-white p-2 align-middle shadow-lg md:w-max dark:border-dark_fg dark:bg-zinc-900"
+  class="static z-10 mx-auto border-b flex h-max w-full items-center justify-between overflow-hidden pb-4 pt-2 px-4 align-middle xl:px-60"
 >
-    <a
-        class="hover:inset-shadow-md flex items-center rounded-full px-5 py-2 text-center align-middle text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
-        href="/"
-        aria-label="Return to homepage"
-    >
-        <Icon class="text-brand" name="tabler:at" size={18} />
-        <span class="font-bold text-lg">jhdcruz</span>
-    </a>
+  <a
+    class="flex items-center rounded-full px-5 py-2 text-center align-middle text-zinc-700 decoration-2 underline-offset-4 hover:underline dark:text-white"
+    href="/"
+    aria-label="Return to homepage"
+  >
+    <Icon class="text-brand" name="tabler:at" size={19} />
+    <span class="text-xl font-extrabold">jhdcruz</span>
+  </a>
 
-    <div class="hidden items-center rounded-full p-1 md:flex">
-        {
-            links.map((link: Page) => (
-                <a
-                    class="hover:inset-shadow-md flex items-center rounded-full px-4 py-1 text-center align-middle text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
-                    href={link.url}
-                    aria-label={`Navigate to ${link.name}`}
-                >
-                    <Icon
-                        name={`tabler:${link.icon}`}
-                        class="mx-0 my-1"
-                        size={18}
-                    />
-                    <span class="ml-1 font-medium">{link.name}</span>
-                </a>
-            ))
-        }
-    </div>
-
-    <div class="ml-8 sm:ml-20 flex items-center space-x-2 align-middle">
-        <ThemeSwitcher client:only="react">
-            <div slot="fallback">
-                <div
-                    class="size-[36px] animate-pulse rounded-full bg-gray-200 dark:bg-zinc-700"
-                >
-                </div>
-            </div>
-        </ThemeSwitcher>
-
+  <div class="mx-auto hidden w-max items-center rounded-full p-1 md:flex">
+    {
+      links.map((link: Page) => (
         <a
-            href="/login"
-            class="block items-center justify-center rounded-full ml-2 border-2 border-brand bg-transparent px-5 py-2 text-center text-sm font-medium hover:border-brand focus:ring-4 focus:ring-primary dark:text-white dark:focus:primary"
+          class="hover:inset-shadow-md flex items-center rounded-full px-5 py-1 text-center align-middle text-sm font-medium text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
+          href={link.url}
+          aria-label={`Navigate to ${link.name}`}
         >
-            Already a client?
+          <Icon name={`tabler:${link.icon}`} class="mx-0 my-1" size={18} />
+          <span class="ml-1 font-medium">{link.name}</span>
         </a>
-    </div>
+      ))
+    }
+  </div>
+
+  <div class="flex items-center space-x-2 align-middle">
+    <ThemeSwitcher client:only="react">
+      <div slot="fallback">
+        <div
+          class="size-[36px] animate-pulse rounded-full bg-gray-200 dark:bg-zinc-700"
+        >
+        </div>
+      </div>
+    </ThemeSwitcher>
+
+    <a
+      href="/login"
+      class="border-brand hover:border-brand focus:ring-primary dark:focus:primary ml-2 block items-center justify-center rounded-full border-2 bg-transparent px-5 py-2 text-center text-sm font-medium focus:ring-4 dark:text-white"
+    >
+      Already a client?
+    </a>
+  </div>
 </nav>

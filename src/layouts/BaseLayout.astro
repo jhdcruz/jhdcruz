@@ -2,60 +2,60 @@
 import Nav from "@/components/Nav.astro";
 import MobileNav from "@/components/MobileNav.astro";
 import Footer from "@/components/Footer.astro";
-import "../global.css";
+import "@/styles/theme.css";
 
 const { subtitle } = Astro.props;
 ---
 
-<html lang="en" class="scroll-smooth bg-light dark:bg-dark">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..900"
-            rel="stylesheet"
-        />
-        <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
-        <meta
-            name="description"
-            content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html lang="en" class="bg-light dark:bg-dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..900"
+      rel="stylesheet"
+    />
+    <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
+    <meta
+      name="description"
+      content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <script is:inline>
-            function siteTheme() {
-                const theme = localStorage.getItem("theme");
-                const prefersDark = window.matchMedia(
-                    "(prefers-color-scheme: dark)"
-                ).matches;
+    <script is:inline>
+      function siteTheme() {
+        const theme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
 
-                if (theme === "dark" || (!theme && prefersDark)) {
-                    document.documentElement.classList.add("dark");
-                    document.documentElement.classList.remove("light");
-                    localStorage.setItem("theme", "dark");
-                } else {
-                    document.documentElement.classList.remove("dark");
-                    document.documentElement.classList.add("light");
-                    localStorage.setItem("theme", "light");
-                }
-            }
+        if (theme === "dark" || (!theme && prefersDark)) {
+          document.documentElement.classList.add("dark");
+          document.documentElement.classList.remove("light");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+          document.documentElement.classList.add("light");
+          localStorage.setItem("theme", "light");
+        }
+      }
 
-            siteTheme();
-            document.addEventListener("astro:after-swap", siteTheme);
-        </script>
-    </head>
+      siteTheme();
+      document.addEventListener("astro:after-swap", siteTheme);
+    </script>
+  </head>
 
-    <body class="bg-light pt-4 font-sans dark:bg-dark">
-        <Nav />
-        <MobileNav />
+  <body class="dark:bg-dark bg-white pt-4 font-sans">
+    <Nav />
+    <MobileNav />
 
-        <main class="dark:text-light">
-            <slot />
-        </main>
+    <main class="dark:text-light">
+      <slot />
+    </main>
 
-        <Footer />
-    </body>
+    <Footer />
+  </body>
 </html>
