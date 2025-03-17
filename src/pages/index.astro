@@ -1,12 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
-import WorkStatus from "@/components/WorkStatus.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import WorkStatus from "@/components/WorkStatus.astro";
+import Badge from "@/components/Badge.astro";
 
 import expertiseData from "@/content/data.json";
 import projectsData from "@/content/projects.json";
-import Badge from "@/components/Badge.astro";
 
+// Get the availability status from CF KV
 const KV = Astro.locals.runtime.env.jhdcruz;
 const status = await KV.get("status");
 

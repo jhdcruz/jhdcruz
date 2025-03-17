@@ -2,10 +2,10 @@
 import { defineConfig, passthroughImageService } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
 import partytown from "@astrojs/partytown";
+import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
-import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
@@ -38,6 +38,7 @@ export default defineConfig({
         experimentalLayout: "responsive",
     },
     integrations: [
+        react(),
         partytown(),
         sitemap(),
         icon({
@@ -45,6 +46,5 @@ export default defineConfig({
                 tabler: ["*"],
             },
         }),
-        solidJs(),
     ],
 });

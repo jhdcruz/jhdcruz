@@ -20,13 +20,17 @@
     "@astrojs/check": "0.9.4",
     "@astrojs/cloudflare": "12.2.4",
     "@astrojs/partytown": "2.1.4",
+    "@astrojs/react": "^4.2.1",
     "@astrojs/sitemap": "3.2.1",
-    "@astrojs/solid-js": "5.0.5",
-    "@tabler/icons-solidjs": "3.31.0",
+    "@tabler/icons-react": "^3.31.0",
     "@tailwindcss/vite": "^4.0.14",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "astro": "5.5.2",
     "astro-icon": "1.1.5",
-    "flowbite": "3.1.2"
+    "flowbite": "3.1.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250313.0",
