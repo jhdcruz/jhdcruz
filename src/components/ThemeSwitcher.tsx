@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { IconMoon, IconSun } from "@tabler/icons-react";
-import { getTheme, useTheme, type ThemeProps } from "@/lib/theme";
+import { getTheme, setTheme, type ThemeProps } from "@/lib/theme";
 
 export const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState<ThemeProps["theme"]>(
+  const [currentTheme, setCurrentTheme] = useState<ThemeProps["theme"]>(
     getTheme() ?? "light",
   );
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    useTheme({ theme: newTheme });
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    setCurrentTheme(newTheme);
+    setTheme({ theme: newTheme });
   };
 
   return (
@@ -20,7 +20,7 @@ export const ThemeSwitcher = () => {
       onClick={toggleTheme}
       className="hover:inset-shadow-md rounded-full p-2 text-sm text-zinc-700 hover:bg-zinc-200 dark:text-white hover:dark:bg-zinc-700"
     >
-      {theme === "dark" ? <IconSun size={20} /> : <IconMoon size={20} />}
+      {currentTheme === "dark" ? <IconSun size={20} /> : <IconMoon size={20} />}
     </button>
   );
 };

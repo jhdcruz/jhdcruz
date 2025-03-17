@@ -23,7 +23,7 @@ export const getTheme = (): ThemeProps["theme"] => {
  *
  * @param theme - The theme to set.
  */
-export const useTheme = ({ theme }: ThemeProps = { theme: "light" }) => {
+export const setTheme = ({ theme }: ThemeProps = { theme: "light" }) => {
   switch (theme) {
     case "dark":
       localStorage.setItem("theme", "dark");
