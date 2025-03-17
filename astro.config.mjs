@@ -27,10 +27,14 @@ export default defineConfig({
     imageService: "cloudflare",
   }),
   vite: {
+    resolve: {
+      alias: {
+        "react-dom/server": "react-dom/server.edge",
+      }
+    },
     ssr: {
       noExternal: ["workerd", "astrojs/cloudflare"],
     },
-
     plugins: [tailwindcss()],
   },
   image: {

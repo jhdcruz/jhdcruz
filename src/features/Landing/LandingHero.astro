@@ -5,6 +5,8 @@ import WorkStatus from "@/components/WorkStatus.astro";
 // Get the availability status from CF KV
 const KV = Astro.locals.runtime.env.jhdcruz;
 const status = await KV.get("status");
+
+export const prerender = false;
 ---
 
 <>
