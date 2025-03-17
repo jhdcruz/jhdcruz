@@ -10,16 +10,20 @@ import { WarpBackground } from "@/components/magicui/warp-background";
 import expertiseData from "@/content/data.json";
 import projectsData from "@/content/projects.json";
 
+// Get the availability status from CF KV
+const KV = Astro.locals.runtime.env.jhdcruz;
+const status = await KV.get("status");
+
 export const prerender = false;
 ---
 
 <BaseLayout>
   <WarpBackground beamSize={2} client:only="react">
-    <div slot="fallback" class="p-8">
-      <LandingHero />
+    <div slot="fallback" class="p-8 md:p-20">
+      <LandingHero status={status} />
     </div>
 
-    <LandingHero />
+    <LandingHero status={status} />
   </WarpBackground>
 
   <hr class="mx-auto block h-px w-full border-0 bg-gray-200 dark:bg-zinc-800" />

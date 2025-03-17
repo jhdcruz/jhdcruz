@@ -28,9 +28,9 @@ export default defineConfig({
   }),
   vite: {
     resolve: {
-      alias: {
+      alias: import.meta.env.PROD && {
         "react-dom/server": "react-dom/server.edge",
-      }
+      } || {},
     },
     ssr: {
       noExternal: ["workerd", "astrojs/cloudflare"],

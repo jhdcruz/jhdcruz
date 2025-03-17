@@ -2,17 +2,13 @@
 import { Icon } from "astro-icon/components";
 import WorkStatus from "@/components/WorkStatus.astro";
 
-// Get the availability status from CF KV
-const KV = Astro.locals.runtime.env.jhdcruz;
-const status = await KV.get("status");
-
-export const prerender = false;
+const { status } = Astro.props;
 ---
 
 <>
   <div class="mx-auto max-w-screen-xl py-8 text-center lg:px-12">
     <!-- Work availability -->
-    <WorkStatus status={status ?? "busy"} server:defer>
+    <WorkStatus status={status ?? "busy"}>
       <div slot="fallback">
         <div
           class="mb-5 inline-flex h-[36px] w-[378px] animate-pulse items-center justify-between rounded-full bg-gray-200 p-1 align-middle dark:bg-zinc-700"
