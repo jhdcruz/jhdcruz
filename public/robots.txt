@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deuz.tech/sitemap-index.xml

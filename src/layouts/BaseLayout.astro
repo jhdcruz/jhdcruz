@@ -17,13 +17,9 @@ const { subtitle } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..900"
       rel="stylesheet"
     />
-    <meta
-      http-equiv="Strict-Transport-Security"
-      content="max-age=63072000; includeSubDomains; preload"
-    />
-    <meta http-equiv="Cache-Control" content="max-age=604800" />
-
     <link rel="canonical" href="https://deuz.tech" />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    <meta name="robots" content="index,follow" />
     <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
     <meta
       name="description"
@@ -31,7 +27,6 @@ const { subtitle } = Astro.props;
     />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <script is:inline>
       function siteTheme() {
