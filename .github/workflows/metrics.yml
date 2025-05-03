@@ -16,7 +16,7 @@ jobs:
           # Options
           user: jhdcruz
           template: classic
-          base: metadata
+          base: "activity,metadata"
           config_timezone: Asia/Manila
           repositories_affiliations: owner, collaborator
           plugin_notable: yes
@@ -32,3 +32,6 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_display: detailed
           plugin_achievements_limit: 7
+          plugin_wakatime: true
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          plugin_wakatime_user: jhdcruz
