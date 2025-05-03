@@ -1,6 +1,4 @@
-<img align="right" alt="Jhdcruz's github stats" src="./github-metrics.svg" width="472" />
-
-## Hi there :wave:
+# Hi there :wave:
 
 - 🌐 I'm a software engineer, with forte in web development.
 - ♾️ Long-term goal of being a DevOps/Platform Engineer that focuses on DX, infrastructure, and streamlining development pipelines.
