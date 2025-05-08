@@ -121,8 +121,8 @@ importers:
         specifier: 8.32.0
         version: 8.32.0(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)
       wrangler:
-        specifier: 4.14.3
-        version: 4.14.3(@cloudflare/workers-types@4.20250508.0)
+        specifier: 4.14.4
+        version: 4.14.4(@cloudflare/workers-types@4.20250508.0)
 
 packages:
 
@@ -4112,8 +4112,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.14.3:
-    resolution: {integrity: sha512-gY2n3cC8yb8VyaM0aY9fXX5AIah+VkGefmAHltUBgVpJaM4QXun6O85BydtTEljLL67JTyFyBDn/UPyg2WhESQ==}
+  wrangler@4.14.4:
+    resolution: {integrity: sha512-HIdOdiMIcJV5ymw80RKsr3Uzen/p1kRX4jnCEmR2XVeoEhV2Qw6GABxS5WMTlSES2/vEX0Y+ezUAdsprcUhJ5g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -4254,7 +4254,7 @@ snapshots:
       astro: 5.7.11(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.1)(typescript@5.8.3)(yaml@2.7.1)
       tinyglobby: 0.2.13
       vite: 6.3.4(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1)
-      wrangler: 4.14.3(@cloudflare/workers-types@4.20250508.0)
+      wrangler: 4.14.4(@cloudflare/workers-types@4.20250508.0)
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
@@ -8549,7 +8549,7 @@ snapshots:
 
   vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1):
     dependencies:
-      esbuild: 0.25.3
+      esbuild: 0.25.4
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2
       postcss: 8.5.3
@@ -8752,7 +8752,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250507.0
       '@cloudflare/workerd-windows-64': 1.20250507.0
 
-  wrangler@4.14.3(@cloudflare/workers-types@4.20250508.0):
+  wrangler@4.14.4(@cloudflare/workers-types@4.20250508.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.0
       '@cloudflare/unenv-preset': 2.3.1(unenv@2.0.0-rc.15)(workerd@1.20250507.0)
