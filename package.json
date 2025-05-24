@@ -40,7 +40,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "4.20250524.0",
     "@iconify-json/tabler": "1.2.18",
-    "@stylistic/eslint-plugin": "4.2.0",
+    "@stylistic/eslint-plugin": "4.4.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.0",
     "@typescript-eslint/parser": "8.32.1",
     "eslint": "9.27.0",
