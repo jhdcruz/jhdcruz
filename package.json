@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",
-    "@astrojs/cloudflare": "12.5.3",
+    "@astrojs/cloudflare": "12.5.4",
     "@astrojs/partytown": "2.1.4",
     "@astrojs/react": "^4.2.1",
     "@astrojs/sitemap": "3.4.1",
@@ -26,7 +26,7 @@
     "@tailwindcss/vite": "^4.0.14",
     "@types/react": "^19.0.11",
     "@types/react-dom": "^19.0.4",
-    "astro": "5.8.2",
+    "astro": "5.9.0",
     "astro-icon": "1.1.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
