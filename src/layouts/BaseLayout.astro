@@ -10,24 +10,6 @@ const { subtitle } = Astro.props;
 <!doctype html>
 <html lang="en" class="bg-light dark:bg-dark scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..900"
-      rel="stylesheet"
-    />
-    <link rel="canonical" href="https://deuz.tech" />
-    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
-    <meta name="robots" content="index,follow" />
-    <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
-    <meta
-      name="description"
-      content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
-    />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script is:inline>
       function siteTheme() {
         const theme = localStorage.getItem("theme");
@@ -49,6 +31,23 @@ const { subtitle } = Astro.props;
       siteTheme();
       document.addEventListener("astro:after-swap", siteTheme);
     </script>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..900"
+      rel="stylesheet"
+    />
+    <link rel="canonical" href="https://deuz.tech" />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    <meta name="robots" content="index,follow" />
+    <title>{subtitle ?? "Joshua Hero Dela Cruz"} | @jhdcruz</title>
+    <meta
+      name="description"
+      content="A versatile full-stack web developer with a passion for crafting elegant and functional software solutions. With a strong foundation in front-end development, crafting intuitive and visually appealing user interfaces. Aspires to be a DevOps/Platform Engineering role, focusing on optimizing development workflows, enhancing developer experience, and automating infrastructure processes."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body class="dark:bg-dark bg-white pt-4 font-sans">
