@@ -39,7 +39,7 @@ export default defineConfig({
   },
   image: {
     service: passthroughImageService(),
-    experimentalLayout: "responsive",
+    experimentalLayout: "full-width",
   },
   integrations: [
     react(),
