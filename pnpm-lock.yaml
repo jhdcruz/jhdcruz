@@ -13,7 +13,7 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.8.3)
       '@astrojs/cloudflare':
         specifier: 12.6.0
-        version: 12.6.0(@types/node@24.0.13)(astro@5.11.0(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0))(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)
+        version: 12.6.0(@types/node@24.0.13)(astro@5.11.1(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0))(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)
       '@astrojs/partytown':
         specifier: 2.1.4
         version: 2.1.4
@@ -36,8 +36,8 @@ importers:
         specifier: ^19.1.6
         version: 19.1.6(@types/react@19.1.8)
       astro:
-        specifier: 5.11.0
-        version: 5.11.0(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0)
+        specifier: 5.11.1
+        version: 5.11.1(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0)
       astro-icon:
         specifier: 1.1.5
         version: 1.1.5
@@ -1418,8 +1418,8 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro@5.11.0:
-    resolution: {integrity: sha512-MEICntERthUxJPSSDsDiZuwiCMrsaYy3fnDhp4c6ScUfldCB8RBnB/myYdpTFXpwYBy6SgVsHQ1H4MuuA7ro/Q==}
+  astro@5.11.1:
+    resolution: {integrity: sha512-32dpUh0tXSV/FR2q2/z7LOA6IXl7RqET9J51IA0pPSSi3exhRP3EOSQGjBq10DzXT7VrvplDrFqwfiiWBS8oYA==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4066,12 +4066,12 @@ snapshots:
       - prettier
       - prettier-plugin-astro
 
-  '@astrojs/cloudflare@12.6.0(@types/node@24.0.13)(astro@5.11.0(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0))(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)':
+  '@astrojs/cloudflare@12.6.0(@types/node@24.0.13)(astro@5.11.1(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0))(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/underscore-redirects': 1.0.0
       '@cloudflare/workers-types': 4.20250712.0
-      astro: 5.11.0(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.11.1(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0)
       tinyglobby: 0.2.14
       vite: 6.3.5(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)
       wrangler: 4.24.3(@cloudflare/workers-types@4.20250712.0)
@@ -5339,7 +5339,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.11.0(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.11.1(@types/node@24.0.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.45.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
