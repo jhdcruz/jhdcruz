@@ -21,7 +21,7 @@
     "@astrojs/cloudflare": "12.6.3",
     "@astrojs/partytown": "2.1.4",
     "@astrojs/react": "^4.3.0",
-    "@astrojs/sitemap": "3.4.2",
+    "@astrojs/sitemap": "3.5.0",
     "@tabler/icons-react": "^3.34.0",
     "@tailwindcss/vite": "^4.1.10",
     "@types/react": "^19.1.8",
