@@ -2,7 +2,6 @@
 
 - 🌐 I'm a software engineer, with forte in web development.
 - ♾️ Long-term goal of being a DevOps/Platform Engineer that focuses on DX, infrastructure, and streamlining development pipelines.
-- 🏆 Endgame as a Software Architect.
 
 <hr />
 
