@@ -38,7 +38,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20251014.0",
+    "@cloudflare/workers-types": "4.20251106.1",
     "@iconify-json/tabler": "1.2.23",
     "@stylistic/eslint-plugin": "5.5.0",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
