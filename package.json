@@ -42,7 +42,7 @@
     "@iconify-json/tabler": "1.2.23",
     "@stylistic/eslint-plugin": "5.6.1",
     "@types/eslint-plugin-jsx-a11y": "6.10.1",
-    "@typescript-eslint/parser": "8.46.4",
+    "@typescript-eslint/parser": "8.47.0",
     "eslint": "9.39.1",
     "eslint-plugin-astro": "1.5.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
@@ -55,7 +55,7 @@
     "solid-js": "1.9.10",
     "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.46.4",
+    "typescript-eslint": "8.47.0",
     "wrangler": "4.49.0"
   },
   "lint-staged": {
