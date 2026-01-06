@@ -48,7 +48,7 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
-    "motion": "12.24.0",
+    "motion": "12.24.7",
     "prettier": "3.7.4",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.7.2",
