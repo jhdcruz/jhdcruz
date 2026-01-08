@@ -56,7 +56,7 @@
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3",
     "typescript-eslint": "8.52.0",
-    "wrangler": "4.57.0"
+    "wrangler": "4.58.0"
   },
   "lint-staged": {
     "*.{astro,svelte,js,jsx,ts,tsx,cjs,mjs}": [
