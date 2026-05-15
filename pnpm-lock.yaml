@@ -109,8 +109,8 @@ importers:
         specifier: 0.8.0
         version: 0.8.0(prettier-plugin-astro@0.14.1)(prettier@3.8.3)
       solid-js:
-        specifier: 1.9.12
-        version: 1.9.12
+        specifier: 1.9.13
+        version: 1.9.13
       tailwindcss:
         specifier: 4.3.0
         version: 4.3.0
@@ -3432,8 +3432,8 @@ packages:
     resolution: {integrity: sha512-dWUG8F5sIIARXih1DTaQAX4SsiTXhInKf1buxdY9DIg4ZYPZK5nGM1VRIYmEbDbsHt7USo99xSLFu5Q1IqTmsg==}
     engines: {node: '>= 18'}
 
-  solid-js@1.9.12:
-    resolution: {integrity: sha512-QzKaSJq2/iDrWR1As6MHZQ8fQkdOBf8GReYb7L5iKwMGceg7HxDcaOHk0at66tNgn9U2U7dXo8ZZpLIAmGMzgw==}
+  solid-js@1.9.13:
+    resolution: {integrity: sha512-6hJeJMOcEX8ktqjpDoJZEmld3ijvcvWBDtiXBm7f4332SiFN66QeAQI1REQshvyUoISsSeJ4PHDauKYbwao9JQ==}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -7826,7 +7826,7 @@ snapshots:
 
   smol-toml@1.6.1: {}
 
-  solid-js@1.9.12:
+  solid-js@1.9.13:
     dependencies:
       csstype: 3.2.3
       seroval: 1.5.4
