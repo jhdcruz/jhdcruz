@@ -51,7 +51,7 @@
     "motion": "12.42.1",
     "prettier": "3.8.4",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "0.8.0",
+    "prettier-plugin-tailwindcss": "0.8.1",
     "solid-js": "1.9.13",
     "tailwindcss": "4.3.2",
     "typescript": "6.0.3",
