@@ -37,7 +37,7 @@ jobs:
                   version: 11
 
             - name: Use Node.js Latest
-              uses: actions/setup-node@v6
+              uses: actions/setup-node@v7
               with:
                   node-version: 23
                   cache: "pnpm"
@@ -78,7 +78,7 @@ jobs:
                   version: 11
 
             - name: Use Node.js Latest
-              uses: actions/setup-node@v6
+              uses: actions/setup-node@v7
               with:
                   node-version: 23
                   cache: "pnpm"
