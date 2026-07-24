@@ -54,7 +54,7 @@
     "prettier-plugin-tailwindcss": "0.8.1",
     "solid-js": "1.9.13",
     "tailwindcss": "4.3.2",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "typescript-eslint": "8.62.0",
     "wrangler": "4.107.0"
   },
