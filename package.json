@@ -49,7 +49,7 @@
     "husky": "9.1.7",
     "lint-staged": "17.0.8",
     "motion": "12.42.2",
-    "prettier": "3.8.4",
+    "prettier": "3.9.6",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.1",
     "solid-js": "1.9.13",
