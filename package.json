@@ -52,7 +52,7 @@
     "prettier": "3.9.6",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.1",
-    "solid-js": "1.9.14",
+    "solid-js": "1.9.15",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
     "typescript-eslint": "8.66.0",
