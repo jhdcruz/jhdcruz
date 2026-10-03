@@ -50,7 +50,7 @@
     "lint-staged": "17.5.1",
     "motion": "12.43.0",
     "prettier": "3.9.9",
-    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-astro": "1.1.0",
     "prettier-plugin-tailwindcss": "0.8.1",
     "solid-js": "1.9.15",
     "tailwindcss": "4.3.3",
